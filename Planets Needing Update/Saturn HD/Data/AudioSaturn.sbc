@@ -8,7 +8,7 @@
       </Id>
       <Category>AMB</Category>
       <MaxDistance>100</MaxDistance>
-      <Volume>0.8</Volume>
+      <Volume>0.5</Volume>
       <Loopable>true</Loopable>
       <Waves>
         <Wave Type="D2">

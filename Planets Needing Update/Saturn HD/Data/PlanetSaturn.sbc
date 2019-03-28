@@ -112,10 +112,17 @@
 
 	<SoundRules>
 	  <SoundRule>
-        <Height Min="0" Max="1.2"/>
+        <Height Min="0" Max="1.0"/>
         <Latitude Min="0" Max="90"/>
         <SunAngleFromZenith Min="0" Max="180"/>
         <EnvironmentSound>AmbHigh</EnvironmentSound>
+      </SoundRule>
+	  
+	  <SoundRule>
+        <Height Min="0" Max="1.2"/>
+        <Latitude Min="0" Max="90"/>
+        <SunAngleFromZenith Min="0" Max="180"/>
+        <EnvironmentSound>Wind</EnvironmentSound>
       </SoundRule>
 	</SoundRules>
 	  
@@ -167,26 +174,26 @@
 
       <AtmosphereSettings>
 		<RayleighScattering>
-		  <X>10.837</X>
-		  <Y>26.854</Y>
-		  <Z>100</Z>
+		  <X>10.837</X>														<!-- 10.837 -->
+		  <Y>26.854</Y>														<!-- 26.854 -->
+		  <Z>100</Z>														<!-- 100 -->
 		</RayleighScattering>
-		<MieScattering>50</MieScattering>
+		<MieScattering>50</MieScattering>									<!-- 50 -->
 		<MieColorScattering>
-		  <X>96.492</X>
-		  <Y>118</Y>
-		  <Z>95.375</Z>
+		  <X>96.492</X>														<!-- 96.492 -->
+		  <Y>118</Y>														<!-- 118 -->
+		  <Z>95.375</Z>														<!-- 95.375 -->
 		</MieColorScattering>
-		<RayleighHeight>12.098</RayleighHeight>
-		<RayleighHeightSpace>8.192</RayleighHeightSpace>
-		<RayleighTransitionModifier>1.2</RayleighTransitionModifier>
-		<MieHeight>174</MieHeight>
-		<MieG>0.995</MieG>
-		<Intensity>4.286</Intensity>
-		<SeaLevelModifier>0.980</SeaLevelModifier>
-		<AtmosphereTopModifier>1.1</AtmosphereTopModifier>
-		<FogIntensity>1</FogIntensity>
-		<Scale>1</Scale>
+		<RayleighHeight>12.098</RayleighHeight>								<!-- 12.098 -->
+		<RayleighHeightSpace>8.192</RayleighHeightSpace>					<!-- 96.492 -->
+		<RayleighTransitionModifier>1.2</RayleighTransitionModifier>		<!-- 1.2 -->
+		<MieHeight>174</MieHeight>											<!-- 174 -->
+		<MieG>0.995</MieG>													<!-- 0.995 -->
+		<Intensity>4.286</Intensity>										<!-- 4.286 -->
+		<SeaLevelModifier>0.980</SeaLevelModifier>							<!-- 0.980 -->
+		<AtmosphereTopModifier>1.10</AtmosphereTopModifier>					<!-- 1.1 -->
+		<FogIntensity>2.301</FogIntensity>										<!-- 3.0 -->
+		<Scale>1</Scale>													<!-- 1.0 -->
       </AtmosphereSettings>
 
     <CloudLayers>
@@ -198,35 +205,54 @@
           </Textures>
           <RelativeAltitude>80</RelativeAltitude>
           <RotationAxis>
-          <X>-0.2</X>
-          <Y>1</Y>
-          <Z>0.2</Z>
+          <X>0.0</X>														<!-- -0.2 -->
+          <Y>0.0</Y>														<!-- 1 -->
+          <Z>0.0</Z>														<!-- 0.2 -->
           </RotationAxis>
-          <AngularVelocity>0.0001</AngularVelocity>
-          <InitialRotation>0</InitialRotation>
-          <ScalingEnabled>false</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>79.9</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>-1.5</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+          <AngularVelocity>0.010</AngularVelocity> 							<!-- 0 -->
+          <InitialRotation>0</InitialRotation>								<!-- 0 -->
+          <ScalingEnabled>false</ScalingEnabled>							<!-- false -->
+          <FadeOutRelativeAltitudeStart>79.9</FadeOutRelativeAltitudeStart>	<!-- 79.9 -->
+          <FadeOutRelativeAltitudeEnd>-1.5</FadeOutRelativeAltitudeEnd>		<!-- -1.5 -->
+          <ApplyFogRelativeDistance>1.5</ApplyFogRelativeDistance>			<!-- 0.05 -->
         </CloudLayer>       
-      <CloudLayer>
+      
+	  <CloudLayer>
         <!-- Far layer -->
         <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
         <Textures>
           <Texture>Textures/Models/Environment/Sky/Saturn/Saturn.dds</Texture>
         </Textures>
-        <RelativeAltitude>1.0</RelativeAltitude>
+        <RelativeAltitude>1.0</RelativeAltitude>							<!-- 1.0 -->
         <RotationAxis>
-          <X>-0.2</X>
-          <Y>1</Y>
-          <Z>0.2</Z>
+          <X>0</X>															<!-- 0.2 -->
+          <Y>0</Y>															<!-- 1.0 -->
+          <Z>0</Z>															<!-- 0.2 -->
         </RotationAxis>
-        <AngularVelocity>0.0001</AngularVelocity>
-        <InitialRotation>0</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
-        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>
+        <AngularVelocity>0.0290</AngularVelocity>							<!-- 0.0001 -->
+        <InitialRotation>0</InitialRotation>								<!-- 0.0 -->
+        <ScalingEnabled>false</ScalingEnabled>								<!-- true -->
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>	<!-- 3.0 -->
+        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>		<!-- 0.1 -->
+        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>			<!-- 0.1 -->
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Saturn/Saturn.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.0</RelativeAltitude>							<!-- 1.0 -->
+        <RotationAxis>
+          <X>0.0</X>														<!-- -0.2 -->
+          <Y>0.0</Y>														<!-- 1.0 -->
+          <Z>0.0</Z>														<!-- 0.2 -->
+        </RotationAxis>
+        <AngularVelocity>0.0200</AngularVelocity>							<!-- 0.0001 -->
+        <InitialRotation>0</InitialRotation>								<!-- 0.0 -->
+        <ScalingEnabled>false</ScalingEnabled>								<!-- false -->
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>	<!-- 3.0 -->
+        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>		<!-- 0.1 -->
+        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>			<!-- 0.1 -->
       </CloudLayer>
       <CloudLayer>
         <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
@@ -235,52 +261,34 @@
         </Textures>
         <RelativeAltitude>1.0</RelativeAltitude>
         <RotationAxis>
-          <X>-0.2</X>
-          <Y>0.2</Y>
-          <Z>1</Z>
+          <X>0.0</X>														<!-- -0.2 -->
+          <Y>0.0</Y>														<!-- 0.2 -->
+          <Z>0.0</Z>															<!-- 1.0 -->
         </RotationAxis>
-        <AngularVelocity>0.0001</AngularVelocity>
-        <InitialRotation>0</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
-        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>
+        <AngularVelocity>0.0200</AngularVelocity>							<!-- 0.0001 -->
+        <InitialRotation>0</InitialRotation>								<!-- 0.0 -->
+        <ScalingEnabled>false</ScalingEnabled>								<!-- false -->
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>	<!-- 3.0 -->
+        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>		<!-- 0.1 -->
+        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>			<!-- 0.1 -->
       </CloudLayer>
       <CloudLayer>
         <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
         <Textures>
           <Texture>Textures/Models/Environment/Sky/Saturn/Saturn.dds</Texture>
         </Textures>
-        <RelativeAltitude>1.0</RelativeAltitude>
+        <RelativeAltitude>1.0</RelativeAltitude>							<!-- 1.0 -->
         <RotationAxis>
-          <X>-0.2</X>
-          <Y>0.2</Y>
-          <Z>1</Z>
+          <X>0.0</X>														<!-- -0.2 -->
+          <Y>0.0</Y>														<!-- 0.2 -->
+          <Z>0.0</Z>															<!-- 1.0 -->
         </RotationAxis>
-        <AngularVelocity>0.0001</AngularVelocity>
-        <InitialRotation>0</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
-        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>
-      </CloudLayer>
-      <CloudLayer>
-        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-        <Textures>
-          <Texture>Textures/Models/Environment/Sky/Saturn/Saturn.dds</Texture>
-        </Textures>
-        <RelativeAltitude>1.0</RelativeAltitude>
-        <RotationAxis>
-          <X>-0.2</X>
-          <Y>0.2</Y>
-          <Z>1</Z>
-        </RotationAxis>
-        <AngularVelocity>0.0001</AngularVelocity>
-        <InitialRotation>0</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
-        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>
+        <AngularVelocity>0.0200</AngularVelocity>							<!-- 0.0001 -->
+        <InitialRotation>0</InitialRotation>								<!-- 0.0 -->
+        <ScalingEnabled>false</ScalingEnabled>								<!-- false -->
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>	<!-- 3.0 -->
+        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>		<!-- 0.1 -->
+        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>			<!-- 0.1 -->
       </CloudLayer>
 
       <!-- Near layers -->
@@ -290,55 +298,55 @@
         <Textures>
           <Texture>Textures/Models/Environment/Sky/Saturn/Saturn.dds</Texture>
         </Textures>
-        <RelativeAltitude>1.0</RelativeAltitude>
+        <RelativeAltitude>1.0</RelativeAltitude>							<!-- 1.0 -->
         <RotationAxis>
-          <X>-0.2</X>
-          <Y>0.2</Y>
-          <Z>1</Z>
+          <X>0.0</X>														<!-- -0.2 -->
+          <Y>0.0</Y>														<!-- 0.2 -->
+          <Z>0.0</Z>														<!-- 1.0 -->
         </RotationAxis>
-        <AngularVelocity>0.0001</AngularVelocity>
-        <InitialRotation>0</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
+        <AngularVelocity>0.0290</AngularVelocity>							<!-- 0.0001 -->
+        <InitialRotation>0</InitialRotation>								<!-- 0.0 -->
+        <ScalingEnabled>false</ScalingEnabled>								<!-- false -->
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>	<!-- 3.0 -->
+        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>		<!-- 0.1 -->
       </CloudLayer>
       <CloudLayer>
         <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
         <Textures>
           <Texture>Textures/Models/Environment/Sky/Saturn/Saturn.dds</Texture>
         </Textures>
-        <RelativeAltitude>1.0</RelativeAltitude>
+        <RelativeAltitude>1.0</RelativeAltitude>							<!-- 1.0 -->
         <RotationAxis>
-          <X>-0.2</X>
-          <Y>0.2</Y>
-          <Z>1</Z>
+          <X>0.0</X>														<!-- -0.2 -->
+          <Y>0.0</Y>														<!-- 0.2 -->
+          <Z>0.0</Z>														<!-- 1.0 -->
         </RotationAxis>
-        <AngularVelocity>0.0001</AngularVelocity>
-        <InitialRotation>0</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
+        <AngularVelocity>0.0290</AngularVelocity>							<!-- 0.0001 -->
+        <InitialRotation>0</InitialRotation>								<!-- 0.0 -->
+        <ScalingEnabled>false</ScalingEnabled>								<!-- false -->
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>	<!-- 3.0 -->
+        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>		<!-- 0.1 -->
       </CloudLayer>
       <CloudLayer>
-        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+         <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
         <Textures>
           <Texture>Textures/Models/Environment/Sky/Saturn/Saturn.dds</Texture>
         </Textures>
-        <RelativeAltitude>1.0</RelativeAltitude>
+        <RelativeAltitude>1.0</RelativeAltitude>							<!-- 1.0 -->
         <RotationAxis>
-          <X>-0.2</X>
-          <Y>0.2</Y>
-          <Z>1</Z>
+          <X>0.0</X>														<!-- -0.2 -->
+          <Y>0.0</Y>														<!-- 0.2 -->
+          <Z>0.0</Z>														<!-- 1.0 -->
         </RotationAxis>
-        <AngularVelocity>0.0001</AngularVelocity>
-        <InitialRotation>0</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
+        <AngularVelocity>0.0290</AngularVelocity>							<!-- 0.0001 -->
+        <InitialRotation>0</InitialRotation>								<!-- 0.0 -->
+        <ScalingEnabled>false</ScalingEnabled>								<!-- false -->
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>	<!-- 3.0 -->
+        <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>		<!-- 0.1 -->
       </CloudLayer>                
     </CloudLayers>        
       	  
-      <SurfaceGravity>3.00</SurfaceGravity>
+      <SurfaceGravity>0.91</SurfaceGravity>
       <MaterialsMaxDepth Min="4000" Max="4000"/>
       <MaterialsMinDepth Min="20" Max="20"/>
 
