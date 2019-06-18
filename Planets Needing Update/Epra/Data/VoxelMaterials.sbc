@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+  
+	<!-- GhostSnow -->
+	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>GhostSnow</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <ColorMetalXZnY>Textures\Voxels\GhostSnow\GhostSnow_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\GhostSnow\GhostSnow_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\GhostSnow\GhostSnow_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\GhostSnow\GhostSnow_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\GhostSnow\GhostSnow_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\GhostSnow\GhostSnow_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>12.242</ScaleMultiplier>
+      <InitialDistance>9.668</InitialDistance>
+      <DistanceMultiplier>10.812</DistanceMultiplier>      
+      <Far1Distance>15911.740</Far1Distance>
+      <Far2Distance>19148.480</Far2Distance>
+      <Far1Scale>50</Far1Scale>
+      <Far2Scale>100</Far2Scale>
+      <Far3Distance>37025.380</Far3Distance>
+      
+      <Far3Color>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </Far3Color>
+
+
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>200</BiomeValueMin>
+      <BiomeValueMax>200</BiomeValueMax>
+    </VoxelMaterial>
+
+      
+	<!-- CleanIce -->
+	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>CleanIce</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <ColorMetalXZnY>Textures\Voxels\CleanIce\CleanIce_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\CleanIce\CleanIce_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\CleanIceCleanIce\_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\CleanIce\CleanIce_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\CleanIce\CleanIce_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\CleanIce\CleanIce_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>12.242</ScaleMultiplier>
+      <InitialDistance>10.240</InitialDistance>
+      <DistanceMultiplier>10.812</DistanceMultiplier>      
+      <Far1Distance>15911.740</Far1Distance>
+      <Far2Distance>19148.480</Far2Distance>
+      <Far1Scale>50</Far1Scale>
+      <Far2Scale>100</Far2Scale>
+      <Far3Distance>37025.380</Far3Distance>
+      
+      <Far3Color>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </Far3Color>      
+      
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>	     	  
+    </VoxelMaterial>                
+  </VoxelMaterials>
+</Definitions>
