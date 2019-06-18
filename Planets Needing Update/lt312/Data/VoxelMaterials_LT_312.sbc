@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>   
+	<!-- GhostRocks -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>GhostRocks</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\GhostRocks\GhostRocks_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\GhostRocks\GhostRocks_ng.dds</NormalGlossXZnY>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+    </VoxelMaterial>
+          
+    <!-- GhostxivSand -->
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>GhostxivSand</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Sand</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\GhostxivSand\GhostxivSand_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\GhostxivSand\GhostxivSand_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\GhostxivSand\GhostxivSand_add.dds</ExtXZnY>      
+      
+      <!--Generated Rocks-->
+      <FoliageTextureArray1>Textures\Voxels\RocksDesert_ForAxisXZ_cm.dds</FoliageTextureArray1>
+      <FoliageTextureArray2>Textures\Voxels\RocksDesert_ForAxisXZ_ng.dds</FoliageTextureArray2>
+      <FoliageDensity>1</FoliageDensity>
+      <FoliageScale>
+        <X>0.2</X>
+        <Y>0.2</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.5</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+      </SpawnChannels>
+      
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>      
+    </VoxelMaterial>
+    
+    <!-- WaterXiv -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>WaterXiv</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      
+      
+      <DiffuseXZ>Textures\Voxels\WaterXiv\WaterXiv_ForAxisXZ_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\WaterXiv\WaterXiv_ForAxisXZ_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\WaterXiv\WaterXiv_ForAxisXZ_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\WaterXiv\WaterXiv_ForAxisXZ_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\WaterXiv\WaterXiv_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\WaterXiv\WaterXiv_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\WaterXiv\WaterXiv_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>1.8</SpecularShininess>
+    </VoxelMaterial>               	  	       
+  </VoxelMaterials>
+</Definitions>
