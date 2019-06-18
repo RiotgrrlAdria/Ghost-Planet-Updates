@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="RocksgrassXiii" />
+    <Options>
+      <Option Chance="1.25">
+        <Change From="Stone" To="RocksgrassXiii" />
+      </Option>
+      <Option Chance="0.65">
+        <Change From="Stone" To="RocksgrassXiii" />
+        <Change From="Iron_01" To="Nickel_01" />
+        <Change From="Iron_02" To="Nickel_01" />
+      </Option>
+      <Option Chance="0.65">
+        <Change From="Stone" To="RocksgrassXiii" />
+        <Change From="Iron_01" To="Silicon_01" />
+        <Change From="Iron_02" To="Silicon_01" />
+      </Option>
+      <Option Chance="0.23">
+        <Change From="Stone" To="RocksgrassXiii" />
+        <Change From="Iron_01" To="Uraninite_01" />
+        <Change From="Iron_02" To="Uraninite_01" />
+      </Option>
+      <Option Chance="0.3">
+        <Change From="Stone" To="RocksgrassXiii" />
+        <Change From="Iron_01" To="Gold_01" />
+        <Change From="Iron_02" To="Gold_01" />
+      </Option>
+      <Option Chance="1.1">
+        <Change From="Stone" To="RocksgrassXiii" />
+        <Change From="Iron_01" To="Cobalt_01" />
+        <Change From="Iron_02" To="Cobalt_01" />
+      </Option>
+      <Option Chance="2.1">
+        <Change From="Stone" To="RocksgrassXiii" />
+        <Change From="Iron_01" To="Silver_01" />
+        <Change From="Iron_02" To="Silver_01" />
+      </Option>
+      <Option Chance="2.1">
+        <Change From="Stone" To="RocksgrassXiii" />
+        <Change From="Iron_01" To="Magnesium_01" />
+        <Change From="Iron_02" To="Magnesium_01" />
+      </Option>
+    </Options>
+  </Definition>
+</Definitions>

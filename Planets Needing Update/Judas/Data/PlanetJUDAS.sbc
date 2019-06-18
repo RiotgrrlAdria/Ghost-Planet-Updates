@@ -1,0 +1,1455 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlanetGeneratorDefinitions>
+    <PlanetGeneratorDefinition>
+      <Id>
+        <TypeId>PlanetGeneratorDefinition</TypeId>
+        <SubtypeId>JUDAS</SubtypeId>
+      </Id>
+      <PlanetMaps Material="true" Ores="true" Biome="true" Occlusion="true"/>
+
+      <SurfaceDetail>
+        <Texture>Data/PlanetDataFiles/Extra/material_detail_3</Texture>
+        <Size>384</Size>
+        <Scale>7</Scale>
+        <Slope Min="20" Max="90" />
+        <Transition>7.5</Transition>
+      </SurfaceDetail>
+
+	<DistortionTable>
+      <Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
+    </DistortionTable>
+	  
+    <OreMappings>
+      <!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
+      <!-- Tier 1-->
+      <Ore Value="200" Type="Iron_02" Start="3" Depth="7" />
+      <Ore Value="220" Type="Nickel_01" Start="3" Depth="7" />
+      <Ore Value="240" Type="Silicon_01" Start="3" Depth="7" />
+
+      <!-- Fe 1-->
+      <Ore Value="1" Type="Iron_02" Start="10" Depth="3" />
+      <Ore Value="4" Type="Iron_02" Start="12" Depth="3" />
+      <Ore Value="8" Type="Iron_02" Start="14" Depth="4" />
+
+      <!-- Fe 2-->
+      <Ore Value="12" Type="Iron_02" Start="25" Depth="5" />
+      <Ore Value="16" Type="Iron_02" Start="28" Depth="5" />
+      <Ore Value="20" Type="Iron_02" Start="31" Depth="8" />
+
+      <!-- Ni 1-->
+      <Ore Value="24" Type="Nickel_01" Start="10" Depth="4" />
+      <Ore Value="28" Type="Nickel_01" Start="11" Depth="4" />
+      <Ore Value="32" Type="Nickel_01" Start="11" Depth="6" />
+
+      <!-- Ni 2-->
+      <Ore Value="36" Type="Nickel_01" Start="24" Depth="5" />
+      <Ore Value="40" Type="Nickel_01" Start="27" Depth="5" />
+      <Ore Value="44" Type="Nickel_01" Start="30" Depth="8" />
+
+      <!-- Si 1-->
+      <Ore Value="48" Type="Silicon_01" Start="9" Depth="4" />
+      <Ore Value="52" Type="Silicon_01" Start="13" Depth="4" />
+      <Ore Value="56" Type="Silicon_01" Start="10" Depth="6" />
+
+      <!-- Si 2-->
+      <Ore Value="60" Type="Silicon_01" Start="22" Depth="6" />
+      <Ore Value="64" Type="Silicon_01" Start="25" Depth="7" />
+      <Ore Value="68" Type="Silicon_01" Start="27" Depth="9" />
+
+      <!-- ORE Tier 2 -->
+      <!-- Co 1-->
+      <Ore Value="72" Type="Cobalt_01" Start="20" Depth="3" />
+      <Ore Value="76" Type="Cobalt_01" Start="22" Depth="4" />
+      <Ore Value="80" Type="Cobalt_01" Start="26" Depth="6" />
+
+      <!-- Co 2-->
+      <Ore Value="84" Type="Cobalt_01" Start="52" Depth="5" />
+      <Ore Value="88" Type="Cobalt_01" Start="55" Depth="6" />
+      <Ore Value="92" Type="Cobalt_01" Start="62" Depth="9" />
+
+      <!-- Ag 1-->
+      <Ore Value="96" Type="Silver_01" Start="21" Depth="3" />
+      <Ore Value="100" Type="Silver_01" Start="25" Depth="3" />
+      <Ore Value="104" Type="Silver_01" Start="31" Depth="5" />
+
+      <!-- Ag 2-->
+      <Ore Value="108" Type="Silver_01" Start="55" Depth="8" />
+      <Ore Value="112" Type="Silver_01" Start="58" Depth="9" />
+      <Ore Value="116" Type="Silver_01" Start="63" Depth="11" />
+
+      <!-- Mg 1-->
+      <Ore Value="120" Type="Magnesium_01" Start="23" Depth="4" />
+      <Ore Value="124" Type="Magnesium_01" Start="26" Depth="4" />
+      <Ore Value="128" Type="Magnesium_01" Start="29" Depth="5" />
+
+      <!-- Mg 2-->
+      <Ore Value="132" Type="Magnesium_01" Start="53" Depth="7" />
+      <Ore Value="136" Type="Magnesium_01" Start="55" Depth="8" />
+      <Ore Value="140" Type="Magnesium_01" Start="59" Depth="10" />
+
+      <!-- ORE Tier 3 -->
+      <!-- U 1-->
+      <Ore Value="144" Type="Uraninite_01" Start="32" Depth="2" />
+      <Ore Value="148" Type="Uraninite_01" Start="35" Depth="3" />
+      <Ore Value="152" Type="Uraninite_01" Start="38" Depth="5" />
+
+      <!-- U 2-->
+      <Ore Value="156" Type="Uraninite_01" Start="80" Depth="8" />
+      <Ore Value="160" Type="Uraninite_01" Start="89" Depth="9" />
+      <Ore Value="164" Type="Uraninite_01" Start="96" Depth="11" />
+
+      <!-- Au 1-->
+      <Ore Value="168" Type="Gold_01" Start="40" Depth="1" />
+      <Ore Value="172" Type="Gold_01" Start="42" Depth="2" />
+      <Ore Value="176" Type="Gold_01" Start="45" Depth="3" />
+
+      <!-- Au 2-->
+      <Ore Value="180" Type="Gold_01" Start="100" Depth="4" />
+      <Ore Value="184" Type="Gold_01" Start="107" Depth="5" />
+      <Ore Value="188" Type="Gold_01" Start="112" Depth="8" />
+    </OreMappings>
+
+	<SoundRules>
+	  <SoundRule>
+        <Height Min="0" Max="1.2"/>
+        <Latitude Min="0" Max="90"/>
+        <SunAngleFromZenith Min="0" Max="180"/>
+        <EnvironmentSound>AmbHigh</EnvironmentSound>
+      </SoundRule>
+	</SoundRules>
+	  
+
+    <ComplexMaterials>
+
+      <MaterialGroup Name="Lake areas" Value="82">        
+
+        <!-- Pole Biome -->
+        <Rule>
+          <Layers>
+            <Layer Material="Water" Depth="20"/>
+          </Layers>
+          <Height Min="0.0" Max="0.0001"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="5"/>
+        </Rule>
+      </MaterialGroup>
+
+      <MaterialGroup Name="Sand_02" Value="43">
+        <Rule>
+          <Layers>
+            <Layer Material="Sand_02" Depth="20"/>
+            <Layer Material="DesertRocks" Depth="40"/>
+          </Layers>
+          <Height Min="0" Max="0.85"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>            
+      </MaterialGroup>
+
+      <MaterialGroup Name="DefaultSetUp" Value="0">
+
+        <!-- Pole Biome -->
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="5"/>
+            <Layer Material="Ice_02" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="80" Max="90"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="50"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="80" Max="90"/>
+          <Slope Min="30" Max="90"/>
+        </Rule>
+        <!-- Pole Biome End -->
+
+        <!-- Iceland Biome -->
+        <!-- Mountain tops snow cover - in iceland/woodlands -->
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="2"/>
+          </Layers>
+          <Height Min="0.43" Max="1.0"/>
+          <Latitude Min="25" Max="80"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="2"/>
+          </Layers>
+          <Height Min="0.44" Max="1"/>
+          <Latitude Min="25" Max="80"/>
+          <Slope Min="30" Max="35"/>
+        </Rule>
+
+        <!-- Iceland / pole transition -->
+
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="5"/>
+            <Layer Material="Ice_02" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="70" Max="80"/>
+          <Slope Min="0" Max="20"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="1"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="70" Max="80"/>
+          <Slope Min="20" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="5"/>
+            <Layer Material="Ice_02" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="55" Max="70"/>
+          <Slope Min="0" Max="10"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="1"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="55" Max="70"/>
+          <Slope Min="10" Max="20"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="55" Max="70"/>
+          <Slope Min="20" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="5"/>
+            <Layer Material="Ice_02" Depth="50"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="50" Max="55"/>
+          <Slope Min="15" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="1"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="50" Max="55"/>
+          <Slope Min="8" Max="15"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="50" Max="55"/>
+          <Slope Min="0" Max="8"/>
+        </Rule>
+        <!-- Iceland / pole transition end -->
+
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="1"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="45" Max="50"/>
+          <Slope Min="15" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="45" Max="50"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+
+        <!-- Iceland Biom End -->
+        <!-- Woodlands Biome -->
+
+        <!-- Woodland / Iceland transition -->
+
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="40" Max="45"/>
+          <Slope Min="0" Max="20"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.35"/>
+          <Latitude Min="40" Max="45"/>
+          <Slope Min="20" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="35" Max="40"/>
+          <Slope Min="0" Max="10"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="1"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="35" Max="40"/>
+          <Slope Min="20" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.35"/>
+          <Latitude Min="35" Max="40"/>
+          <Slope Min="10" Max="20"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="30" Max="35"/>
+          <Slope Min="8" Max="15"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="1"/>
+          </Layers>
+          <Height Min="0.0" Max="0.51"/>
+          <Latitude Min="30" Max="35"/>
+          <Slope Min="15" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.35"/>
+          <Latitude Min="30" Max="35"/>
+          <Slope Min="0" Max="8"/>
+        </Rule>
+
+        <!-- Woodland / Iceland transition end -->
+
+        <!-- Stone transition  -->
+
+
+        <Rule>
+          <Layers>
+            <Layer Material="DesertRocks" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="10" Max="13"/>
+          <Slope Min="40" Max="70"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="10" Max="13"/>
+          <Slope Min="70" Max="90"/>
+        </Rule>
+
+
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="13" Max="80"/>
+          <Slope Min="40" Max="90"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="DesertRocks" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="1.0"/>
+          <Latitude Min="0" Max="10"/>
+          <Slope Min="40" Max="90"/>
+        </Rule>
+
+        <!-- Stone transition end -->
+
+        <!-- Top -->
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="5"/>
+          </Layers>
+          <Height Min="0.7" Max="1.0"/>
+          <Latitude Min="20" Max="90"/>
+          <Slope Min="0" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="DesertRocks" Depth="5"/>
+          </Layers>
+          <Height Min="0.51" Max="0.7"/>
+          <Latitude Min="0" Max="10"/>
+          <Slope Min="0" Max="90"/>
+        </Rule>
+        <!-- Tree line -->
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="1"/>
+          </Layers>
+          <Height Min="0.44" Max="0.51"/>
+          <Latitude Min="20" Max="30"/>
+          <Slope Min="0" Max="40"/>
+        </Rule>
+        <!-- Pine line -->
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.35" Max="0.44"/>
+          <Latitude Min="20" Max="30"/>
+          <Slope Min="0" Max="40"/>
+        </Rule>
+        <!-- Grass lands line -->
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.35"/>
+          <Latitude Min="20" Max="30"/>
+          <Slope Min="0" Max="25"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.35"/>
+          <Latitude Min="20" Max="30"/>
+          <Slope Min="25" Max="40"/>
+        </Rule>
+        <!-- Woodlands Biom End -->
+
+        <!-- Desert Biom -->
+
+
+        <!-- Desert / woodland transition -->
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.44"/>
+          <Latitude Min="15" Max="20"/>
+          <Slope Min="0" Max="20"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass_old" Depth="1"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.0" Max="0.44"/>
+          <Latitude Min="15" Max="20"/>
+          <Slope Min="20" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.44"/>
+          <Latitude Min="10" Max="15"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass_old" Depth="1"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.0" Max="0.44"/>
+          <Latitude Min="10" Max="15"/>
+          <Slope Min="15" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+          </Layers>
+          <Height Min="0.0" Max="0.44"/>
+          <Latitude Min="5" Max="10"/>
+          <Slope Min="15" Max="40"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Sand_02" Depth="1"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.0" Max="0.44"/>
+          <Latitude Min="5" Max="10"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+
+        <!-- Desert / woodland transition end-->
+
+        <!-- Top -->
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="5"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.51" Max="1.0"/>
+          <Latitude Min="0" Max="20"/>
+          <Slope Min="0" Max="40"/>
+        </Rule>
+
+        <!-- Tree line + Pine line-->
+        <Rule>
+          <Layers>
+            <Layer Material="Sand_02" Depth="1"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.35" Max="0.51"/>
+          <Latitude Min="0" Max="5"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="DesertRocks" Depth="1"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.35" Max="0.51"/>
+          <Latitude Min="0" Max="5"/>
+          <Slope Min="15" Max="40"/>
+        </Rule>
+        <!-- Grass lands line -->
+        <Rule>
+          <Layers>
+            <Layer Material="Sand_02" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.0" Max="0.35"/>
+          <Latitude Min="0" Max="5"/>
+          <Slope Min="5" Max="20"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Grass_old" Depth="2"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.0" Max="0.45"/>
+          <Latitude Min="0" Max="5"/>
+          <Slope Min="0" Max="5"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="DesertRocks" Depth="1"/>
+            <Layer Material="DesertRocks" Depth="100"/>
+          </Layers>
+          <Height Min="0.0" Max="0.35"/>
+          <Latitude Min="0" Max="5"/>
+          <Slope Min="20" Max="40"/>
+        </Rule>
+
+        <!-- Desert Biome End -->
+      </MaterialGroup>
+    </ComplexMaterials>
+
+    <!-- Rules that define where environment items will spawn -->
+    <EnvironmentItems>
+      <!-- Snow -->
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Snow</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="10"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Snow</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SnowFoliage" Density="0.1"/>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <!--EasyStart Location-->
+        <Biomes>
+          <Biome>87</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Woods_grass</Material>
+          <Material>Grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassFoliage" Density="0.2"/>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Woods_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="10"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Woods_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="WoodGrassFoliage" Density="0.15"/>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Rocks_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="10"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Rocks_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="RockGrassFoliage" Density="0.1"/>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="10"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassFoliage" Density="0.2"/>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass_old</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="10"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass_old</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="0.3"/>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Sand_02</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="10"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>85</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Sand_02</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SandFoliage" Density="0.1"/>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.003" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+      </Item>
+
+      <!-- Biom foliage Earth end -->
+
+      <!-- Biom foliage end -->
+
+      <!-- Biom woods edge -->
+      <!-- Earth Biom woods edge -->
+      <Item>
+        <Biomes>
+          <Biome>113</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Snow</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="SnowForestEdge" Density="0.3"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SnowBushForestEdge" Density="0.4"/>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>113</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Soil</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="0.5"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>113</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Woods_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="WoodGrassForestEdge" Density="0.3"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="WoodGrassBushForestEdge" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>113</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Rocks_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="RockGrassForestEdge" Density="0.45"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="RockGrassBushForestEdge" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>113</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassForestEdge" Density="3.1"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassBushForestEdge" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>113</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass_old</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassForestEdge" Density="1.3"/>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassOldForestEdge" Density="0.06"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldBushForestEdge" Density="0.5"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="20" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>113</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass_old</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassOldForestEdge" Density="0.06"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldBushForestEdge" Density="0.5"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="20"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>113</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Sand_02</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="SandForestEdge" Density="0.05"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SandBushForestEdge" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+      <!-- Earth Biom woods edge end -->
+
+      <!-- Biom woods edge end -->
+
+      <!-- Biom woods medium -->
+      <Item>
+        <Biomes>
+          <Biome>141</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Snow</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="SnowForestMedium" Density="0.6"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SnowBushForestMedium" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>141</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Soil</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="0.7"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>141</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Woods_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="WoodGrassForestMedium" Density="0.6"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="WoodGrassBushForestMedium" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>141</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Rocks_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="RockGrassForestMedium" Density="0.4"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="RockGrassBushForestMedium" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>141</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassForestMedium" Density="2.6"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassBushForestMedium" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>141</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass_old</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassOldForestMedium" Density="1.15"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldBushForestMedium" Density="0.45"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="20" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>141</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Sand_02</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="SandForestMedium" Density="0.15"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SandBushForestMedium" Density="0.2"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+      <!-- Earth Biom woods Medium end -->
+
+      <!-- Biom woods medium end -->
+
+      <!-- Biom woods large -->
+      <!-- Earth Biom woods Large -->
+      <Item>
+        <Biomes>
+          <Biome>198</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Snow</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="SnowForestLarge" Density="0.6"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SnowBushForestLarge" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>198</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Woods_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="WoodGrassForestLarge" Density="0.6"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="WoodGrassBushForestLarge" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>198</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Soil</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="0.8"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>198</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Rocks_grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="RockGrassForestLarge" Density="0.35"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="RockGrassBushForestLarge" Density="0.2"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+
+      <Item>
+        <Biomes>
+          <Biome>198</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassForestLarge" Density="2.6"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassBushForestLarge" Density="0.4"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>198</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Grass_old</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassOldForestLarge" Density="0.07"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldBushForestLarge" Density="0.3"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="20" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>198</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Sand_02</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="SandForestLarge" Density="0.01"/>
+          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SandBushForestLarge" Density="0.15"/>
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="75"/>
+          <Slope Min="0" Max="50"/>
+        </Rule>
+      </Item>
+      <!-- Earth Biom woods Large end -->
+
+      <!-- Biom woods large end -->
+    </EnvironmentItems>
+
+      <DefaultSurfaceMaterial Material="Water" MaxDepth="6"/>
+      <DefaultSubSurfaceMaterial Material="Stone"/>
+
+      <HasAtmosphere>true</HasAtmosphere>
+	  <MaximumOxygen>0.9</MaximumOxygen>
+	  <Atmosphere>
+        <Breathable>true</Breathable>
+		<OxygenDensity>0.9</OxygenDensity>
+		<Density>1.1</Density>
+		<LimitAltitude>2.0</LimitAltitude>
+	  </Atmosphere>
+
+      <AtmosphereSettings>
+          <RayleighScattering>
+              <X>100</X>
+              <Y>100</Y>
+              <Z>72</Z>
+          </RayleighScattering>
+          <MieScattering>50</MieScattering>
+          <MieColorScattering>
+              <X>44</X>
+              <Y>62</Y>
+              <Z>150</Z>
+          </MieColorScattering>
+          <RayleighHeight>36</RayleighHeight>
+          <RayleighHeightSpace>15</RayleighHeightSpace>
+          <RayleighTransitionModifier>0.6</RayleighTransitionModifier>
+          <MieHeight>200</MieHeight>
+          <MieG>0.9995474</MieG>
+          <Intensity>6</Intensity>
+          <SeaLevelModifier>0.978</SeaLevelModifier>
+          <AtmosphereTopModifier>1.1</AtmosphereTopModifier>
+          <FogIntensity>1.0</FogIntensity>
+          <Scale>1</Scale>
+      </AtmosphereSettings>
+
+      
+    <CloudLayers>
+      <CloudLayer>
+        <!-- Far layer -->
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.0</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>1</Y>
+          <Z>0.2</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0002</AngularVelocity>
+        <InitialRotation>1.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.0</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>0.2</Y>
+          <Z>1</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0002</AngularVelocity>
+        <InitialRotation>3.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+        <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.0</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>0.2</Y>
+          <Z>1</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0002</AngularVelocity>
+        <InitialRotation>5.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+        <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>0.9</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>0.2</Y>
+          <Z>1</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0002</AngularVelocity>
+        <InitialRotation>5.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+        <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+      </CloudLayer>
+
+      <!-- Near layers -->
+
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.0</RelativeAltitude>
+        <RotationAxis>
+          <X>0</X>
+          <Y>1</Y>
+          <Z>0</Z>
+        </RotationAxis>
+        <AngularVelocity>0.000085</AngularVelocity>
+        <InitialRotation>0.15</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.5</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.6</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.0</RelativeAltitude>
+        <RotationAxis>
+          <X>1</X>
+          <Y>0.2</Y>
+          <Z>-0.2</Z>
+        </RotationAxis>
+        <AngularVelocity>0.000085</AngularVelocity>
+        <InitialRotation>2.5</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.7</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.5</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/clouds.dds</Texture>
+        </Textures>
+        <RelativeAltitude>0.9</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>0.2</Y>
+          <Z>1</Z>
+        </RotationAxis>
+        <AngularVelocity>0.000085</AngularVelocity>
+        <InitialRotation>4.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+    </CloudLayers>
+    
+      <SurfaceGravity>1</SurfaceGravity>
+      <MaterialsMaxDepth Min="4000" Max="4000"/>
+      <MaterialsMinDepth Min="20" Max="20"/>
+
+      <HillParams Min = "-0.01" Max ="0.09"/>
+
+    <AnimalSpawnInfo>
+      <Animals>
+        <Animal Type="Wolf"/>
+      </Animals>
+      <SpawnDelayMin>60000</SpawnDelayMin>
+      <SpawnDelayMax>80000</SpawnDelayMax>
+      <SpawnDistMin>100</SpawnDistMin>
+      <SpawnDistMax>140</SpawnDistMax>
+      <WaveCountMin>2</WaveCountMin>
+      <WaveCountMax>4</WaveCountMax>
+    </AnimalSpawnInfo>
+    <NightAnimalSpawnInfo>
+      <Animals>
+        <Animal Type="Wolf"/>
+      </Animals>
+      <SpawnDelayMin>30000</SpawnDelayMin>
+      <SpawnDelayMax>60000</SpawnDelayMax>
+      <SpawnDistMin>100</SpawnDistMin>
+      <SpawnDistMax>140</SpawnDistMax>
+      <WaveCountMin>4</WaveCountMin>
+      <WaveCountMax>7</WaveCountMax>
+    </NightAnimalSpawnInfo>
+
+    </PlanetGeneratorDefinition>
+
+  </PlanetGeneratorDefinitions>
+</Definitions>
