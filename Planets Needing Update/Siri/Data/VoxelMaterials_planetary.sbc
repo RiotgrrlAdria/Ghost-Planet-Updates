@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>   
+    <!-- SiriGrass -->
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>SiriGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Soil</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\SiriGrass\SiriGrass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\SiriGrass\SiriGrass_ng.dds</NormalGlossXZnY>
+	  <ExtXZnY>Textures\Voxels\SiriGrass\SiriGrass_add.dds</ExtXZnY>
+	  <ExtDetailScale>0.001</ExtDetailScale>
+	  
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <!--Foliage-->
+      <FoliageTextureArray1>Textures\Models\Environment\Grass\GrassFlower_cm.dds</FoliageTextureArray1>
+      <FoliageTextureArray1>Textures\Models\Environment\Grass\GrassFlower_ng.dds</FoliageTextureArray1>
+
+      <FoliageDensity>5</FoliageDensity>
+      <FoliageScale>
+        <X>1</X>
+        <Y>1</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+
+	</VoxelMaterial> 
+
+	<!-- SiriRocks -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>SiriRocks</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\SiriRocks\SiriRocks_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\SiriRocks\SiriRocks_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\SiriRocks\SiriRocks_add.dds</ExtXZnY>
+
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>2</Scale>
+      <Far1Distance>1000</Far1Distance>
+      <Far2Distance>1500</Far2Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Scale>3000</Far2Scale>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+      </SpawnChannels>
+
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>
+
+    </VoxelMaterial>
+    
+    <!-- FrozenIce2 -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>FrozenIce2</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      
+      
+      <DiffuseXZ>Textures\Voxels\FrozenIce2\FrozenIce2_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\FrozenIce2\FrozenIce2_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\FrozenIce2\FrozenIce2_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\FrozenIce2\FrozenIce2_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\FrozenIce2\FrozenIce2_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\FrozenIce2\FrozenIce2_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\FrozenIce2\FrozenIce2_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>1.8</SpecularShininess>
+    </VoxelMaterial>
+    
+    <!-- SiriSand -->
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>SiriSand</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Soil</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\SiriSand\SiriSand_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\SiriSand\SiriSand_ng.dds</NormalGlossXZnY>
+	  <ExtXZnY>Textures\Voxels\SiriSand\SiriSand_add.dds</ExtXZnY>
+	  <ExtDetailScale>0.001</ExtDetailScale>
+	  
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess> 
+    </VoxelMaterial>
+    
+    <!-- SiriSnow -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>SiriSnow</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      
+      <ColorMetalXZnY>Textures\Voxels\SiriSnow\SiriSnow_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\SiriSnow\SiriSnow_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\SiriSnow\SiriSnow_add.dds</ExtXZnY>      
+     
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>1.8</SpecularShininess>
+    </VoxelMaterial>                   	       
+  </VoxelMaterials>
+</Definitions>
