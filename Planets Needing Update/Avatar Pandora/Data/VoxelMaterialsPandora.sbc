@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+  
+	<!-- PandoraWater -->	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>PandoraWater</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <DiffuseXZ>Textures\Voxels\PandoraWater\PandoraWater_ForAxisXZ_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\PandoraWater\PandoraWater_ForAxisXZ_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\PandoraWater\PandoraWater_ForAxisXZ_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\PandoraWater\PandoraWater_ForAxisXZ_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\PandoraWater\PandoraWater_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\PandoraWater\PandoraWater_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+    </VoxelMaterial>
+	
+	<!-- PandoraBlueGlowinGrass -->
+	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>PandoraBlueGlowinGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>GrassDry</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\PandoraBlueGlowinGrass\PandoraBlueGlowinGrass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\PandoraBlueGlowinGrass\PandoraBlueGlowinGrass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\PandoraBlueGlowinGrass\PandoraBlueGlowinGrass_add.dds</ExtXZnY>
+
+      <Far3Color>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </Far3Color>
+      
+      <!--Foliage-->
+      <FoliageColorTextureArray>
+        <Color>Textures\Models\Environment\Grass\AlienGreenGrass_Tubes_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\AlienGreenGrass_Tubes01_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\AlienGreenGrass_Tubes_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\AlienGreenGrass_Tubes01_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>0.3</FoliageDensity>
+      <FoliageScale>
+        <X>2.6</X>
+        <Y>2.6</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+    </VoxelMaterial>      
+      
+	<!-- PandoraWhiteGlowinGrass -->
+	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>PandoraWhiteGlowinGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>GrassDry</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\PandoraWhiteGlowinGrass\PandoraWhiteGlowinGrass_add.dds</ExtXZnYFar2>
+
+      <Far3Color>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>100</Z>
+        <W>0</W>
+      </Far3Color>
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+      </VoxelMaterial>           
+    
+     <!-- PandoraGreenGrass -->
+     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>PandoraGreenGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>GrassDry</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\PandoraGreenGrass\PandoraGreenGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+      
+      <!--Foliage-->
+      <FoliageColorTextureArray>
+        <Color>Textures\Models\Environment\Grass\Grass_01_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_02_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_03_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_04_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_05_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_06_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_08_cm.dds</Color>
+      </FoliageColorTextureArray>
+      
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\Grass_01_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_02_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_03_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_04_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_05_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_06_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_08_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+      
+      <FoliageDensity>5</FoliageDensity>
+      <FoliageScale>
+        <X>1.8</X>
+        <Y>1.8</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+
+      <SpawnChannels>
+        <Channel>1</Channel>
+        <Channel>4</Channel>
+      </SpawnChannels>
+      
+      <SpawnsFlora>true</SpawnsFlora>>
+      <BiomeValueMin>255</BiomeValueMin>
+      <BiomeValueMax>255</BiomeValueMax>
+      
+      <DamageThreashold>0.1</DamageThreashold>
+      <DamagedMaterial>Soil</DamagedMaterial>
+     </VoxelMaterial> 
+     <!-- CliffRock -->          
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>CliffRock</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\CliffRock\CliffRock_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\CliffRock\CliffRock_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\CliffRock\CliffRock_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>      
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+     </VoxelMaterial>
+
+    <!-- RockGrassy-->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>RockGrassy</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\RockGrassy\RockGrassy_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\RockGrassy\RockGrassy_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\RockGrassy\RockGrassy_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\RockGrassy\RockGrassy_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\RockGrassy\RockGrassy_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\RockGrassy\RockGrassy_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\RockGrassy\RockGrassy_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\RockGrassy\RockGrassy_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\RockGrassy\RockGrassy_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\RockGrassy\RockGrassy_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <!--Foliage-->
+      <FoliageColorTextureArray>
+        <Color>Textures\Models\Environment\Grass\AlienRockGrass_Tubes_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\AlienRockGrass_Tubes01_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\AlienRockGrass_Tubes_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\AlienRockGrass_Tubes01_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>1</FoliageDensity>
+      <FoliageScale>
+        <X>0.7</X>
+        <Y>0.7</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+      
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>   
+    </VoxelMaterial>
+    
+     <!-- PandoraSoil -->          
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>PandoraSoil</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Soil</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\PandoraSoil\PandoraSoil_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\PandoraSoil\PandoraSoil_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\PandoraSoil\PandoraSoil_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\PandoraSoil\PandoraSoil_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\PandoraSoil\PandoraSoil_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\PandoraSoil\PandoraSoil_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\PandoraSoil\PandoraSoil_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\PandoraSoil\PandoraSoil_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\PandoraSoil\PandoraSoil_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\PandoraSoil\PandoraSoil_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>      
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+     </VoxelMaterial>
+     
+     <!-- RockyTerrain -->          
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>RockyTerrain</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\RockyTerrain\RockyTerrain_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\RockyTerrain\RockyTerrain_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>     
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+     </VoxelMaterial>          
+    
+    <!-- PandoraBlueGrass-->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>PandoraBlueGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>GrassDry</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\PandoraBlueGrass\PandoraBlueGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <!--Foliage-->
+      <FoliageColorTextureArray>
+        <Color>Textures\Models\Environment\Grass\Grass_01_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_02_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_03_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_04_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_05_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_06_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_08_cm.dds</Color>
+      </FoliageColorTextureArray>
+      
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\Grass_01_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_02_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_03_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_04_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_05_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_06_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_08_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+      
+      <FoliageDensity>5</FoliageDensity>
+      <FoliageScale>
+        <X>0.8</X>
+        <Y>0.8</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+
+      <SpawnChannels>
+        <Channel>1</Channel>
+        <Channel>4</Channel>
+      </SpawnChannels>
+      
+      <SpawnsFlora>true</SpawnsFlora>>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>
+    </VoxelMaterial>
+    
+	<!-- PandoraSnow -->
+	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>PandoraSnow</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <ColorMetalXZnY>Textures\Voxels\PandoraSnow\PandoraSnow_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\PandoraSnow\PandoraSnow_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\PandoraSnow\PandoraSnow_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\PandoraSnow\PandoraSnow_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\PandoraSnow\PandoraSnow_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\PandoraSnow\PandoraSnow_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>200</BiomeValueMin>
+      <BiomeValueMax>200</BiomeValueMax>      
+      </VoxelMaterial>                                                            
+  </VoxelMaterials>
+</Definitions>
