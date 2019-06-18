@@ -1,0 +1,1015 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <EnvironmentItemsDefinitions>
+    <!-- Earth planet -->
+    <!-- Earth Foliage -->
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SnowFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>WoodGrassFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>RockGrassFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>GrassFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>GrassOldFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SandFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+    <!-- Earth Foliage end -->
+    <!-- Alien Foliage -->
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienSnowFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienOrangeGrassFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienYellowGrassFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienGreenGrassFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienRockGrassFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienSandFoliage</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+
+    <!-- Alien Foliage end -->
+    <!-- Earth Forest edge -->
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SnowBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>SnowForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>WoodGrassBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>WoodGrassForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>RockGrassBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>RockGrassForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>GrassBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>GrassForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>GrassOldBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>GrassOldForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SandBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>SandForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+    <!-- Earth Forest edge end -->
+    <!-- Alie Forest edge -->
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienSnowBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienSnowForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienOrangeGrassBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienOrangeGrassForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienYellowGrassBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienYellowGrassForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienGreenGrassBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienGreenGrassForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienRockGrassBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienRockGrassForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienSandBushForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienSandForestEdge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+    <!-- Alien Forest edge end -->
+    <!-- Earth Forest medium -->
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SnowBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>SnowForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>WoodGrassBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>WoodGrassForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>RockGrassBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>RockGrassForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>GrassBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>GrassForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>GrassOldBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>GrassOldForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SandBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>SandForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+    <!-- Earth Forest medium end -->
+    <!-- Alien Forest medium -->
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienSnowBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienSnowForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienOrangeGrassBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienOrangeGrassForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienYellowGrassBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienYellowGrassForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienGreenGrassBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienGreenGrassForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienRockGrassBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienRockGrassForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienSandBushForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienSandForestMedium</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+    <!-- Alien Forest medium end -->
+    <!-- Earth Forest large -->
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SnowBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>SnowForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>WoodGrassBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>WoodGrassForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>RockGrassBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>RockGrassForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>GrassBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>GrassForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>GrassOldBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>GrassOldForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SandBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>SandForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+    <!-- Earth Forest large end -->
+    <!-- Alien Forest large -->
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienSnowBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienSnowForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienOrangeGrassBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienOrangeGrassForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienYellowGrassBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienYellowGrassForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienGreenGrassBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienGreenGrassForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienRockGrassBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienRockGrassForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>AlienSandBushForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>AlienSandForestLarge</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+    <!-- Alien Forest large end -->
+
+    <!-- Earth planet end -->
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>SnowTrees</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>DesertTrees</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_Trees</TypeId>
+        <SubtypeId>JungleTrees</SubtypeId>
+      </Id>
+      <MaxViewDistance>500</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>20</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>BushesDesert</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>SnowBushes</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>1500</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MyObjectBuilder_DestroyableItems</TypeId>
+        <SubtypeId>BushesForest</SubtypeId>
+      </Id>
+      <MaxViewDistance>50</MaxViewDistance>
+      <SectorSize>150</SectorSize>
+      <PhysicalMaterial>Wood</PhysicalMaterial>
+      <ItemSize>8</ItemSize>
+    </Definition>
+
+  </EnvironmentItemsDefinitions>
+
+  <EnvironmentItemsEntries>
+<Entry Type="MyObjectBuilder_Trees" Subtype="AlienGreenGrassForestMedium" ItemSubtype="AlienLeafTreeBlue" Frequency="0.2"/>
+<Entry Type="MyObjectBuilder_Trees" Subtype="AlienGreenGrassForestMedium" ItemSubtype="AlienLeafTreeBlue" Frequency="0.2"/>
+  </EnvironmentItemsEntries>
+</Definitions>

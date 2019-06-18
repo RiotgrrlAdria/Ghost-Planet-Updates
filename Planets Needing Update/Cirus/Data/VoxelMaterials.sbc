@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <!-- grass-->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>GrassMod</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Grass</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <DiffuseXZ>Textures\Voxels\GrassMod_ForAxisXZ_de.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\GrassMod_ForAxisXZ_ns.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\GrassMod_ForAxisY_de.dds</DiffuseY>
+      <NormalY>Textures\Voxels\GrassMod_ForAxisY_ns.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\GrassMod_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\GrassMod_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\GreenMod_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\EarthGreenGrassMod_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\EarthGreenGrassMod_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\DummyMod_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\EarthGreenGrassMod_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\EarthGreenGrassMod_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\EarthGreenGrassBlue_Far2_cm</ExtXZnYFar2>
+      
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>2</Scale>
+      <Far1Distance>30</Far1Distance>
+      <Far2Distance>500</Far2Distance>
+      <Far1Scale>200</Far1Scale>
+      <Far2Scale>1000</Far2Scale>
+
+      <Far3Distance>5000</Far3Distance>
+      <Far3Color>
+        <X>0.04</X>
+        <Y>0.07</Y>
+        <Z>0</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <!--Foliage-->
+      <FoliageColorTextureArray>
+        <Color>Textures\Models\Environment\Grass\GrassMod_01_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\GrassMod_02_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\GrassMod_03_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\GrassMod_04_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\GrassMod_05_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\GrassMod_06_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\GrassMod_08_cm.dds</Color>
+      </FoliageColorTextureArray>
+      
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\GrassMod_01_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\GrassMod_02_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\GrassMod_03_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\GrassMod_04_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\GrassMod_05_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\GrassMod_06_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\GrassMod_08_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>0</FoliageDensity>
+      <FoliageScale>
+        <X>0.8</X>
+        <Y>0.8</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.50</FoliageRandomRescaleMult>
+
+      <SpawnChannels>
+        <Channel>1</Channel>
+        <Channel>4</Channel>
+      </SpawnChannels>
+      
+      <SpawnsFlora>false</SpawnsFlora>
+      <BiomeValueMin>255</BiomeValueMin>
+      <BiomeValueMax>255</BiomeValueMax>
+      
+    </VoxelMaterial> 
+    
+  </VoxelMaterials>
+</Definitions>
