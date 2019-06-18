@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--Planets -->
+  <Definition xsi:type="PlanetGeneratorDefinition">
+    <Id>
+      <TypeId>PlanetGeneratorDefinition</TypeId>
+      <SubtypeId>Deltiri</SubtypeId>
+    </Id>
+    <!--!!!Important!! Read if you want to mod Planets! -->
+    <!--Following tag switches off loading from certain color channels. Its performance measure in cases where channels are not used-->
+    <!--Make sure you are not modding a switched off channel-->
+    <PlanetMaps Material="true" Ores="true" Biome="true" Occlusion="true"/>
+
+    <SurfaceDetail>
+      <Texture>Data/PlanetDatafiles/Extra/Material_Detail_2</Texture>
+      <Size>64</Size>
+      <Scale>1</Scale>
+      <Slope Min="30" Max="90" />
+      <Transition>5</Transition>
+      <!-- <Transition>7.5</Transition> -->
+    </SurfaceDetail>
+
+    <OreMappings>
+      <!-- Tier 1 !INSERT ONLY IN BLUE CHANNEL! -->
+      <!-- Underground Ice for Marz  -->
+      <Ore Value="50" Type="Ice" Start="2" Depth="5" />
+
+      <!-- EASY START-->
+      <Ore Value="200" Type="Iron_02" Start="3" Depth="7" />
+      <Ore Value="220" Type="Nickel_01" Start="3" Depth="7" />
+      <Ore Value="240" Type="Silicon_01" Start="3" Depth="7" />
+
+      <!-- Fe 1-->
+      <Ore Value="1" Type="Iron_02" Start="10" Depth="3" />
+      <Ore Value="4" Type="Iron_02" Start="12" Depth="3" />
+      <Ore Value="8" Type="Iron_02" Start="14" Depth="4" />
+
+      <!-- Fe 2-->
+      <Ore Value="12" Type="Iron_02" Start="25" Depth="5" />
+      <Ore Value="16" Type="Iron_02" Start="28" Depth="5" />
+      <Ore Value="20" Type="Iron_02" Start="31" Depth="8" />
+
+      <!-- Ni 1-->
+      <Ore Value="24" Type="Nickel_01" Start="10" Depth="4" />
+      <Ore Value="28" Type="Nickel_01" Start="11" Depth="4" />
+      <Ore Value="32" Type="Nickel_01" Start="11" Depth="6" />
+
+      <!-- Ni 2-->
+      <Ore Value="36" Type="Nickel_01" Start="24" Depth="5" />
+      <Ore Value="40" Type="Nickel_01" Start="27" Depth="5" />
+      <Ore Value="44" Type="Nickel_01" Start="30" Depth="8" />
+
+      <!-- Si 1-->
+      <Ore Value="48" Type="Silicon_01" Start="9" Depth="4" />
+      <Ore Value="52" Type="Silicon_01" Start="13" Depth="4" />
+      <Ore Value="56" Type="Silicon_01" Start="10" Depth="6" />
+
+      <!-- Si 2-->
+      <Ore Value="60" Type="Silicon_01" Start="22" Depth="6" />
+      <Ore Value="64" Type="Silicon_01" Start="25" Depth="7" />
+      <Ore Value="68" Type="Silicon_01" Start="27" Depth="9" />
+
+      <!-- ORE Tier 2 -->
+      <!-- Co 1-->
+      <Ore Value="72" Type="Cobalt_01" Start="20" Depth="3" />
+      <Ore Value="76" Type="Cobalt_01" Start="22" Depth="4" />
+      <Ore Value="80" Type="Cobalt_01" Start="26" Depth="6" />
+
+      <!-- Co 2-->
+      <Ore Value="84" Type="Cobalt_01" Start="52" Depth="5" />
+      <Ore Value="88" Type="Cobalt_01" Start="55" Depth="6" />
+      <Ore Value="92" Type="Cobalt_01" Start="62" Depth="9" />
+
+      <!-- Ag 1-->
+      <Ore Value="96" Type="Silver_01" Start="21" Depth="3" />
+      <Ore Value="100" Type="Silver_01" Start="25" Depth="3" />
+      <Ore Value="104" Type="Silver_01" Start="31" Depth="5" />
+
+      <!-- Ag 2-->
+      <Ore Value="108" Type="Silver_01" Start="55" Depth="8" />
+      <Ore Value="112" Type="Silver_01" Start="58" Depth="9" />
+      <Ore Value="116" Type="Silver_01" Start="63" Depth="11" />
+
+      <!-- Mg 1-->
+      <Ore Value="120" Type="Magnesium_01" Start="23" Depth="4" />
+      <Ore Value="124" Type="Magnesium_01" Start="26" Depth="4" />
+      <Ore Value="128" Type="Magnesium_01" Start="29" Depth="5" />
+
+      <!-- Mg 2-->
+      <Ore Value="132" Type="Magnesium_01" Start="53" Depth="7" />
+      <Ore Value="136" Type="Magnesium_01" Start="55" Depth="8" />
+      <Ore Value="140" Type="Magnesium_01" Start="59" Depth="10" />
+
+      <!-- ORE Tier 3 -->
+      <!-- U 1-->
+      <Ore Value="144" Type="Uraninite_01" Start="32" Depth="2" />
+      <Ore Value="148" Type="Uraninite_01" Start="35" Depth="3" />
+      <Ore Value="152" Type="Uraninite_01" Start="38" Depth="5" />
+
+      <!-- U 2-->
+      <Ore Value="156" Type="Uraninite_01" Start="80" Depth="8" />
+      <Ore Value="160" Type="Uraninite_01" Start="89" Depth="9" />
+      <Ore Value="164" Type="Uraninite_01" Start="96" Depth="11" />
+
+      <!-- Au 1-->
+      <Ore Value="168" Type="Gold_01" Start="40" Depth="1" />
+      <Ore Value="172" Type="Gold_01" Start="42" Depth="2" />
+      <Ore Value="176" Type="Gold_01" Start="45" Depth="3" />
+
+      <!-- Au 2-->
+      <Ore Value="180" Type="Gold_01" Start="100" Depth="4" />
+      <Ore Value="184" Type="Gold_01" Start="107" Depth="5" />
+      <Ore Value="188" Type="Gold_01" Start="112" Depth="8" />
+    </OreMappings>
+
+    <!-- Mars ambient -->
+    <SoundRules>
+      <SoundRule>
+        <Height Min="0" Max="1"/>
+        <Latitude Min="0" Max="90"/>
+        <SunAngleFromZenith Min="0" Max="180"/>
+        <EnvironmentSound>AmbMarsLoop</EnvironmentSound>
+      </SoundRule>
+    </SoundRules>
+
+    <!-- Marz named for easier finding  -->
+    <ComplexMaterials>
+      <MaterialGroup Name="SandNew" Value="0">
+
+        <!-- Snow on top mountains -->
+        <Rule>
+          <Layers>
+            <Layer Material="Cliffs" Depth="2"/>
+          </Layers>
+          <Height Min="0.455" Max="1.0"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+
+        <!-- Snow on top mountains END -->
+
+        <Rule>
+          <Layers>
+            <Layer Material="SandNew" Depth="5"/>
+          </Layers>
+          <Height Min="0" Max="1"/>
+          <Latitude Min="80" Max="90"/>
+          <Slope Min="0" Max="60"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="SandNew" Depth="5"/>
+          </Layers>
+          <Height Min="0.6" Max="1"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="90"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Dirt2" Depth="5"/>
+          </Layers>
+          <Height Min="0.15" Max="1"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="20" Max="90"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="SandNew" Depth="5"/>
+          </Layers>
+          <Height Min="0.15" Max="0.18"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="60" Max="90"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="SandNew" Depth="5"/>
+          </Layers>
+          <Height Min="0.09" Max="0.12"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="30" Max="50"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Dirt2" Depth="5"/>
+          </Layers>
+          <Height Min="0" Max="0.1"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="10" Max="70"/>
+        </Rule>
+
+      </MaterialGroup>
+    </ComplexMaterials>
+
+    <EnvironmentItems>
+      <Item>
+        <Biomes>
+          <Biome>0</Biome>
+        </Biomes>
+        <Materials>
+          <Material>SandNew</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="Stones" ModifierId="EarthForestArea" Density="0.003" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+      </Item>     
+
+      <Item>
+        <Biomes>
+          <Biome>0</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Dirt2</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="Stones" ModifierId="EarthForestArea" Density="0.003" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+      </Item>
+    </EnvironmentItems>
+
+    <!-- Titan Planet's Atmosphere settings-->
+    <AtmosphereSettings>
+      <RayleighScattering>
+        <X>2.515</X>
+        <Y>19.420</Y>
+        <Z>100.000</Z>
+      </RayleighScattering>
+      <MieScattering>147.671082</MieScattering>
+      <MieColorScattering>
+        <X>121.198</X>
+        <Y>132.931</Y>
+        <Z>143.041</Z>
+      </MieColorScattering>
+      <RayleighHeight>9.386989</RayleighHeight>
+      <MieHeight>45.1775055</MieHeight>
+      <MieG>0.9961641</MieG>
+      <Intensity>6.00218773</Intensity>
+      <FogIntensity>1</FogIntensity>
+      <SeaLevelModifier>0.916</SeaLevelModifier>
+      <AtmosphereTopModifier>1.030</AtmosphereTopModifier>
+    </AtmosphereSettings>
+
+    <Atmosphere>
+      <Breathable>false</Breathable>
+      <OxygenDensity>0</OxygenDensity>
+      <Density>1.0</Density>
+      <LimitAltitude>2.0</LimitAltitude>
+    </Atmosphere>
+
+    <DefaultSurfaceMaterial Material="SandNew" MaxDepth="5"/>
+    <DefaultSubSurfaceMaterial Material="Cliffs"/>
+
+    <HasAtmosphere>true</HasAtmosphere>
+
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/MartianSky.dds</Texture>
+        </Textures>
+        <RelativeAltitude>-0.2</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>0.2</Y>
+          <Z>1</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0002</AngularVelocity>
+        <InitialRotation>3.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/MartianSky.dds</Texture>
+        </Textures>
+        <RelativeAltitude>-0.2</RelativeAltitude>
+        <RotationAxis>
+          <X>0.5</X>
+          <Y>-0.2</Y>
+          <Z>1</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0002</AngularVelocity>
+        <InitialRotation>0.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+        <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>
+      </CloudLayer>
+
+    <MaximumOxygen>0.0</MaximumOxygen>
+    <SurfaceGravity>0.9</SurfaceGravity>
+    <MaterialsMaxDepth Min="4000" Max="4000"/>
+    <MaterialsMinDepth Min="20" Max="20"/>
+
+    <HillParams Min = "-0.01" Max ="0.12"/>
+  </Definition> 
+</Definitions>  

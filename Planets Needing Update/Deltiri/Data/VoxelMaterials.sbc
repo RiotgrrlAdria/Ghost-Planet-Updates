@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <!-- organics  -->
+    <!-- desert-->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>SandNew</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Sand</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\SandNew\SandNew_de.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\SandNew\SandNew_ns.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\SandNew\SandNew_de.dds</DiffuseY>
+      <NormalY>Textures\Voxels\SandNew\SandNew_ns.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\SandNew\SandNew_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\SandNew\SandNew_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\SandNew\SandNew_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\SandNew\SandNew_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\SandNew\SandNew_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\SandNew\SandNew_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <!--Distance values that look great-->
+      <InitialScale>21.684</InitialScale>
+      <ScaleMultiplier>66.316</ScaleMultiplier>
+      <InitialDistance>12.242</InitialDistance>
+      <DistanceMultiplier>35.417</DistanceMultiplier>
+      <Far1Distance>15911.740</Far1Distance>
+      <Far2Distance>19148.480</Far2Distance>
+      <Far1Scale>50</Far1Scale>
+      <Far2Scale>100</Far2Scale>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+        
+      <!--Generated Rocks-->
+      <FoliageTextureArray1>Textures\Voxels\RocksDesert_ForAxisXZ_cm.dds</FoliageTextureArray1>
+      <FoliageTextureArray2>Textures\Voxels\RocksDesert_ForAxisXZ_ng.dds</FoliageTextureArray2>
+      <FoliageDensity>1</FoliageDensity>
+      <FoliageScale>
+        <X>0.2</X>
+        <Y>0.2</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.5</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+      </SpawnChannels>
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>
+    </VoxelMaterial>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Dirt2</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Sand</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\Dirt2\Dirt2_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\Dirt2\Dirt2_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\Dirt2\Dirt2_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\Dirt2\Dirt2_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\Dirt2\Dirt2_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Dirt2\Dirt2_ng.dds</NormalGlossXZnY>
+	    <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+	    <ExtY>Textures\Voxels\Dummy_add.dds</ExtY>
+	 
+	  <ColorMetalXZnYFar1>Textures\Voxels\Dirt2\Dirt2_Far1_cm.dds</ColorMetalXZnYFar1>   
+      <NormalGlossXZnYFar1>Textures\Voxels\Dirt\Dirt_Far1__ng.dds</NormalGlossXZnYFar1>
+	  
+	  <ColorMetalXZnYFar2>Textures\Voxels\Dirt2\Dirt2_Far2_cm.dds</ColorMetalXZnYFar2>   
+      <NormalGlossXZnYFar2>Textures\Voxels\Dirt2\Dirt2_Far2_ng.dds</NormalGlossXZnYFar2>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+       </SpawnChannels>
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>
+    </VoxelMaterial>    
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Cliffs</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Sand</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\Cliffs\Cliffs_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\Cliffs\Cliffs_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\Cliffs\Cliffs_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\Cliffs\Cliffs_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\Cliffs\Cliffs_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Cliffs\Cliffs_ng.dds</NormalGlossXZnY>
+	    <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+	    <ExtY>Textures\Voxels\Dummy_add.dds</ExtY>
+	 
+	  <ColorMetalXZnYFar1>Textures\Voxels\Cliffs\Cliffs_Far1_cm.dds</ColorMetalXZnYFar1>   
+      <NormalGlossXZnYFar1>Textures\Voxels\Cliffs\Cliffs_Far1__ng.dds</NormalGlossXZnYFar1>
+	  
+	  <ColorMetalXZnYFar2>Textures\Voxels\Cliffs\Cliffs_Far2_cm.dds</ColorMetalXZnYFar2>   
+      <NormalGlossXZnYFar2>Textures\Voxels\Cliffs\Cliffs_Far2_ng.dds</NormalGlossXZnYFar2>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+       </SpawnChannels>
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>
+    </VoxelMaterial>                     
+  </VoxelMaterials>  
+</Definitions>       
