@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>   
+	<!-- IcyMountains -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>IcyMountains</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\IcyMountains\IcyMountains_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\IcyMountains\IcyMountains_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\IcyMountains\IcyMountains_add.dds</ExtXZnY>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>2</Scale>
+      <Far1Distance>1000</Far1Distance>
+      <Far2Distance>1500</Far2Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Scale>3000</Far2Scale>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+      </SpawnChannels>
+
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>
+
+    </VoxelMaterial>	       
+  </VoxelMaterials>
+</Definitions>
