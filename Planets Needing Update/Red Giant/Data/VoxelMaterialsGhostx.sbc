@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+  
+	<!-- Lava -->
+	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Lava</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Lava</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+     
+      <SpecularPower>8</SpecularPower>
+      <SpecularShininess>0.23</SpecularShininess>
+
+      <ColorMetalXZnY>Textures\Voxels\Lava\Lava_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Lava\Lava_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Lava\Lava_add.dds</ExtXZnY>
+      
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+    </VoxelMaterial>            
+  </VoxelMaterials>
+</Definitions>

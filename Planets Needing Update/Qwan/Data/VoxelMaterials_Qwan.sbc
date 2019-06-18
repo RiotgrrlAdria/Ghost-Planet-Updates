@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>   
+    <!-- QwanSoil -->
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>QwanSoil</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Soil</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\QwanSoil\QwanSoil_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\QwanSoil\QwanSoil_ng.dds</NormalGlossXZnY>
+	  <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+	  <ExtDetailScale>0.001</ExtDetailScale>
+	  
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <!--Generated Rocks-->
+      <FoliageTextureArray1>Textures\Voxels\QwanStone\QwanStone_cm.dds</FoliageTextureArray1>
+      <FoliageTextureArray2>Textures\Voxels\QwanStone\QwanStone_ng.dds</FoliageTextureArray2>
+      <FoliageDensity>1</FoliageDensity>
+      <FoliageScale>
+        <X>0.2</X>
+        <Y>0.2</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.5</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+
+	</VoxelMaterial> 
+
+	<!-- QwanStone -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>QwanStone</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\QwanStone\QwanStone_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\QwanStone\QwanStone_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\QwanStone\QwanStone_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\QwanStone\QwanStone_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\QwanStone\QwanStone_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\QwanStone\QwanStone_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\QwanStone\QwanStone_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\QwanStone\QwanStone_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\QwanStone\QwanStone_add.dds</ExtXZnYFar2>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>2</Scale>
+      <Far1Distance>1000</Far1Distance>
+      <Far2Distance>1500</Far2Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Scale>3000</Far2Scale>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+      </SpawnChannels>
+
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>
+
+    </VoxelMaterial>
+    
+	<!-- QwanOrangeGrass -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>QwanOrangeGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>GrassDry</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <ColorMetalXZnY>Textures\Voxels\QwanOrangeGrass\QwanOrangeGrass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\QwanOrangeGrass\QwanOrangeGrass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <ExtDetailScale>0.001</ExtDetailScale>
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\QwanOrangeGrass\QwanOrangeGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\QwanOrangeGrass\QwanOrangeGrass_Far2_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <!--Foliage-->
+      <FoliageTextureArray1>Textures\Models\Environment\Grass\QwanFoliage_cm.dds</FoliageTextureArray1>
+      <FoliageTextureArray1>Textures\Models\Environment\Grass\QwanFoliage_ng.dds</FoliageTextureArray1>
+
+      <FoliageDensity>1</FoliageDensity>
+      <FoliageScale>
+        <X>1</X>
+        <Y>1</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>2</Scale>
+      <Far1Distance>22</Far1Distance>
+      <Far2Distance>500</Far2Distance>
+      <Far1Scale>200</Far1Scale>
+      <Far2Scale>1000</Far2Scale>
+
+      <SpawnChannels>
+        <Channel>1</Channel>
+        <Channel>4</Channel>
+      </SpawnChannels>
+
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>20</BiomeValueMin>
+      <BiomeValueMax>30</BiomeValueMax>
+
+      <DamageThreashold>0.1</DamageThreashold>
+      <DamagedMaterial>Soil</DamagedMaterial>
+    </VoxelMaterial>            	       
+  </VoxelMaterials>
+</Definitions>
