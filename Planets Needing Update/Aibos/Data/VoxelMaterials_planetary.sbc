@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>   
+    <!-- AibosTerrian -->
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>AibosTerrian</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Soil</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\AibosTerrian\AibosTerrian_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\AibosTerrian\AibosTerrian_ng.dds</NormalGlossXZnY>
+	  <ExtXZnY>Textures\Voxels\AibosTerrian\AibosTerrian_add.dds</ExtXZnY>
+	  <ExtDetailScale>0.001</ExtDetailScale>
+	  
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <!--Generated Rocks-->
+      <FoliageTextureArray1>Textures\Voxels\RocksDesert_ForAxisXZ_cm.dds</FoliageTextureArray1>
+      <FoliageTextureArray2>Textures\Voxels\RocksDesert_ForAxisXZ_ng.dds</FoliageTextureArray2>
+      <FoliageDensity>1</FoliageDensity>
+      <FoliageScale>
+        <X>0.2</X>
+        <Y>0.2</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.5</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+
+	</VoxelMaterial> 
+
+	<!-- AibosMountain -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>AibosMountain</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <ColorMetalXZnY>Textures\Voxels\AibosMountain\AibosMountain_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\AibosMountain\AibosMountain_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\AibosMountain\AibosMountain_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\AibosMountain\AibosMountain_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\AibosMountain\AibosMountain_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\AibosMountain\AibosMountain_Far1_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\AibosMountain\AibosMountain_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\AibosMountain\AibosMountain_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\AibosMountain\AibosMountain_Far2_add.dds</ExtXZnYFar2>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>2</Scale>
+      <Far1Distance>1000</Far1Distance>
+      <Far2Distance>1500</Far2Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Scale>3000</Far2Scale>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+      </SpawnChannels>
+
+      <SpawnsFlora>true</SpawnsFlora>
+      <BiomeValueMin>1</BiomeValueMin>
+      <BiomeValueMax>1</BiomeValueMax>
+
+    </VoxelMaterial>	       
+  </VoxelMaterials>
+</Definitions>

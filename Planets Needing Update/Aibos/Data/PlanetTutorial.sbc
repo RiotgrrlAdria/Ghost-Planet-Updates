@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlanetGeneratorDefinitions>
+    <PlanetGeneratorDefinition>
+      <Id>
+        <TypeId>PlanetGeneratorDefinition</TypeId>
+        <SubtypeId>Aibos</SubtypeId>
+      </Id>
+      <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
+
+      <SurfaceDetail>
+        <Texture>Data/PlanetDataFiles/Extra/material_detail_2</Texture>
+        <Size>384</Size>
+        <Scale>5</Scale>
+        <Slope Min="20" Max="90" />
+        <Transition>7.5</Transition>
+      </SurfaceDetail>
+
+	<DistortionTable>
+      <Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
+    </DistortionTable>	  
+
+	<SoundRules>
+	  <SoundRule>
+        <Height Min="0" Max="1.2"/>
+        <Latitude Min="0" Max="90"/>
+        <SunAngleFromZenith Min="0" Max="180"/>
+        <EnvironmentSound>AmbHigh</EnvironmentSound>
+      </SoundRule>
+	</SoundRules>
+	  
+      <ComplexMaterials>
+        <MaterialGroup Name="Planet Features" Value="0">
+		  
+		  <Rule>
+            <Layers>
+              <Layer Material="AibosTerrian" Depth="3"/>
+			  <Layer Material="AibosMountains" Depth="3"/>
+            </Layers>
+            <Height Min="0" Max="1"/>
+            <Latitude Min="0" Max="90"/>
+            <Slope Min="0" Max="40"/>
+          </Rule>
+		  
+		  <Rule>
+            <Layers>
+              <Layer Material="AibosMountain" Depth="3"/>
+            </Layers>
+            <Height Min="0" Max="1"/>
+            <Latitude Min="0" Max="90"/>
+            <Slope Min="40" Max="90"/>
+          </Rule>
+		  
+        </MaterialGroup>
+      </ComplexMaterials>
+
+      <EnvironmentItems>
+		<Item>
+          <Biomes>
+            <Biome>0</Biome>
+          </Biomes>
+          <Materials>
+            <Material>AibosTerrian</Material>
+          </Materials>
+          <Items>
+            <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="Stones" ModifierId="EarthDesertArea" Density="0.001" />
+          </Items>
+          <Rule>
+            <Height Min="0" Max="1.2"/>
+            <Latitude Min="0" Max="90"/>
+            <Slope Min="0" Max="90"/>
+          </Rule>
+        </Item>
+      </EnvironmentItems>
+
+      <DefaultSurfaceMaterial Material="AibosTerrian" MaxDepth="4"/>
+      <DefaultSubSurfaceMaterial Material="AibosMountains"/>
+
+      <HasAtmosphere>true</HasAtmosphere>
+	  <MaximumOxygen>0.9</MaximumOxygen>
+	  <Atmosphere>
+        <Breathable>false</Breathable>
+		<OxygenDensity>0.9</OxygenDensity>
+		<Density>1.1</Density>
+		<LimitAltitude>2.0</LimitAltitude>
+	  </Atmosphere>
+
+      <AtmosphereSettings>
+		<RayleighScattering>
+		  <X>3.305</X>
+		  <Y>8.241</Y>
+		  <Z>97.472</Z>
+		</RayleighScattering>
+		<MieScattering>50</MieScattering>
+		<MieColorScattering>
+		  <X>150</X>
+		  <Y>71.775</Y>
+		  <Z>5.000</Z>
+		</MieColorScattering>
+		<RayleighHeight>15.672</RayleighHeight>
+		<RayleighHeightSpace>8.739</RayleighHeightSpace>
+		<RayleighTransitionModifier>0.777</RayleighTransitionModifier>
+		<MieHeight>200</MieHeight>
+		<MieG>1.000</MieG>
+		<Intensity>1.618</Intensity>
+		<SeaLevelModifier>0.900</SeaLevelModifier>
+		<AtmosphereTopModifier>0.907</AtmosphereTopModifier>
+		<FogIntensity>0.643</FogIntensity>
+		<Scale>1</Scale>
+      </AtmosphereSettings>
+	  
+      <SurfaceGravity>0.50</SurfaceGravity>
+      <MaterialsMaxDepth Min="4000" Max="4000"/>
+      <MaterialsMinDepth Min="20" Max="20"/>
+
+      <HillParams Min = "-0.01" Max ="0.07"/>
+
+    </PlanetGeneratorDefinition>
+
+  </PlanetGeneratorDefinitions>
+</Definitions>
