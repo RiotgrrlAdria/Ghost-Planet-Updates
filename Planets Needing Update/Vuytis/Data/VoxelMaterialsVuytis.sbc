@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+  
+	<!-- Slate -->
+	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Slate</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <ColorMetalXZnY>Textures\Voxels\Slate\Slate_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Slate\Slate_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+      
+      <ColorMetalXZnY>Textures\Voxels\Slate\Slate_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Slate\Slate_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>      
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      
+      <ColorMetalXZnYFar1>Textures\Voxels\Slate\Slate_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Slate\Slate_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Slate\Slate_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Slate\Slate_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>      
+      
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+      
+      <DamageThreashold>0.1</DamageThreashold>
+      <DamagedMaterial>Soil</DamagedMaterial>          
+    </VoxelMaterial>      
+           
+    <!-- VuytisGrass-->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>VuytisGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Grass</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\Grass\VuytisGrass_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\Grass\VuytisGrass_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\Grass\VuytisGrass_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\Grass\VuytisGrass_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\Grass\VuytisGrass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Grass\VuytisGrass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+      
+      <SpecularPower>8</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Grass\VuytisGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Grass\VuytisGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Grass\VuytisGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Grass\VuytisGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+      
+      <!--Foliage-->
+      <FoliageColorTextureArray>
+        <Color>Textures\Models\Environment\Grass\VuytisGrass_01_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\VuytisGrass_02_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\VuytisGrass_03_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\VuytisGrass_04_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\VuytisGrass_05_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\VuytisGrass_06_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\VuytisGrass_08_cm.dds</Color>
+      </FoliageColorTextureArray>
+      
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\VuytisGrass_01_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\VuytisGrass_02_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\VuytisGrass_03_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\VuytisGrass_04_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\VuytisGrass_05_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\VuytisGrass_06_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\VuytisGrass_08_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>10</FoliageDensity>
+      <FoliageScale>
+        <X>0.8</X>
+        <Y>0.8</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+
+      <SpawnChannels>
+        <Channel>1</Channel>
+        <Channel>4</Channel>
+      </SpawnChannels>
+      
+      <SpawnsFlora>true</SpawnsFlora>>
+      <BiomeValueMin>255</BiomeValueMin>
+      <BiomeValueMax>255</BiomeValueMax>
+      
+      <DamageThreashold>0.1</DamageThreashold>
+      <DamagedMaterial>Soil</DamagedMaterial>          
+    </VoxelMaterial>
+ 
+	<!-- AlienCrystal -->
+	
+	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>AlienCrystal</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <ColorMetalXZnY>Textures\Voxels\AlienCrystal\AlienCrystal_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\AlienCrystal\AlienCrystal_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\AlienCrystal\AlienCrystal_add.dds</ExtXZnY>
+      
+      <ColorMetalXZnY>Textures\Voxels\AlienCrystal\AlienCrystal_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\AlienCrystal\AlienCrystal_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\AlienCrystal\AlienCrystal_add.dds</ExtXZnY>      
+
+      <SpecularPower>8</SpecularPower>
+      <SpecularShininess>0.23</SpecularShininess>
+      
+      <ColorMetalXZnYFar1>Textures\Voxels\AlienCrystal\AlienCrystal_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\AlienCrystal\AlienCrystal_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\AlienCrystal\AlienCrystal_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\AlienCrystal\AlienCrystal_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\AlienCrystal\AlienCrystal_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\AlienCrystal\AlienCrystal_add.dds</ExtXZnYFar2> 
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>500</Scale>
+      <Far1Distance>19476.700</Far1Distance>
+      <Far2Distance>20000.000</Far2Distance>
+      <Far1Scale>49077.000</Far1Scale>
+      <Far2Scale>50000.000</Far2Scale>
+
+      <Far3Distance>40000.000</Far3Distance>      
+      <Far3Color>
+        <X>255</X>
+        <Y>0</Y>
+        <Z>255</Z>
+        <W>0</W>
+      </Far3Color>           
+      
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+    </VoxelMaterial>             
+  </VoxelMaterials>
+</Definitions>
