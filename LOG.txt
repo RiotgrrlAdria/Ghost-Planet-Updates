@@ -1,36 +1,6 @@
-CURRENT VERSION: 6.18.19.3
-
-INFO:
-Version format is month.day.year.branch + revision number. 6.18.19.0104 means that the version is from June 18th, 2019, from the alpha
-branch and has been updated a total of 4 times (xx.xx.xx.0104)
-Alpha branch is when major changes are made, or things are added top the project. With alpha, things will get some very basic testing to
-ensure that these changes (in their current form) appear in game.
-Beta branch is for testing Alpha branch releases for reliability. This includes having the changes appear through multiple loads, dropping
-in multiple instances of the same planet, and checking for any sort of inconsistancy or issues that interfere with gameplay mechanics.
-Master branch contains the most stable, and well tested version that is availible. Master branches are ready for general release once the
-appropriate milestones are made.
-MILESTONES:
-In each branch, different milestones are assigned, which represent a point where significant changes which have been predetermined have
-been reached. Once a milestone is reached, the branch is merged with the next branch, where it can run through the the milestones of that
-branch.
-ALL BRANCHES, SANS MASTER BRANCH WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BEFORE MOVING ON.
+CURRENT VERSION: 6.18.19.0103
 
 Version Log:
 
-6.18.19.3
-  ADDED: Created log (you're reading it)
-  ADDED: Uploaded original copies of the planets to github
-  REMOVED: all branches except master branch (for now).
-  ADDED: Alpha branch. This branch will contain the initial updates for compatability with the newer planetary additions, and all
-new modifications and additions to the planets, with very light testing.
-  ADDED: Beta branch. Beta branch is where changes will be tweaked and additional testing will be done to ensure that the end product is
-stable.
-  ADDED: Release Branch. This is what is currently released to the workshop. Will be blank until new versions are up past the initial
-release.
-  ADDED: Set up initial milestones for alpha, beta, and release branch.
-
-MILESTONES:
-  -ALPHA: Update all planets to the current standards and feature sets. Fix planets which CTD.
-  -BETA:  Test planets in a large world filled with many planets already. Create multiple instances of the planets. Check stats to make
-sure they match the programmed stats and function as planned. Do planetary reentry, and takeoff (x10 times each) to ensure things
-function as planned.
+6.18.19.0103
+  ADDED: Created BETA branch. Forked from the master branch. Version is identical to the Alpha branch until Beta and Alpha are merged.
