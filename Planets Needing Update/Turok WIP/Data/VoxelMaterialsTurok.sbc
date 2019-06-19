@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>    
+  <!-- Glacier -->    
+  <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Glacier</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\Glacier\Glacier_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\Glacier\Glacier_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\Glacier\Glacier_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\Glacier\Glacier_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\Glacier\Glacier_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Glacier\Glacier_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+    
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Glacier\Glacier_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Glacier\Glacier_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Glacier\Glacier_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Glacier\Glacier_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>    
+    </VoxelMaterial>
+ 
+  <!-- BlueSnow-->   
+  <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>BlueSnow</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\BlueSnow\BlueSnow_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\BlueSnow\BlueSnow_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\BlueSnow\BlueSnow_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\BlueSnow\BlueSnow_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\BlueSnow\BlueSnow_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\BlueSnow\BlueSnow_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+    
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\BlueSnow\BlueSnow_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\BlueSnow\BlueSnow_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\BlueSnow\BlueSnow_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\BlueSnow\BlueSnow_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>    
+    </VoxelMaterial>
+    
+  <!-- TurokIce -->    
+  <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>TurokIce</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+      
+      <DiffuseXZ>Textures\Voxels\TurokIce\TurokIce_cm.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\TurokIce\TurokIce_ng.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\TurokIce\TurokIce_cm.dds</DiffuseY>
+      <NormalY>Textures\Voxels\TurokIce\TurokIce_ng.dds</NormalY>
+      <ColorMetalXZnY>Textures\Voxels\TurokIce\TurokIce_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\TurokIce\TurokIce_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+    
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\TurokIce\TurokIce_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\TurokIce\TurokIce_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\TurokIce\TurokIce_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\TurokIce\TurokIce_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>    
+    </VoxelMaterial>    
+        
+  </VoxelMaterials>
+</Definitions>

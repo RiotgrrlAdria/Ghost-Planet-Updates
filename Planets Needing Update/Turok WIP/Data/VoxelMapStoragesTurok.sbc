@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMapStorages>
+    <VoxelMapStorage>
+      <Id>
+        <TypeId>VoxelMapStorageDefinition</TypeId>
+        <SubtypeId>SnowCoverageIronCore</SubtypeId>
+      </Id>
+      <StorageFile>VoxelMaps\MediumIceStoneIronCoreSnowCoverage.vx2</StorageFile>
+    </VoxelMapStorage>
+    <VoxelMapStorage>
+      <Id>
+        <TypeId>VoxelMapStorageDefinition</TypeId>
+        <SubtypeId>StoneCoverageIronCore</SubtypeId>
+      </Id>
+      <StorageFile>VoxelMaps\MediumIceStoneIronCoreStoneCoverage.vx2</StorageFile>
+    </VoxelMapStorage>
+    <VoxelMapStorage>
+      <Id>
+        <TypeId>VoxelMapStorageDefinition</TypeId>
+        <SubtypeId>IceStones</SubtypeId>
+      </Id>
+      <StorageFile>VoxelMaps\MediumIceStoneIronCoreStoneCoverage.vx2</StorageFile>
+    </VoxelMapStorage>
+  </VoxelMapStorages>
+</Definitions>
