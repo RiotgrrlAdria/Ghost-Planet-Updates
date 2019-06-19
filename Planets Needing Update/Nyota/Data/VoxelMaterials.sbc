@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <!-- organics  -->
+    <!-- GhostSnow-->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>GhostSnow</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>Ice</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      
+
+      <!--<DiffuseXZ>Textures\Voxels\AlienGrassOrange_ForAxisXZ_de.dds</DiffuseXZ>
+      <NormalXZ>Textures\Voxels\AlienGrass_ForAxisXZ_ns.dds</NormalXZ>
+      <DiffuseY>Textures\Voxels\AlienGrassOrange_ForAxisXZ_de.dds</DiffuseY>
+      <NormalY>Textures\Voxels\AlienGrass_ForAxisXZ_ns.dds</NormalY>-->
+      <ColorMetalXZnY>Textures\Voxels\GhostSnow\GhostSnow_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\GhostSnow\GhostSnow_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+      
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\GhostSnow\GhostSnow_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\GhostSnow\GhostSnow_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\GhostSnow\GhostSnow_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\GhostSnow\GhostSnow_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <!--<FoliageTextureArray1>Textures\Models\Environment\Grass\AlienThickGrass.dds</FoliageTextureArray1>
+      <FoliageDensity>4</FoliageDensity>
+      <FoliageScale>
+        <X>0.5</X>
+        <Y>0.5</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>3</FoliageRandomRescaleMult>-->
+
+      <BiomeValueMin>0</BiomeValueMin>
+      <BiomeValueMax>10</BiomeValueMax>
+      </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="PlanetGeneratorDefinition">
+  <!--Planets -->  
+    <Id>
+      <TypeId>PlanetGeneratorDefinition</TypeId>
+      <SubtypeId>Nyota</SubtypeId>
+    </Id>
+    <!--!!!Important!! Read if you want to mod Planets! -->
+    <!--Following tag switches off loading from certain color channels. Its performance measure in cases where channels are not used-->
+    <!--Make sure you are not modding a switched off channel-->
+    <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
+
+    <SurfaceDetail>
+      <Texture>Data/PlanetDataFiles/Extra/material_detail_1</Texture>
+      <Size>384</Size>
+      <Scale>5</Scale>
+      <Slope Min="30" Max="90" />
+      <Transition>10</Transition>
+      <!-- <Transition>7.5</Transition> -->
+    </SurfaceDetail>
+
+    <CustomMaterialTable>
+      <Material Material="Stone_04" Value ="190" MaxDepth ="5"/>
+      <Material Material="Ice" Value ="174" MaxDepth ="5"/>
+      <Material Material="Ice_02" Value ="158" MaxDepth ="5"/>
+      <Material Material="Ice_01" Value ="142" MaxDepth ="5"/>
+    </CustomMaterialTable>
+
+    <OreMappings>
+      <!-- Tier 1 ! INSERT ONLY IN BLUE CHANNEL ! -->
+      <!-- Fe 1-->
+      <Ore Value="1" Type="Iron_02" Start="10" Depth="3" />
+      <Ore Value="4" Type="Iron_02" Start="12" Depth="3" />
+      <Ore Value="8" Type="Iron_02" Start="14" Depth="4" />
+
+      <!-- Fe 2-->
+      <Ore Value="12" Type="Iron_02" Start="25" Depth="5" />
+      <Ore Value="16" Type="Iron_02" Start="28" Depth="5" />
+      <Ore Value="20" Type="Iron_02" Start="31" Depth="8" />
+
+      <!-- Ni 1-->
+      <Ore Value="24" Type="Nickel_01" Start="10" Depth="4" />
+      <Ore Value="28" Type="Nickel_01" Start="11" Depth="4" />
+      <Ore Value="32" Type="Nickel_01" Start="11" Depth="6" />
+
+      <!-- Ni 2-->
+      <Ore Value="36" Type="Nickel_01" Start="24" Depth="5" />
+      <Ore Value="40" Type="Nickel_01" Start="27" Depth="5" />
+      <Ore Value="44" Type="Nickel_01" Start="30" Depth="8" />
+
+      <!-- Si 1-->
+      <Ore Value="48" Type="Silicon_01" Start="9" Depth="4" />
+      <Ore Value="52" Type="Silicon_01" Start="13" Depth="4" />
+      <Ore Value="56" Type="Silicon_01" Start="10" Depth="6" />
+
+      <!-- Si 2-->
+      <Ore Value="60" Type="Silicon_01" Start="22" Depth="6" />
+      <Ore Value="64" Type="Silicon_01" Start="25" Depth="7" />
+      <Ore Value="68" Type="Silicon_01" Start="27" Depth="9" />
+
+      <!-- ORE Tier 2 -->
+      <!-- Co 1-->
+      <Ore Value="72" Type="Cobalt_01" Start="20" Depth="3" />
+      <Ore Value="76" Type="Cobalt_01" Start="22" Depth="4" />
+      <Ore Value="80" Type="Cobalt_01" Start="26" Depth="6" />
+
+      <!-- Co 2-->
+      <Ore Value="84" Type="Cobalt_01" Start="52" Depth="5" />
+      <Ore Value="88" Type="Cobalt_01" Start="55" Depth="6" />
+      <Ore Value="92" Type="Cobalt_01" Start="62" Depth="9" />
+
+      <!-- Ag 1-->
+      <Ore Value="96" Type="Silver_01" Start="21" Depth="3" />
+      <Ore Value="100" Type="Silver_01" Start="25" Depth="3" />
+      <Ore Value="104" Type="Silver_01" Start="31" Depth="5" />
+
+      <!-- Ag 2-->
+      <Ore Value="108" Type="Silver_01" Start="55" Depth="8" />
+      <Ore Value="112" Type="Silver_01" Start="58" Depth="9" />
+      <Ore Value="116" Type="Silver_01" Start="63" Depth="11" />
+
+      <!-- Mg 1-->
+      <Ore Value="120" Type="Magnesium_01" Start="23" Depth="4" />
+      <Ore Value="124" Type="Magnesium_01" Start="26" Depth="4" />
+      <Ore Value="128" Type="Magnesium_01" Start="29" Depth="5" />
+
+      <!-- Mg 2-->
+      <Ore Value="132" Type="Magnesium_01" Start="53" Depth="7" />
+      <Ore Value="136" Type="Magnesium_01" Start="55" Depth="8" />
+      <Ore Value="140" Type="Magnesium_01" Start="59" Depth="10" />
+
+      <!-- ORE Tier 3 -->
+      <!-- U 1-->
+      <Ore Value="144" Type="Uraninite_01" Start="32" Depth="2" />
+      <Ore Value="148" Type="Uraninite_01" Start="35" Depth="3" />
+      <Ore Value="152" Type="Uraninite_01" Start="38" Depth="5" />
+
+      <!-- U 2-->
+      <Ore Value="156" Type="Uraninite_01" Start="80" Depth="8" />
+      <Ore Value="160" Type="Uraninite_01" Start="89" Depth="9" />
+      <Ore Value="164" Type="Uraninite_01" Start="96" Depth="11" />
+
+      <!-- Au 1-->
+      <Ore Value="168" Type="Gold_01" Start="40" Depth="1" />
+      <Ore Value="172" Type="Gold_01" Start="42" Depth="2" />
+      <Ore Value="176" Type="Gold_01" Start="45" Depth="3" />
+
+      <!-- Au 2-->
+      <Ore Value="180" Type="Gold_01" Start="100" Depth="4" />
+      <Ore Value="184" Type="Gold_01" Start="107" Depth="5" />
+      <Ore Value="188" Type="Gold_01" Start="112" Depth="8" />
+
+      <!-- Pt 1-->
+      <Ore Value="192" Type="Platinum_01" Start="50" Depth="1" />
+      <Ore Value="196" Type="Platinum_01" Start="51" Depth="2" />
+      <Ore Value="208" Type="Platinum_01" Start="53" Depth="4" />
+
+      <!-- Pt 1-->
+      <Ore Value="212" Type="Platinum_01" Start="110" Depth="5" />
+      <Ore Value="217" Type="Platinum_01" Start="114" Depth="6" />
+      <Ore Value="222" Type="Platinum_01" Start="119" Depth="8" />
+    </OreMappings>
+
+    <SoundRules>
+      <!-- Day -->
+      <SoundRule>
+        <Height Min="0" Max="0.75"/>
+        <Latitude Min="0" Max="90"/>
+        <SunAngleFromZenith Min="0" Max="90"/>
+        <EnvironmentSound>AmbEuropaMoonDay</EnvironmentSound>
+      </SoundRule>
+
+      <!-- Night -->
+      <SoundRule>
+        <Height Min="0" Max="0.75"/>
+        <Latitude Min="0" Max="90"/>
+        <SunAngleFromZenith Min="90" Max="180"/>
+        <EnvironmentSound>AmbEuropaMoonNight</EnvironmentSound>
+      </SoundRule>
+    </SoundRules>
+
+    <MusicCategories>
+      <MusicCategory Category="Planet" Frequency="0.90" />
+      <MusicCategory Category="Mystery" Frequency="0.1" />
+    </MusicCategories>
+
+    <!-- moon definitions - name shortened for better navigation -->
+    <ComplexMaterials>
+
+      <MaterialGroup Name="Iron Valleys" Value="48">
+
+        <Rule>
+          <Layers>
+            <Layer Material="GhostSnow" Depth="5"/>
+          </Layers>
+          <Height Min="0.1" Max="0.5"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="20"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="GhostSnow" Depth="5"/>
+          </Layers>
+          <Height Min="0" Max="3"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="20" Max="90"/>
+        </Rule>
+
+      </MaterialGroup>
+
+      <MaterialGroup Name="General Ice" Value="127">
+
+        <Rule>
+          <Layers>
+            <Layer Material="Stone_05" Depth="5"/>
+          </Layers>
+          <Height Min="0" Max="1"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="20" Max="90"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Stone_05" Depth="5"/>
+          </Layers>
+          <Height Min="0.1" Max="3"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="20"/>
+        </Rule>
+
+      </MaterialGroup>
+
+      <MaterialGroup Name="Top ice" Value="255">
+
+        <Rule>
+          <Layers>
+            <Layer Material="Stone_05" Depth="5"/>
+          </Layers>
+          <Height Min="0" Max="1"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="30" Max="90"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Stone_05" Depth="5"/>
+          </Layers>
+          <Height Min="0" Max="1"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="0" Max="30"/>
+        </Rule>
+
+      </MaterialGroup>
+
+      <MaterialGroup Name="Top ice 2" Value="0">
+
+        <Rule>
+          <Layers>
+            <Layer Material="GhostSnow" Depth="5"/>
+          </Layers>
+          <Height Min="0" Max="1"/>
+          <Latitude Min="0" Max="90"/>
+          <Slope Min="20" Max="90"/>
+        </Rule>
+
+      </MaterialGroup>
+    </ComplexMaterials>
+    <!-- END moon definitions - name shortened for better navigation -->
+
+    <EnvironmentItems>
+      <Item>
+        <Biomes>
+          <Biome>0</Biome>
+        </Biomes>
+        <Materials>
+          <Material>GhostSnow</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowStones" ModifierId="Europa" Density="0.003" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+      </Item>
+
+      <Item>
+        <Biomes>
+          <Biome>0</Biome>
+        </Biomes>
+        <Materials>
+          <Material>Ice_02</Material>
+        </Materials>
+        <Items>
+          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowStones" ModifierId="Europa" Density="0.003" />
+        </Items>
+        <Rule>
+          <Height Min="0" Max="0.7"/>
+          <Latitude Min="0" Max="80"/>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+      </Item>
+    </EnvironmentItems>
+
+    <DefaultSurfaceMaterial Material="GhostSnow" MaxDepth="5"/>
+    <DefaultSubSurfaceMaterial Material="Ice_03"/>
+
+    <HasAtmosphere>true</HasAtmosphere>
+
+    <AtmosphereSettings>
+      <RayleighScattering>
+        <X>17.1</X>
+        <Y>24.3</Y>
+        <Z>47</Z>
+      </RayleighScattering>
+      <MieScattering>147.671082</MieScattering>
+      <MieColorScattering>
+        <X>121</X>
+        <Y>132</Y>
+        <Z>143</Z>
+      </MieColorScattering>
+      <RayleighHeight>10</RayleighHeight>
+      <MieHeight>41</MieHeight>
+      <MieG>0.9961641</MieG>
+      <Intensity>4.1</Intensity>
+      <FogIntensity>1</FogIntensity>
+      <SeaLevelModifier>0.933</SeaLevelModifier>
+      <AtmosphereTopModifier>0.9</AtmosphereTopModifier>
+    </AtmosphereSettings>
+
+    <SurfaceGravity>0.25</SurfaceGravity>
+    <MaterialsMaxDepth Min="4000" Max="4000"/>
+    <MaterialsMinDepth Min="20" Max="20"/>
+
+    <HillParams Min = "-0.03" Max ="0.06"/>
+
+  </Definition>
+</Definitions>
