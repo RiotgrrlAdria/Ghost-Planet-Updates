@@ -6,15 +6,52 @@
         <TypeId>PlanetGeneratorDefinition</TypeId>
         <SubtypeId>Aibos</SubtypeId>
       </Id>
-      <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
-
-      <SurfaceDetail>
+      
+	  <!--MesherPostprocessing is new -->
+	  <MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
+      <PostprocessingSteps>
+        <Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
+          <LodSettings>
+            <Settings FromLod="0">
+              <FeatureAngle>15</FeatureAngle>
+              <EdgeThreshold>.04</EdgeThreshold>
+              <PlaneThreshold>.02</PlaneThreshold>
+            </Settings>
+            <Settings FromLod="1">
+              <FeatureAngle>15</FeatureAngle>
+              <EdgeThreshold>.04</EdgeThreshold>
+              <PlaneThreshold>.04</PlaneThreshold>
+            </Settings>
+            <Settings FromLod="2">
+              <FeatureAngle>15</FeatureAngle>
+              <EdgeThreshold>.06</EdgeThreshold>
+              <PlaneThreshold>.06</PlaneThreshold>
+            </Settings>
+          </LodSettings>
+        </Step>
+      </PostprocessingSteps>
+    </MesherPostprocessing>
+	  
+	  <SurfaceDetail>
         <Texture>Data/PlanetDataFiles/Extra/material_detail_2</Texture>
-        <Size>384</Size>
-        <Scale>5</Scale>
-        <Slope Min="20" Max="90" />
-        <Transition>7.5</Transition>
+        <Size>200</Size>	<!--384-->
+        <Scale>1.7</Scale> <!--5-->
+        <Slope Min="5" Max="90" /> <!--min 20-->
+        <Transition>10</Transition>
       </SurfaceDetail>
+	  
+    <!--New-->
+    <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
+
+    <CustomMaterialTable>
+      <Material Material="Grass_old" Value ="10" MaxDepth ="3"/>
+      <Material Material="Sand_02" Value ="40" MaxDepth ="3"/>
+      <Material Material="Rocks_grass" Value ="70" MaxDepth ="3"/>
+      <Material Material="Woods_grass" Value ="100" MaxDepth ="3"/>
+      <Material Material="Snow" Value ="130" MaxDepth ="3"/>
+      <Material Material="Stone" Value ="160" MaxDepth ="3"/>
+      <Material Material="Grass" Value ="180" MaxDepth ="3"/>
+    </CustomMaterialTable>
 
 	<DistortionTable>
       <Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
@@ -63,7 +100,7 @@
             <Material>AibosTerrian</Material>
           </Materials>
           <Items>
-            <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="Stones" ModifierId="EarthDesertArea" Density="0.001" />
+            <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="Stones" ModifierId="EarthDesertArea" Density="1.001" /> <!-- Density="0.001" -->
           </Items>
           <Rule>
             <Height Min="0" Max="1.2"/>
@@ -83,32 +120,47 @@
 		<OxygenDensity>0.9</OxygenDensity>
 		<Density>1.1</Density>
 		<LimitAltitude>2.0</LimitAltitude>
+		<MaxWindSpeed>0</MaxWindSpeed>
 	  </Atmosphere>
 
       <AtmosphereSettings>
-		<RayleighScattering>
+		<RayleighScattering> 
 		  <X>3.305</X>
 		  <Y>8.241</Y>
 		  <Z>97.472</Z>
 		</RayleighScattering>
-		<MieScattering>50</MieScattering>
+		
+		<MieScattering>50</MieScattering>	<!--50-->
 		<MieColorScattering>
 		  <X>150</X>
 		  <Y>71.775</Y>
 		  <Z>5.000</Z>
 		</MieColorScattering>
-		<RayleighHeight>15.672</RayleighHeight>
-		<RayleighHeightSpace>8.739</RayleighHeightSpace>
+		<RayleighHeight>1</RayleighHeight> <!--15.672-->
+		<RayleighHeightSpace>0.1</RayleighHeightSpace>	<!--8.739-->
 		<RayleighTransitionModifier>0.777</RayleighTransitionModifier>
 		<MieHeight>200</MieHeight>
 		<MieG>1.000</MieG>
 		<Intensity>1.618</Intensity>
 		<SeaLevelModifier>0.900</SeaLevelModifier>
 		<AtmosphereTopModifier>0.907</AtmosphereTopModifier>
-		<FogIntensity>0.643</FogIntensity>
+		<FogIntensity>0.0</FogIntensity> <!-- <FogIntensity>0.643</FogIntensity> -->
 		<Scale>1</Scale>
+		<!--New -->
+		<SunColor>
+            <X>1</X>
+            <Y>1</Y>
+            <Z>1</Z>
+          </SunColor>
+          <SunSpecularColor>
+            <X>1</X>
+            <Y>1</Y>	<!--0.97-->
+            <Z>1</Z>	<!--0.611-->
+          </SunSpecularColor>
+		<!-- End New -->  
       </AtmosphereSettings>
 	  
+	  <MaximumOxygen>0.0</MaximumOxygen>
       <SurfaceGravity>0.50</SurfaceGravity>
       <MaterialsMaxDepth Min="4000" Max="4000"/>
       <MaterialsMinDepth Min="20" Max="20"/>
