@@ -31,9 +31,9 @@ ALL BRANCHES, SANS MASTER BRANCH WILL HAVE MILESTONES ASSIGNED THAT MUST BE REAC
   TODO: Update Aibos to have it's landscape look proper. Adjust lighting so that the day sky is completely non-existant.
 
 6.20.19.0104
-  FIXED: Planet atmosphere settings fixed.
-  CHANGED: Surface detail values tweaked to give the planet a better overall look, and to help with performance (kept running out of                VRAM).
-  TODO: Redo textures so planet looks proper.
+  FIXED: Aibos atmosphere settings fixed.
+  CHANGED: Aibos surface detail values tweaked to give the planet a better overall look, and to help with performance (kept running out of                VRAM).
+  TODO: Redo textures so planets looks proper.
 
 
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
