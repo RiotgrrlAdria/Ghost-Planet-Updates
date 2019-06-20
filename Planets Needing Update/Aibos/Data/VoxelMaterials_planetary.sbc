@@ -83,7 +83,7 @@
         <Channel>3</Channel>
       </SpawnChannels>
 
-      <SpawnsFlora>true</SpawnsFlora>
+      <SpawnsFlora>false</SpawnsFlora>
       <BiomeValueMin>1</BiomeValueMin>
       <BiomeValueMax>1</BiomeValueMax>
 
