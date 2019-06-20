@@ -1,4 +1,4 @@
-CURRENT VERSION: 6.18.19.0103
+CURRENT VERSION: 6.20.19.0104
 
 INFO:
 Version format is month.day.year.branch + revision number. 6.18.19.0104 means that the version is from June 18th, 2019, from the alpha
@@ -29,7 +29,12 @@ ALL BRANCHES, SANS MASTER BRANCH WILL HAVE MILESTONES ASSIGNED THAT MUST BE REAC
   FIXED: Cleaned up the look of the log so its easier to read.
   ADDED: Updated Aibos to new standards and features.
   TODO: Update Aibos to have it's landscape look proper. Adjust lighting so that the day sky is completely non-existant.
-  
+
+6.20.19.0104
+  FIXED: Planet atmosphere settings fixed.
+  CHANGED: Surface detail values tweaked to give the planet a better overall look, and to help with performance (kept running out of                VRAM).
+  TODO: Redo textures so planet looks proper.
+
 
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
   -ALPHA: Update all planets to the current standards and feature sets. Fix planets which CTD.
