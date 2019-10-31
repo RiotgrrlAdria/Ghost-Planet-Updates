@@ -5,5 +5,5 @@ Version Log:
 6.18.19.0103
   ADDED: Created BETA branch. Forked from the master branch. Version is identical to the Alpha branch until Beta and Alpha are merged.
 
-10.30.19.0104
+10.30.19.0105
   ADDED: GhostXIV's cloud layers and rings. Currently the original format and file structure as found in master. See that log for more details.
