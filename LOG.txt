@@ -29,8 +29,14 @@ stable.
 release.
   ADDED: Set up initial milestones for alpha, beta, and release branch.
 
+10.30.19.4
+  ADDED: Added GhostsCIV Cloud Layers. Version attached to master is the original, unaltered version. One that is updated to the standard layout will be found in the Alpha. Beta also will have the same version as Master for contenuity.
+ 
 MILESTONES:
+  
   -ALPHA: Update all planets to the current standards and feature sets. Fix planets which CTD.
+  Update all planets so they are properly referencing the correct file locations in the new cloud layout. Do the same with the             rings for the planets.
+  
   -BETA:  Test planets in a large world filled with many planets already. Create multiple instances of the planets. Check stats to make
 sure they match the programmed stats and function as planned. Do planetary reentry, and takeoff (x10 times each) to ensure things
 function as planned.
