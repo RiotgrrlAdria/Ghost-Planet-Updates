@@ -29,7 +29,7 @@ stable.
 release.
   ADDED: Set up initial milestones for alpha, beta, and release branch.
 
-10.30.19.4
+10.30.19.104
   ADDED: Added GhostsCIV Cloud Layers. Version attached to master is the original, unaltered version. One that is updated to the standard layout will be found in the Alpha. Beta also will have the same version as Master for contenuity.
  
 MILESTONES:
