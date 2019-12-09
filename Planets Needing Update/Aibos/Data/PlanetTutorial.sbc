@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <PlanetGeneratorDefinitions>
-    <PlanetGeneratorDefinition>
-      <Id>
-        <TypeId>PlanetGeneratorDefinition</TypeId>
-        <SubtypeId>Aibos</SubtypeId>
-      </Id>
+  <Definition xsi:type="PlanetGeneratorDefinition">
+    <Id>
+      <TypeId>PlanetGeneratorDefinition</TypeId>
+      <SubtypeId>Aibos</SubtypeId>
+    </Id>
       
-	  <!--MesherPostprocessing is new -->
-	  <MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
+	<!--MesherPostprocessing is new -->
+	<MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
       <PostprocessingSteps>
         <Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
           <LodSettings>
@@ -32,13 +31,13 @@
       </PostprocessingSteps>
     </MesherPostprocessing>
 	  
-	  <SurfaceDetail>
-        <Texture>Data/PlanetDataFiles/Extra/material_detail_2</Texture>
-        <Size>200</Size>	<!--384-->
-        <Scale>1.7</Scale> <!--5-->
-        <Slope Min="5" Max="90" /> <!--min 20-->
-        <Transition>10</Transition>
-      </SurfaceDetail>
+	<SurfaceDetail>
+      <Texture>Data/PlanetDataFiles/Extra/material_detail_2</Texture>
+      <Size>200</Size>	<!--384-->
+      <Scale>1.7</Scale> <!--5-->
+      <Slope Min="5" Max="90" /> <!--min 20-->
+      <Transition>10</Transition>
+    </SurfaceDetail>
 	  
     <!--New-->
     <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
@@ -167,7 +166,5 @@
 
       <HillParams Min = "-0.01" Max ="0.07"/>
 
-    </PlanetGeneratorDefinition>
-
-  </PlanetGeneratorDefinitions>
+    </Definition>
 </Definitions>
