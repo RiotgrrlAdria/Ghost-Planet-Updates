@@ -6,8 +6,14 @@
       <SubtypeId>Aibos</SubtypeId>
     </Id>
       
+<<<<<<< Updated upstream
 	<!--MesherPostprocessing is new -->
 	<MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
+=======
+	  <!--MesherPostprocessing is new -->
+	  <Difficulty>DifficultyEasy</Difficulty>
+	  <MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
+>>>>>>> Stashed changes
       <PostprocessingSteps>
         <Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
           <LodSettings>
@@ -54,7 +60,100 @@
 
 	<DistortionTable>
       <Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
-    </DistortionTable>	  
+    </DistortionTable>
+
+<OreMappings>
+      <!-- Tier 1 !INSERT ONLY IN BLUE CHANNEL! -->
+      <!-- Underground Ice for Marz  -->
+      <Ore Value="50" Type="Ice" Start="2" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- EASY START-->
+      <Ore Value="200" Type="Iron_02" Start="3" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="220" Type="Nickel_01" Start="3" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="240" Type="Silicon_01" Start="3" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Fe 1-->
+      <Ore Value="1" Type="Iron_02" Start="10" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="4" Type="Iron_02" Start="12" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="8" Type="Iron_02" Start="14" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Fe 2-->
+      <Ore Value="12" Type="Iron_02" Start="25" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="16" Type="Iron_02" Start="28" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="20" Type="Iron_02" Start="31" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Ni 1-->
+      <Ore Value="24" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="28" Type="Nickel_01" Start="11" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="32" Type="Nickel_01" Start="11" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Ni 2-->
+      <Ore Value="36" Type="Nickel_01" Start="24" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="40" Type="Nickel_01" Start="27" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="44" Type="Nickel_01" Start="30" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Si 1-->
+      <Ore Value="48" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="52" Type="Silicon_01" Start="13" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="56" Type="Silicon_01" Start="10" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Si 2-->
+      <Ore Value="60" Type="Silicon_01" Start="22" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="64" Type="Silicon_01" Start="25" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="68" Type="Silicon_01" Start="27" Depth="9" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- ORE Tier 2 -->
+      <!-- Co 1-->
+      <Ore Value="72" Type="Cobalt_01" Start="20" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="76" Type="Cobalt_01" Start="22" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="80" Type="Cobalt_01" Start="26" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Co 2-->
+      <Ore Value="84" Type="Cobalt_01" Start="52" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="88" Type="Cobalt_01" Start="55" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="92" Type="Cobalt_01" Start="62" Depth="9" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Ag 1-->
+      <Ore Value="96" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="100" Type="Silver_01" Start="25" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="104" Type="Silver_01" Start="31" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Ag 2-->
+      <Ore Value="108" Type="Silver_01" Start="55" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="112" Type="Silver_01" Start="58" Depth="9" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="116" Type="Silver_01" Start="63" Depth="11" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Mg 1-->
+      <Ore Value="120" Type="Magnesium_01" Start="23" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="124" Type="Magnesium_01" Start="26" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="128" Type="Magnesium_01" Start="29" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Mg 2-->
+      <Ore Value="132" Type="Magnesium_01" Start="53" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="136" Type="Magnesium_01" Start="55" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="140" Type="Magnesium_01" Start="59" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- ORE Tier 3 -->
+      <!-- U 1-->
+      <Ore Value="144" Type="Ice_01" Start="32" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="148" Type="Ice_01" Start="35" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="152" Type="Ice_01" Start="38" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- U 2-->
+      <Ore Value="156" Type="Ice_01" Start="80" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="160" Type="Ice_01" Start="89" Depth="9" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="164" Type="Ice_01" Start="96" Depth="11" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Au 1-->
+      <Ore Value="168" Type="Gold_01" Start="40" Depth="1" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="172" Type="Gold_01" Start="42" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="176" Type="Gold_01" Start="45" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- Au 2-->
+      <Ore Value="180" Type="Gold_01" Start="100" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="184" Type="Gold_01" Start="107" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="188" Type="Gold_01" Start="112" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+    </OreMappings>	
 
 	<SoundRules>
 	  <SoundRule>
@@ -64,6 +163,13 @@
         <EnvironmentSound>AmbHigh</EnvironmentSound>
       </SoundRule>
 	</SoundRules>
+	
+    <MusicCategories>
+      <MusicCategory Category="Planet" Frequency="0.7" />
+      <MusicCategory Category="Mystery" Frequency="0.05" />
+      <MusicCategory Category="Danger" Frequency="0.125" />
+      <MusicCategory Category="Calm" Frequency="0.125" />
+    </MusicCategories>	
 	  
       <ComplexMaterials>
         <MaterialGroup Name="Planet Features" Value="0">
@@ -109,17 +215,19 @@
         </Item>
       </EnvironmentItems>
 
+	  <MaximumOxygen>0.9</MaximumOxygen>
+      <SurfaceGravity>0.50</SurfaceGravity>
       <DefaultSurfaceMaterial Material="AibosTerrian" MaxDepth="4"/>
       <DefaultSubSurfaceMaterial Material="AibosMountains"/>
 
       <HasAtmosphere>true</HasAtmosphere>
-	  <MaximumOxygen>0.9</MaximumOxygen>
+
 	  <Atmosphere>
         <Breathable>false</Breathable>
 		<OxygenDensity>0.9</OxygenDensity>
 		<Density>1.1</Density>
 		<LimitAltitude>2.0</LimitAltitude>
-		<MaxWindSpeed>0</MaxWindSpeed>
+		<MaxWindSpeed>2034</MaxWindSpeed>
 	  </Atmosphere>
 
       <AtmosphereSettings>
@@ -127,8 +235,7 @@
 		  <X>3.305</X>
 		  <Y>8.241</Y>
 		  <Z>97.472</Z>
-		</RayleighScattering>
-		
+		</RayleighScattering>		
 		<MieScattering>50</MieScattering>	<!--50-->
 		<MieColorScattering>
 		  <X>150</X>
@@ -145,7 +252,6 @@
 		<AtmosphereTopModifier>0.907</AtmosphereTopModifier>
 		<FogIntensity>0.0</FogIntensity> <!-- <FogIntensity>0.643</FogIntensity> -->
 		<Scale>1</Scale>
-		<!--New -->
 		<SunColor>
             <X>1</X>
             <Y>1</Y>
@@ -155,16 +261,99 @@
             <X>1</X>
             <Y>1</Y>	<!--0.97-->
             <Z>1</Z>	<!--0.611-->
-          </SunSpecularColor>
-		<!-- End New -->  
+          </SunSpecularColor>  
       </AtmosphereSettings>
 	  
-	  <MaximumOxygen>0.0</MaximumOxygen>
-      <SurfaceGravity>0.50</SurfaceGravity>
       <MaterialsMaxDepth Min="4000" Max="4000"/>
       <MaterialsMinDepth Min="20" Max="20"/>
 
       <HillParams Min = "-0.01" Max ="0.07"/>
+<<<<<<< Updated upstream
 
     </Definition>
 </Definitions>
+=======
+	  
+	  <MinimumSurfaceLayerDepth>5</MinimumSurfaceLayerDepth>
+	  
+	  <WeatherFrequencyMin>1800</WeatherFrequencyMin>
+	  <WeatherFrequencyMax>5400</WeatherFrequencyMax>
+	  <WeatherGenerators>
+		<WeatherGenerator>
+			<Voxel>MarsSoil</Voxel>
+			<Weathers>
+				<Weather>
+					<Name>MarsStormLight</Name>
+					<Weight>2</Weight>
+					<MinLength>600</MinLength>
+					<MaxLength>1800</MaxLength>
+					<SpawnOffset>2000</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>MarsStormHeavy</Name>
+					<Weight>1</Weight>
+					<MinLength>1200</MinLength>
+					<MaxLength>3600</MaxLength>
+					<SpawnOffset>2000</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>Dust</Name>
+					<Weight>2</Weight>
+					<MinLength>600</MinLength>
+					<MaxLength>1200</MaxLength>
+					<SpawnOffset>2000</SpawnOffset>
+				</Weather>
+			</Weathers>
+		</WeatherGenerator>
+		<WeatherGenerator>
+			<Voxel>Rock</Voxel>
+			<Weathers>
+				<Weather>
+					<Name>MarsStormLight</Name>
+					<Weight>2</Weight>
+					<MinLength>600</MinLength>
+					<MaxLength>1800</MaxLength>
+					<SpawnOffset>2000</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>MarsStormHeavy</Name>
+					<Weight>1</Weight>
+					<MinLength>1200</MinLength>
+					<MaxLength>3600</MaxLength>
+					<SpawnOffset>2000</SpawnOffset>
+				</Weather>
+            	<Weather>
+					<Name>Dust</Name>
+					<Weight>2</Weight>
+					<MinLength>600</MinLength>
+					<MaxLength>1200</MaxLength>
+					<SpawnOffset>2000</SpawnOffset>
+				</Weather>
+			</Weathers>
+		</WeatherGenerator>
+        <WeatherGenerator>
+            <Voxel>Snow</Voxel>
+            <Weathers>
+                <Weather>
+                    <Name>MarsSnow</Name>
+                    <Weight>2</Weight>
+                    <MinLength>300</MinLength>
+                    <MaxLength>900</MaxLength>
+                    <SpawnOffset>2000</SpawnOffset>
+                </Weather>
+                <Weather>
+                    <Name>FogLight</Name>
+                    <Weight>1</Weight>
+                    <MinLength>300</MinLength>
+                    <MaxLength>900</MaxLength>
+                    <SpawnOffset>2000</SpawnOffset>
+                </Weather>
+            </Weathers>
+        </WeatherGenerator>
+	  </WeatherGenerators>
+	  
+    </PlanetGeneratorDefinition>
+
+  </PlanetGeneratorDefinitions>
+</Definitions>
+>>>>>>> Stashed changes
