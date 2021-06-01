@@ -5,7 +5,6 @@
       <TypeId>PlanetGeneratorDefinition</TypeId>
       <SubtypeId>Akura</SubtypeId>
     </Id>
-<<<<<<< Updated upstream
 	
 	<MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
 =======
@@ -14,7 +13,6 @@
     <PlanetMaps Material="true" Ores="true" Biome="true" Occlusion="true"/>
 
     <MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
->>>>>>> Stashed changes
       <PostprocessingSteps>
         <Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
           <LodSettings>
@@ -37,11 +35,9 @@
         </Step>
       </PostprocessingSteps>
     </MesherPostprocessing>
-<<<<<<< Updated upstream
     
 =======
 	
->>>>>>> Stashed changes
     <SurfaceDetail>
       <Texture>Data/PlanetDataFiles/Extra/material_detail_1</Texture>
       <Size>32</Size>
@@ -604,13 +600,8 @@
         <FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
         <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
       </CloudLayer>
-    </CloudLayers>
-
-
-<<<<<<< Updated upstream
-=======
+    </CloudLay
     <SurfaceGravity>0.25</SurfaceGravity>
->>>>>>> Stashed changes
     <MaterialsMaxDepth Min="4000" Max="4000"/>
     <MaterialsMinDepth Min="20" Max="20"/>
 
@@ -627,7 +618,6 @@
       <WaveCountMin>1</WaveCountMin>
       <WaveCountMax>4</WaveCountMax>
     </AnimalSpawnInfo>
-<<<<<<< Updated upstream
 	<NightAnimalSpawnInfo>
       <Animals>
         <Animal Type="SpaceSpiderGreen"/>
@@ -641,14 +631,11 @@
     </NightAnimalSpawnInfo>
 
     <MinimumSurfaceLayerDepth>5</MinimumSurfaceLayerDepth>
-=======
-
     <MinimumSurfaceLayerDepth>5</MinimumSurfaceLayerDepth>
-
 	<WeatherFrequencyMin>600</WeatherFrequencyMin>
 	<WeatherFrequencyMax>1800</WeatherFrequencyMax>
 	<WeatherGenerators>
-	<!-- Alien Grass Weather Generators-->
+
 		<WeatherGenerator>
 			<Voxel>AlienGreenGrass</Voxel>
 			<Weathers>
@@ -935,7 +922,5 @@
             </Weathers>
         </WeatherGenerator>
 	</WeatherGenerators>
-
->>>>>>> Stashed changes
   </Definition>
 </Definitions>

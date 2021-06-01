@@ -1,50 +1,4 @@
 <?xml version="1.0"?>
-<<<<<<< Updated upstream
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Definition xsi:type="PlanetGeneratorDefinition"> 
-      <Id>
-        <TypeId>PlanetGeneratorDefinition</TypeId>
-        <SubtypeId>ANDROS</SubtypeId>
-      </Id>
-
-    <MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
-      <PostprocessingSteps>
-        <Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
-          <LodSettings>
-            <Settings FromLod="0">
-              <FeatureAngle>15</FeatureAngle>
-              <EdgeThreshold>.04</EdgeThreshold>
-              <PlaneThreshold>.02</PlaneThreshold>
-            </Settings>
-            <Settings FromLod="1">
-              <FeatureAngle>15</FeatureAngle>
-              <EdgeThreshold>.04</EdgeThreshold>
-              <PlaneThreshold>.04</PlaneThreshold>
-            </Settings>
-            <Settings FromLod="2">
-              <FeatureAngle>15</FeatureAngle>
-              <EdgeThreshold>.06</EdgeThreshold>
-              <PlaneThreshold>.06</PlaneThreshold>
-            </Settings>
-          </LodSettings>
-        </Step>
-      </PostprocessingSteps>
-    </MesherPostprocessing>
-
-    <SurfaceDetail>
-      <Texture>Data/PlanetDataFiles/Extra/material_detail_2</Texture>
-      <Size>384</Size>
-      <Scale>5</Scale>
-      <Slope Min="20" Max="90" />
-      <Transition>7.5</Transition>
-    </SurfaceDetail>
-
-    <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
-
-	<DistortionTable>
-      <Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
-    </DistortionTable>
-=======
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
 	<Definition xsi:type="PlanetGeneratorDefinition">
 		<Id>
@@ -90,8 +44,7 @@
 		<DistortionTable>
 			<Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
 		</DistortionTable>
->>>>>>> Stashed changes
-	  
+
 		<OreMappings>
 			<!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
 			<!-- Tier 1-->
@@ -222,9 +175,7 @@
 					<Slope Min="20" Max="90"/>
 				</Rule>
 		  
-<<<<<<< Updated upstream
-        </MaterialGroup>
-      </ComplexMaterials>
+		</ComplexMaterials>
 
       <EnvironmentItems>
 		<Item>
@@ -300,9 +251,6 @@
     <MinimumSurfaceLayerDepth>5</MinimumSurfaceLayerDepth>
 
   </Definition>
-=======
-			</MaterialGroup>
-		</ComplexMaterials>
 
 		<EnvironmentItems>
 			<Item>
@@ -322,7 +270,6 @@
 				</Rule>
 			</Item>
 		</EnvironmentItems>
-
 
 		<MaximumOxygen>0</MaximumOxygen>
 		<SurfaceGravity>0.60</SurfaceGravity>
@@ -366,6 +313,5 @@
 		<MaterialsMinDepth Min="20" Max="20"/>
 		<HillParams Min = "-0.01" Max ="0.09"/>
 		<MinimumSurfaceLayerDepth>5</MinimumSurfaceLayerDepth>
-    </Definition>
->>>>>>> Stashed changes
+	</Definition>
 </Definitions>

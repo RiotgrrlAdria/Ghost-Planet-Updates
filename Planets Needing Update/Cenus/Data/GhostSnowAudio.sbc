@@ -12,7 +12,7 @@
       <Loopable>true</Loopable>
       <Waves>
         <Wave Type="D2">
-          <Loop>Audio\ARC\AMB\AmbSnowstormLoop.xwm</Loop>
+          <Loop>Audio\ARC\AMB\AmbSnowstormLoop.wav</Loop>
         </Wave>
       </Waves>
     </Sound>

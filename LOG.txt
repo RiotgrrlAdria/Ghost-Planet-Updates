@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-CURRENT VERSION: 19.12.08.0306
-=======
-CURRENT VERSION: 21.05.25.0308
->>>>>>> Stashed changes
+CURRENT VERSION: 21.05.31.0311
 
 INFO:
 Version format is year.month.day.branch + revision number
@@ -19,6 +15,7 @@ candidates. Like the Alpha branch, beta has milestones. However, these milestone
 ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BEFORE MOVING ON.
 
 -----------------------------------------------------------Version Log------------------------------------------------------------------
+
 
 19.6.18.0303
 	ADDED: Created log (you're reading it)
@@ -38,11 +35,7 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 
 19.6.20.0304
 	FIXED: Aibos atmosphere settings fixed.
-<<<<<<< Updated upstream
-	CHANGED: Aibos surface detail values tweaked to give the planet a better overall look, and to help with performance (kept running out of             	VRAM).
-=======
 	CHANGED: Aibos surface detail values tweaked to give the planet a better overall look, and to help with performance (kept running out of VRAM).
->>>>>>> Stashed changes
 	TODO: Redo textures so planets looks proper.
 
 
@@ -51,29 +44,60 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 
 
 19.12.08.0307
-<<<<<<< Updated upstream
-	FIXED: Updated versioning, as previous versioning of having the month.date.year.branch + revision number would result in the version decreasing come 	       January of next year. Also, having alpha being 01 with the master version being 03 gave the impression that alpha builds were potentially 	 	       behind master builds, should both be updated on the same day. This fixes such inconsistancies.
-=======
 	FIXED: Updated versioning, as previous versioning of having the month.date.year.branch + revision number would result in the version decreasing come January of next year. Also, having alpha being 01 with the master version being 03 gave the impression that alpha builds were potentially behind master builds, should both be updated on the same day. This fixes such inconsistancies.
->>>>>>> Stashed changes
 	FIXED: Updated the file structure of the skyboxes to reflect current standard file structure. Error in previous update.
 	FIXED: Aibos planet generator definitions updated to the latest standard
 	FIXED: Ancore planet generator definitions updated to the latest standard
 	FIXED: Ancore sky texture bug.
 	FIXED: Andros planet generator definitions updated to the latest standard
-<<<<<<< Updated upstream
+
 	
-=======
-
 21.05.24.0308
-	FIXED: Aibos updated to latest standards. Added in ore generation and music. Fixed wind speed. Added in weather (copied mars).
-	FIXED: Akura updated to the latest standards. Fixed ore generatrion and added in wind & weather (alien planet weather).
+	FIXED: Aibos updated to latest standards.
+	ADDED: Aibos now has ore (added in ore generation).
+	ADDED: Aibos now has music.
+	FIXED: Aibos now has accurate wind speed.
+	ADDED: Aibos was given weather (copied mars). Clouds were added in as it makes no sense for the planet to have ridiculously high winds yet nothing like clouds or anthing kicked into the atmospere.
+	FIXED: Akura updated to the latest standards.
+	FIXED: Akura's ore generatrion should work now.
+	ADDED: Akura has wind & weather (alien planet weather).
 
-21.05.25.0308
+
+21.05.25.0309
 	FIXED: Ancore updated to the latest standards. Added in weather, adjusted clouds to make the planet appear bigger.
 	FIXED: Andros updated to the latest standards. Added in music and weather.
 	FIXED: Auros updated to the latest standards. Added in music and weather.
->>>>>>> Stashed changes
+
+
+21.05.27.310
+	FIXED: Aplov update to the latest standards.
+	ADDED: Aplov now has music
+	FIXED: Aplov's clouds were adjusted to make the planet apear bigger and increased the angular velocity. Adjusted maximum oxygen from 0.9 to 0.1.
+	ADDED: Aplov has had appropriate weather added in.
+	FIXED: Arcelia updated to the latest standards.
+	FIXED: Arcelia no longer has a purple surface.
+	ADDED: Arcelia has music in the air.
+	FIXED: Avalon updated to the latest standards.
+	FIXED: Avalon missing audio file fixed (created one).
+	ADDED: Avalon is a lot dealier - wolves are now on the surface.
+	ADDED: Avalon has weather.
+	NOTE: With Avalon -Need to test to make sure that the textures work properly. I *think* this one may CTD.
+
+21.05.31.311
+	FIXED: Pandora updated to the latest standards.
+	ADDED: Pandora has some bitchin tunes.
+	ADDED: Pandora has weather.
+	FIXED: Cenus updated to the latest standards.
+	FIXED: Cenus missing enviroment sound.
+	ADDED: Cenus has some music.
+	ADDED: Cenus has had weather added.
+	FIXED: Cirus updated to the latest standards.
+	FIXED: Cirus surface detail corrected. *Should* take care of the purple surface bug.
+	ADDED: Cirus has music now.
+	ADDED: Cirus now has weather.
+	NOTE: Unknown if Sandwhite texture will work. If it doesn't, I'll have to create it.
+	NOTE: Cirus is missing a shit load of textures. Look into VoxelMaterials to get an entire list.
+
 
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
   ALPHA:
@@ -85,9 +109,4 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	-Add in new feature sets including music, etc.
 	-Write scripts for planets with high gravity / high winds / inhospitable
 	
-<<<<<<< Updated upstream
   BETA:
-	
-=======
-  BETA:
->>>>>>> Stashed changes

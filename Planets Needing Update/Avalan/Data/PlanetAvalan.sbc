@@ -1,478 +1,825 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <PlanetGeneratorDefinitions>
-    <PlanetGeneratorDefinition>
-      <Id>
-        <TypeId>PlanetGeneratorDefinition</TypeId>
-        <SubtypeId>Avalan</SubtypeId>
-      </Id>
-      <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
+    <Definition>
+		<Id>
+			<TypeId>PlanetGeneratorDefinition</TypeId>
+			<SubtypeId>Avalan</SubtypeId>
+		</Id>
+      
+		<Difficulty>DifficultyEasy</Difficulty>
+		<MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
+			<PostprocessingSteps>
+				<Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
+					<LodSettings>
+						<Settings FromLod="0">
+							<FeatureAngle>15</FeatureAngle>
+							<EdgeThreshold>.04</EdgeThreshold>
+							<PlaneThreshold>.02</PlaneThreshold>
+						</Settings>
+						
+						<Settings FromLod="1">
+							<FeatureAngle>15</FeatureAngle>
+							<EdgeThreshold>.04</EdgeThreshold>
+							<PlaneThreshold>.04</PlaneThreshold>
+						</Settings>
+            
+						<Settings FromLod="2">
+							<FeatureAngle>15</FeatureAngle>
+							<EdgeThreshold>.06</EdgeThreshold>
+							<PlaneThreshold>.06</PlaneThreshold>
+						</Settings>
+					</LodSettings>
+				</Step>
+			</PostprocessingSteps>
+		</MesherPostprocessing>
 
-      <SurfaceDetail>
-        <Texture>Data/PlanetDataFiles/Extra/material_detail_3</Texture>
-        <Size>384</Size>
-        <Scale>5</Scale>
-        <Slope Min="20" Max="90" />
-        <Transition>7.5</Transition>
-      </SurfaceDetail>
+		<SurfaceDetail>
+			<Texture>Data/PlanetDataFiles/Extra/material_detail_3</Texture>
+			<Size>384</Size>
+			<Scale>5</Scale>
+			<Slope Min="20" Max="90" />
+			<Transition>7.5</Transition>
+		</SurfaceDetail>
+	
+		<PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
 
-	<DistortionTable>
-      <Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
-    </DistortionTable>
+		<DistortionTable>
+			<Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
+		</DistortionTable>
 
-    <OreMappings>
-      <!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
-      <!-- Tier 1-->
-      <!-- EASY START-->
-      <Ore Value="200" Type="Iron_02" Start="3" Depth="7" />
-      <Ore Value="220" Type="Nickel_01" Start="3" Depth="7" />
-      <Ore Value="240" Type="Silicon_01" Start="3" Depth="7" />
-
-      <!-- Fe 1-->
-      <Ore Value="1" Type="Iron_02" Start="10" Depth="3" />
-      <Ore Value="4" Type="Iron_02" Start="12" Depth="3" />
-      <Ore Value="8" Type="Iron_02" Start="14" Depth="4" />
-
-      <!-- Fe 2-->
-      <Ore Value="12" Type="Iron_02" Start="25" Depth="5" />
-      <Ore Value="16" Type="Iron_02" Start="28" Depth="5" />
-      <Ore Value="20" Type="Iron_02" Start="31" Depth="8" />
-
-      <!-- Ni 1-->
-      <Ore Value="24" Type="Nickel_01" Start="10" Depth="4" />
-      <Ore Value="28" Type="Nickel_01" Start="11" Depth="4" />
-      <Ore Value="32" Type="Nickel_01" Start="11" Depth="6" />
-
-      <!-- Ni 2-->
-      <Ore Value="36" Type="Nickel_01" Start="24" Depth="5" />
-      <Ore Value="40" Type="Nickel_01" Start="27" Depth="5" />
-      <Ore Value="44" Type="Nickel_01" Start="30" Depth="8" />
-
-      <!-- Si 1-->
-      <Ore Value="48" Type="Silicon_01" Start="9" Depth="4" />
-      <Ore Value="52" Type="Silicon_01" Start="13" Depth="4" />
-      <Ore Value="56" Type="Silicon_01" Start="10" Depth="6" />
-
-      <!-- Si 2-->
-      <Ore Value="60" Type="Silicon_01" Start="22" Depth="6" />
-      <Ore Value="64" Type="Silicon_01" Start="25" Depth="7" />
-      <Ore Value="68" Type="Silicon_01" Start="27" Depth="9" />
-
-      <!-- ORE Tier 2 -->
-      <!-- Co 1-->
-      <Ore Value="72" Type="Cobalt_01" Start="20" Depth="3" />
-      <Ore Value="76" Type="Cobalt_01" Start="22" Depth="4" />
-      <Ore Value="80" Type="Cobalt_01" Start="26" Depth="6" />
-
-      <!-- Co 2-->
-      <Ore Value="84" Type="Cobalt_01" Start="52" Depth="5" />
-      <Ore Value="88" Type="Cobalt_01" Start="55" Depth="6" />
-      <Ore Value="92" Type="Cobalt_01" Start="62" Depth="9" />
-
-      <!-- Ag 1-->
-      <Ore Value="96" Type="Silver_01" Start="21" Depth="3" />
-      <Ore Value="100" Type="Silver_01" Start="25" Depth="3" />
-      <Ore Value="104" Type="Silver_01" Start="31" Depth="5" />
-
-      <!-- Ag 2-->
-      <Ore Value="108" Type="Silver_01" Start="55" Depth="8" />
-      <Ore Value="112" Type="Silver_01" Start="58" Depth="9" />
-      <Ore Value="116" Type="Silver_01" Start="63" Depth="11" />
-
-      <!-- Mg 1-->
-      <Ore Value="120" Type="Magnesium_01" Start="23" Depth="4" />
-      <Ore Value="124" Type="Magnesium_01" Start="26" Depth="4" />
-      <Ore Value="128" Type="Magnesium_01" Start="29" Depth="5" />
-
-      <!-- Mg 2-->
-      <Ore Value="132" Type="Magnesium_01" Start="53" Depth="7" />
-      <Ore Value="136" Type="Magnesium_01" Start="55" Depth="8" />
-      <Ore Value="140" Type="Magnesium_01" Start="59" Depth="10" />
-
-      <!-- ORE Tier 3 -->
-      <!-- U 1-->
-      <Ore Value="144" Type="Uraninite_01" Start="32" Depth="2" />
-      <Ore Value="148" Type="Uraninite_01" Start="35" Depth="3" />
-      <Ore Value="152" Type="Uraninite_01" Start="38" Depth="5" />
-
-      <!-- U 2-->
-      <Ore Value="156" Type="Uraninite_01" Start="80" Depth="8" />
-      <Ore Value="160" Type="Uraninite_01" Start="89" Depth="9" />
-      <Ore Value="164" Type="Uraninite_01" Start="96" Depth="11" />
-
-      <!-- Au 1-->
-      <Ore Value="168" Type="Gold_01" Start="40" Depth="1" />
-      <Ore Value="172" Type="Gold_01" Start="42" Depth="2" />
-      <Ore Value="176" Type="Gold_01" Start="45" Depth="3" />
-
-      <!-- Au 2-->
-      <Ore Value="180" Type="Gold_01" Start="100" Depth="4" />
-      <Ore Value="184" Type="Gold_01" Start="107" Depth="5" />
-      <Ore Value="188" Type="Gold_01" Start="112" Depth="8" />
-    </OreMappings>
+		<OreMappings>
+			<!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
+			<!-- Tier 1-->
+			<!-- EASY START-->
+			<Ore Value="200" Type="Iron_02" Start="3" Depth="7" />
+			<Ore Value="220" Type="Nickel_01" Start="3" Depth="7" />
+			<Ore Value="240" Type="Silicon_01" Start="3" Depth="7" />
+	
+			<!-- Fe 1-->
+			<Ore Value="1" Type="Iron_02" Start="10" Depth="3" />
+			<Ore Value="4" Type="Iron_02" Start="12" Depth="3" />
+			<Ore Value="8" Type="Iron_02" Start="14" Depth="4" />
+		
+			<!-- Fe 2-->
+			<Ore Value="12" Type="Iron_02" Start="25" Depth="5" />
+			<Ore Value="16" Type="Iron_02" Start="28" Depth="5" />
+			<Ore Value="20" Type="Iron_02" Start="31" Depth="8" />
+		
+			<!-- Ni 1-->
+			<Ore Value="24" Type="Nickel_01" Start="10" Depth="4" />
+			<Ore Value="28" Type="Nickel_01" Start="11" Depth="4" />
+			<Ore Value="32" Type="Nickel_01" Start="11" Depth="6" />
+		
+			<!-- Ni 2-->
+			<Ore Value="36" Type="Nickel_01" Start="24" Depth="5" />
+			<Ore Value="40" Type="Nickel_01" Start="27" Depth="5" />
+			<Ore Value="44" Type="Nickel_01" Start="30" Depth="8" />
+		
+			<!-- Si 1-->
+			<Ore Value="48" Type="Silicon_01" Start="9" Depth="4" />
+			<Ore Value="52" Type="Silicon_01" Start="13" Depth="4" />
+			<Ore Value="56" Type="Silicon_01" Start="10" Depth="6" />
+		
+			<!-- Si 2-->
+			<Ore Value="60" Type="Silicon_01" Start="22" Depth="6" />
+			<Ore Value="64" Type="Silicon_01" Start="25" Depth="7" />
+			<Ore Value="68" Type="Silicon_01" Start="27" Depth="9" />
+		
+			<!-- ORE Tier 2 -->
+			<!-- Co 1-->
+			<Ore Value="72" Type="Cobalt_01" Start="20" Depth="3" />
+			<Ore Value="76" Type="Cobalt_01" Start="22" Depth="4" />
+			<Ore Value="80" Type="Cobalt_01" Start="26" Depth="6" />
+		
+			<!-- Co 2-->
+			<Ore Value="84" Type="Cobalt_01" Start="52" Depth="5" />
+			<Ore Value="88" Type="Cobalt_01" Start="55" Depth="6" />
+			<Ore Value="92" Type="Cobalt_01" Start="62" Depth="9" />
+	
+			<!-- Ag 1-->
+			<Ore Value="96" Type="Silver_01" Start="21" Depth="3" />
+			<Ore Value="100" Type="Silver_01" Start="25" Depth="3" />
+			<Ore Value="104" Type="Silver_01" Start="31" Depth="5" />
+		
+			<!-- Ag 2-->
+			<Ore Value="108" Type="Silver_01" Start="55" Depth="8" />
+			<Ore Value="112" Type="Silver_01" Start="58" Depth="9" />
+			<Ore Value="116" Type="Silver_01" Start="63" Depth="11" />
+		
+			<!-- Mg 1-->
+			<Ore Value="120" Type="Magnesium_01" Start="23" Depth="4" />
+			<Ore Value="124" Type="Magnesium_01" Start="26" Depth="4" />
+			<Ore Value="128" Type="Magnesium_01" Start="29" Depth="5" />
+		
+			<!-- Mg 2-->
+			<Ore Value="132" Type="Magnesium_01" Start="53" Depth="7" />
+			<Ore Value="136" Type="Magnesium_01" Start="55" Depth="8" />
+			<Ore Value="140" Type="Magnesium_01" Start="59" Depth="10" />
+		
+			<!-- ORE Tier 3 -->
+			<!-- U 1-->
+			<Ore Value="144" Type="Uraninite_01" Start="32" Depth="2" />
+			<Ore Value="148" Type="Uraninite_01" Start="35" Depth="3" />
+			<Ore Value="152" Type="Uraninite_01" Start="38" Depth="5" />
+		
+			<!-- U 2-->
+			<Ore Value="156" Type="Uraninite_01" Start="80" Depth="8" />
+			<Ore Value="160" Type="Uraninite_01" Start="89" Depth="9" />
+			<Ore Value="164" Type="Uraninite_01" Start="96" Depth="11" />
+	
+			<!-- Au 1-->
+			<Ore Value="168" Type="Gold_01" Start="40" Depth="1" />
+			<Ore Value="172" Type="Gold_01" Start="42" Depth="2" />
+			<Ore Value="176" Type="Gold_01" Start="45" Depth="3" />
+	
+			<!-- Au 2-->
+			<Ore Value="180" Type="Gold_01" Start="100" Depth="4" />
+			<Ore Value="184" Type="Gold_01" Start="107" Depth="5" />
+			<Ore Value="188" Type="Gold_01" Start="112" Depth="8" />
+		</OreMappings>
 	  
-	<SoundRules>
-	  <SoundRule>
-        <Height Min="0" Max="1.2"/>
-        <Latitude Min="0" Max="90"/>
-        <SunAngleFromZenith Min="0" Max="180"/>
-        <EnvironmentSound>AmbEarthLoop</EnvironmentSound>
-      </SoundRule>
-	</SoundRules>
+		<SoundRules>
+		<SoundRule>
+			<Height Min="0" Max="1.2"/>
+			<Latitude Min="0" Max="90"/>
+			<SunAngleFromZenith Min="0" Max="180"/>
+			<EnvironmentSound>AmbEarthLoop</EnvironmentSound>
+		</SoundRule>
+		</SoundRules>
 	  
-      <ComplexMaterials>
-        <MaterialGroup Name="Planet Features" Value="0">
-
-        <!-- Pole Biome -->
-        <Rule>
-          <Layers>
-            <Layer Material="FrozenIce" Depth="20"/>
-          </Layers>
-          <Height Min="0.0" Max="0.0002"/>
-          <Latitude Min="0" Max="90"/>
-          <Slope Min="0" Max="5"/>
-        </Rule>
+		<ComplexMaterials>
+			<MaterialGroup Name="Planet Features" Value="0">
+				<!-- Pole Biome -->
+				<Rule>
+					<Layers>
+						<Layer Material="FrozenIce" Depth="20"/>
+					</Layers>
+					<Height Min="0.0" Max="0.0002"/>
+					<Latitude Min="0" Max="90"/>
+					<Slope Min="0" Max="5"/>
+				</Rule>
 		  
-		  <Rule>
-            <Layers>
-              <Layer Material="AvalanGrass" Depth="3"/>
-			  <Layer Material="AvalanSoil" Depth="3"/>
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="5" Max="90"/>
-            <Slope Min="1" Max="45"/>
-          </Rule>              
+				<Rule>
+					<Layers>
+						<Layer Material="AvalanGrass" Depth="3"/>
+						<Layer Material="AvalanSoil" Depth="3"/>
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="5" Max="90"/>
+					<Slope Min="1" Max="45"/>
+				</Rule>              
           		  
-		  <Rule>
-            <Layers>
-              <Layer Material="AvalanRocks" Depth="5"/>
-              <Layer Material="AvalanRocks" Depth="5"/>              
-              <Layer Material="Platinum_01" Depth="3"/>              
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="5" Max="90"/>
-            <Slope Min="45" Max="90"/>
-          </Rule>
+				<Rule>
+					<Layers>
+						<Layer Material="AvalanRocks" Depth="5"/>
+						<Layer Material="AvalanRocks" Depth="5"/>              
+						<Layer Material="Platinum_01" Depth="3"/>              
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="5" Max="90"/>
+					<Slope Min="45" Max="90"/>
+				</Rule>
           
-		  <Rule>
-            <Layers>
-              <Layer Material="AvalanSand" Depth="3"/>
-			  <Layer Material="AvalanSoil" Depth="3"/>
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="0" Max="5"/>
-            <Slope Min="1" Max="25"/>
-          </Rule>
+				<Rule>
+					<Layers>
+						<Layer Material="AvalanSand" Depth="3"/>
+						<Layer Material="AvalanSoil" Depth="3"/>
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="0" Max="5"/>
+					<Slope Min="1" Max="25"/>
+				</Rule>
           
-		  <Rule>
-            <Layers>
-              <Layer Material="DesertGrassX" Depth="3"/>
-			  <Layer Material="AvalanSoil" Depth="3"/>		  
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="0" Max="5"/>
-            <Slope Min="10" Max="20"/>
-          </Rule>          
+				<Rule>
+					<Layers>
+						<Layer Material="DesertGrassX" Depth="3"/>
+						<Layer Material="AvalanSoil" Depth="3"/>		  
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="0" Max="5"/>
+					<Slope Min="10" Max="20"/>
+				</Rule>          
 
-		  <Rule>
-            <Layers>
-              <Layer Material="DeadGrass2" Depth="3"/>
-			  <Layer Material="AvalanSoil" Depth="3"/>		  
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="5" Max="10"/>
-            <Slope Min="20" Max="30"/>
-          </Rule>
+				<Rule>
+					<Layers>
+						<Layer Material="DeadGrass2" Depth="3"/>
+						<Layer Material="AvalanSoil" Depth="3"/>		  
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="5" Max="10"/>
+					<Slope Min="20" Max="30"/>
+				</Rule>
           
-		  <Rule>
-            <Layers>
-              <Layer Material="WoodForest" Depth="3"/>
-			  <Layer Material="AvalanSoil" Depth="3"/>
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="15" Max="40"/>
-            <Slope Min="10" Max="40"/>
-          </Rule>          
+				<Rule>
+					<Layers>
+						<Layer Material="WoodForest" Depth="3"/>
+						<Layer Material="AvalanSoil" Depth="3"/>
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="15" Max="40"/>
+					<Slope Min="10" Max="40"/>
+				</Rule>          
 
-		  <Rule>
-            <Layers>
-              <Layer Material="WoodsMountain" Depth="5"/>
-              <Layer Material="WoodsMountain" Depth="3"/>              
-              <Layer Material="Uraninite_01" Depth="3"/>              
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="15" Max="40"/>
-            <Slope Min="40" Max="90"/>
-          </Rule>                    
+				<Rule>
+					<Layers>
+						<Layer Material="WoodsMountain" Depth="5"/>
+						<Layer Material="WoodsMountain" Depth="3"/>              
+						<Layer Material="Uraninite_01" Depth="3"/>              
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="15" Max="40"/>
+					<Slope Min="40" Max="90"/>
+				</Rule>                    
 
-		  <Rule>
-            <Layers>
-              <Layer Material="DesertStone" Depth="5"/>
-              <Layer Material="DesertStone" Depth="3"/>              
-              <Layer Material="Gold_01" Depth="3"/>              
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="0" Max="5"/>
-            <Slope Min="25" Max="90"/>
-          </Rule>
+				<Rule>
+					<Layers>
+						<Layer Material="DesertStone" Depth="5"/>
+						<Layer Material="DesertStone" Depth="3"/>              
+						<Layer Material="Gold_01" Depth="3"/>              
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="0" Max="5"/>
+					<Slope Min="25" Max="90"/>
+				</Rule>
           
-		  <Rule>
-            <Layers>
-              <Layer Material="AvalanSnow" Depth="3"/>
-            </Layers>
-            <Height Min="0" Max="1"/>
-            <Latitude Min="60" Max="90"/>
-            <Slope Min="1" Max="90"/>
-          </Rule>                             
-		  
-        </MaterialGroup>
-      </ComplexMaterials>
+				<Rule>
+					<Layers>
+						<Layer Material="AvalanSnow" Depth="3"/>
+					</Layers>
+					<Height Min="0" Max="1"/>
+					<Latitude Min="60" Max="90"/>
+					<Slope Min="1" Max="90"/>
+				</Rule>                             
+			</MaterialGroup>
+		</ComplexMaterials>
 
-      <EnvironmentItems>
-		<Item>
-          <Biomes>
-            <Biome>0</Biome>
-          </Biomes>
-          <Materials>
-            <Material>AvalanSand</Material>
-          </Materials>
-          <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.003" />
-          </Items>
-          <Rule>
-            <Height Min="0" Max="1.2"/>
-            <Latitude Min="0" Max="90"/>
-            <Slope Min="0" Max="90"/>
-          </Rule>
-        </Item>
+		<EnvironmentItems>
+			<Item>
+				<Biomes>
+					<Biome>0</Biome>
+				</Biomes>				
+				<Materials>
+					<Material>AvalanSand</Material>
+				</Materials>				
+				<Items>
+					<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.003" />
+				</Items>
+				<Rule>
+					<Height Min="0" Max="1.2"/>
+					<Latitude Min="0" Max="90"/>
+					<Slope Min="0" Max="90"/>
+				</Rule>				
+			</Item>
         
-      <Item>
-        <Biomes>
-          <Biome>0</Biome>
-        </Biomes>
-        <Materials>
-          <Material>AvalanGrass</Material>
-        </Materials>
-        <Items>
-          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassForestLarge" Density="20.6"/>
-          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassFoliage" Density="5.4"/>
-        </Items>
-        <Rule>
-          <Height Min="0" Max="0.7"/>
-          <Latitude Min="0" Max="75"/>
-          <Slope Min="0" Max="90"/>
-        </Rule>
-      </Item>
+			<Item>
+				<Biomes>
+					<Biome>0</Biome>
+				</Biomes>
+				<Materials>
+					<Material>AvalanGrass</Material>
+				</Materials>
+				<Items>
+					<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GrassForestLarge" Density="20.6"/>
+					<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassFoliage" Density="5.4"/>
+				</Items>
+				<Rule>
+					<Height Min="0" Max="0.7"/>
+					<Latitude Min="0" Max="75"/>
+					<Slope Min="0" Max="90"/>
+				</Rule>
+			</Item>
       
-		<Item>
-          <Biomes>
-            <Biome>0</Biome>
-          </Biomes>
-          <Materials>
-            <Material>SiriGrass</Material>
-          </Materials>
-          <Items>
-          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassFoliage" Density="10.2"/>
-          </Items>
-          <Rule>
-            <Height Min="0" Max="1.2"/>
-            <Latitude Min="0" Max="90"/>
-            <Slope Min="0" Max="90"/>
-          </Rule>
-        </Item>      
+			<Item>
+				<Biomes>
+					<Biome>0</Biome>
+				</Biomes>
+				<Materials>
+					<Material>SiriGrass</Material>
+				</Materials>
+				<Items>
+					<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassFoliage" Density="10.2"/>
+				</Items>
+				<Rule>
+					<Height Min="0" Max="1.2"/>
+					<Latitude Min="0" Max="90"/>
+					<Slope Min="0" Max="90"/>
+				</Rule>
+			</Item>      
 
-		<Item>
-          <Biomes>
-            <Biome>0</Biome>
-          </Biomes>
-          <Materials>
-            <Material>WoodForest</Material>
-          </Materials>
-          <Items>
-          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="WoodGrassForestMedium" Density="10.6"/>
-          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="WoodGrassBushForestMedium" Density="5.4"/>
-          </Items>
-          <Rule>
-            <Height Min="0" Max="1.2"/>
-            <Latitude Min="0" Max="90"/>
-            <Slope Min="0" Max="90"/>
-          </Rule>
-        </Item>
+			<Item>
+				<Biomes>
+					<Biome>0</Biome>
+				</Biomes>
+				<Materials>
+					<Material>WoodForest</Material>
+				</Materials>
+				<Items>
+					<Item TypeId="MyObjectBuilder_Trees" SubtypeId="WoodGrassForestMedium" Density="10.6"/>
+					<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="WoodGrassBushForestMedium" Density="5.4"/>
+				</Items>
+				<Rule>
+					<Height Min="0" Max="1.2"/>
+					<Latitude Min="0" Max="90"/>
+					<Slope Min="0" Max="90"/>
+				</Rule>
+			</Item>
         
-		<Item>
-          <Biomes>
-            <Biome>0</Biome>
-          </Biomes>
-          <Materials>
-            <Material>AvalanSnow</Material>
-          </Materials>
-          <Items>
-          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SnowBushForestLarge" Density="0.4"/>
-          </Items>
-          <Rule>
-            <Height Min="0" Max="1.2"/>
-            <Latitude Min="0" Max="90"/>
-            <Slope Min="0" Max="90"/>
-          </Rule>
-        </Item>
+			<Item>
+				<Biomes>
+					<Biome>0</Biome>
+				</Biomes>
+				<Materials>
+					<Material>AvalanSnow</Material>
+				</Materials>
+				<Items>
+					<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SnowBushForestLarge" Density="0.4"/>
+				</Items>
+				<Rule>
+					<Height Min="0" Max="1.2"/>
+					<Latitude Min="0" Max="90"/>
+					<Slope Min="0" Max="90"/>
+				</Rule>
+			</Item>
         
-		<Item>
-          <Biomes>
-            <Biome>0</Biome>
-          </Biomes>
-          <Materials>
-            <Material>DesertGrassX</Material>
-          </Materials>
-          <Items>
-          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="SandForestMedium" Density="0.01"/>
-          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SandBushForestMedium" Density="0.2"/>
-          </Items>
-          <Rule>
-            <Height Min="0" Max="1.2"/>
-            <Latitude Min="0" Max="90"/>
-            <Slope Min="0" Max="90"/>
-          </Rule>
-        </Item>
+			<Item>	
+				<Biomes>
+					<Biome>0</Biome>
+				</Biomes>
+				<Materials>
+					<Material>DesertGrassX</Material>
+				</Materials>
+				<Items>
+					<Item TypeId="MyObjectBuilder_Trees" SubtypeId="SandForestMedium" Density="0.01"/>
+					<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SandBushForestMedium" Density="0.2"/>
+				</Items>
+				<Rule>
+					<Height Min="0" Max="1.2"/>
+					<Latitude Min="0" Max="90"/>
+					<Slope Min="0" Max="90"/>
+				</Rule>
+			</Item>
         
-		<Item>
-          <Biomes>
-            <Biome>0</Biome>
-          </Biomes>
-          <Materials>
-            <Material>DeadGrass2</Material>
-          </Materials>
-          <Items>
-          <Item TypeId="MyObjectBuilder_Trees" SubtypeId="RockGrassForestLarge" Density="0.35"/>
-          <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="RockGrassBushForestLarge" Density="0.2"/>
-          </Items>
-          <Rule>
-            <Height Min="0" Max="1.2"/>
-            <Latitude Min="0" Max="90"/>
-            <Slope Min="0" Max="90"/>
-          </Rule>
-        </Item>                           
-      </EnvironmentItems>
-      
-      <DefaultSurfaceMaterial Material="AvalanGrass" MaxDepth="4"/>
-      <DefaultSubSurfaceMaterial Material="AvalanRocks"/>
+			<Item>
+				<Biomes>
+					<Biome>0</Biome>
+				</Biomes>
+				<Materials>
+					<Material>DeadGrass2</Material>
+				</Materials>
+				<Items>
+					<Item TypeId="MyObjectBuilder_Trees" SubtypeId="RockGrassForestLarge" Density="0.35"/>
+					<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="RockGrassBushForestLarge" Density="0.2"/>
+				</Items>
+				<Rule>
+					<Height Min="0" Max="1.2"/>
+					<Latitude Min="0" Max="90"/>
+					<Slope Min="0" Max="90"/>
+				</Rule>
+			</Item>                           
+		</EnvironmentItems>
 
-      <HasAtmosphere>true</HasAtmosphere>
-	  <MaximumOxygen>0.9</MaximumOxygen>
-	  <Atmosphere>
-        <Breathable>true</Breathable>
-		<OxygenDensity>0.9</OxygenDensity>
-		<Density>1.1</Density>
-		<LimitAltitude>2.0</LimitAltitude>
-	  </Atmosphere>
+		<MaximumOxygen>1.0</MaximumOxygen>      
+		<SurfaceGravity>1</SurfaceGravity>
+		<DefaultSurfaceMaterial Material="AvalanGrass" MaxDepth="4"/>
+		<DefaultSubSurfaceMaterial Material="AvalanRocks"/>
+		<HasAtmosphere>true</HasAtmosphere>
 
-      <AtmosphereSettings>
-          <RayleighScattering>
-              <X>100</X>
-              <Y>100</Y>
-              <Z>61.779</Z>
-          </RayleighScattering>
-          <MieScattering>50</MieScattering>
-          <MieColorScattering>
-              <X>48.454</X>
-              <Y>22.200</Y>
-              <Z>5.000</Z>
-          </MieColorScattering>
-          <RayleighHeight>36</RayleighHeight>
-          <RayleighHeightSpace>15</RayleighHeightSpace>
-          <RayleighTransitionModifier>0.4</RayleighTransitionModifier>
-          <MieHeight>70.949</MieHeight>
-          <MieG>1.000</MieG>
-          <Intensity>6</Intensity>
-          <SeaLevelModifier>0.948</SeaLevelModifier>
-          <AtmosphereTopModifier>1.1</AtmosphereTopModifier>
-          <FogIntensity>1.0</FogIntensity>
-          <Scale>1</Scale>
-      </AtmosphereSettings>
+		<Atmosphere>
+			<Breathable>true</Breathable>
+			<OxygenDensity>0.9</OxygenDensity>
+			<Density>1.1</Density>
+			<LimitAltitude>2.0</LimitAltitude>
+			<MaxWindSpeed>80</MaxWindSpeed>		
+		</Atmosphere>
 
-    <CloudLayers>
-      <CloudLayer>
-        <!-- Far layer -->
-        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-        <Textures>
-          <Texture>Textures/Models/Environment/Sky/EarthFarClouds.dds</Texture>
-        </Textures>
-        <RelativeAltitude>0.9</RelativeAltitude>
-        <RotationAxis>
-          <X>-0.2</X>
-          <Y>1</Y>
-          <Z>0.2</Z>
-        </RotationAxis>
-        <AngularVelocity>0.0002</AngularVelocity>
-        <InitialRotation>1.2</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>2.0</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
-        <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
-      </CloudLayer>
+		<AtmosphereSettings>
+			<RayleighScattering>
+				<X>100</X>
+				<Y>100</Y>
+				<Z>61.779</Z>
+			</RayleighScattering>
+			<MieScattering>50</MieScattering>
+			<MieColorScattering>
+				<X>48.454</X>
+				<Y>22.200</Y>
+				<Z>5.000</Z>
+			</MieColorScattering>
+			<RayleighHeight>36</RayleighHeight>
+			<RayleighHeightSpace>15</RayleighHeightSpace>
+			<RayleighTransitionModifier>0.4</RayleighTransitionModifier>
+			<MieHeight>70.949</MieHeight>
+			<MieG>1.000</MieG>
+			<Intensity>6</Intensity>
+			<SeaLevelModifier>0.948</SeaLevelModifier>
+			<AtmosphereTopModifier>1.1</AtmosphereTopModifier>
+			<FogIntensity>1.0</FogIntensity>
+			<Scale>1</Scale>
+		</AtmosphereSettings>
 
-      <!-- Near layers -->
-      <CloudLayer>
-        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-        <Textures>
-          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
-        </Textures>
-        <RelativeAltitude>1.0</RelativeAltitude>
-        <RotationAxis>
-          <X>0</X>
-          <Y>1</Y>
-          <Z>0</Z>
-        </RotationAxis>
-        <AngularVelocity>0.0006</AngularVelocity>
-        <InitialRotation>0.15</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>0.5</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>1.6</FadeOutRelativeAltitudeEnd>
-      </CloudLayer>
+		<CloudLayers>
+			<CloudLayer>	
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/EarthFarClouds.dds</Texture>
+				</Textures>
+				<RelativeAltitude>0.9</RelativeAltitude>
+				<RotationAxis>
+					<X>-0.2</X>
+					<Y>1</Y>
+					<Z>0.2</Z>
+				</RotationAxis>
+				<AngularVelocity>0.0002</AngularVelocity>
+				<InitialRotation>1.2</InitialRotation>
+				<ScalingEnabled>false</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>2.0</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+			</CloudLayer>
 
-      <CloudLayer>
-        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-        <Textures>
-          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
-        </Textures>
-        <RelativeAltitude>2.0</RelativeAltitude>
-        <RotationAxis>
-          <X>0.2</X>
-          <Y>1</Y>
-          <Z>-0.2</Z>
-        </RotationAxis>
-        <AngularVelocity>0.0006</AngularVelocity>
-        <InitialRotation>0.5</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>0.7</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>1.5</FadeOutRelativeAltitudeEnd>
-      </CloudLayer>
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+				</Textures>
+				<RelativeAltitude>1.0</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>1</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0.0006</AngularVelocity>
+				<InitialRotation>0.15</InitialRotation>
+				<ScalingEnabled>false</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.5</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>1.6</FadeOutRelativeAltitudeEnd>
+			</CloudLayer>
 
-      <CloudLayer>
-        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-        <Textures>
-          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
-        </Textures>
-        <RelativeAltitude>3.0</RelativeAltitude>
-        <RotationAxis>
-          <X>-0.2</X>
-          <Y>1</Y>
-          <Z>0.2</Z>
-        </RotationAxis>
-        <AngularVelocity>0.0006</AngularVelocity>
-        <InitialRotation>1.2</InitialRotation>
-        <ScalingEnabled>false</ScalingEnabled>
-        <FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
-        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
-      </CloudLayer>
-    </CloudLayers>
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+				</Textures>
+				<RelativeAltitude>2.0</RelativeAltitude>
+				<RotationAxis>
+					<X>0.2</X>
+					<Y>1</Y>
+					<Z>-0.2</Z>
+				</RotationAxis>
+				<AngularVelocity>0.0006</AngularVelocity>
+				<InitialRotation>0.5</InitialRotation>
+				<ScalingEnabled>false</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.7</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>1.5</FadeOutRelativeAltitudeEnd>
+			</CloudLayer>
+
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+				</Textures>
+				<RelativeAltitude>3.0</RelativeAltitude>
+				<RotationAxis>
+					<X>-0.2</X>
+					<Y>1</Y>
+					<Z>0.2</Z>
+				</RotationAxis>
+				<AngularVelocity>0.0006</AngularVelocity>
+				<InitialRotation>1.2</InitialRotation>
+				<ScalingEnabled>false</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+			</CloudLayer>
+		</CloudLayers>
 	  
-      <SurfaceGravity>1</SurfaceGravity>
       <MaterialsMaxDepth Min="4000" Max="4000"/>
       <MaterialsMinDepth Min="20" Max="20"/>
-
       <HillParams Min = "-0.01" Max ="0.09"/>
 
-    </PlanetGeneratorDefinition>
+		<AnimalSpawnInfo>
+			<Animals>
+				<Animal Type="Wolf"/>
+			</Animals>
+			<SpawnDelayMin>60000</SpawnDelayMin>
+			<SpawnDelayMax>3600000</SpawnDelayMax>
+			<SpawnDistMin>100</SpawnDistMin>
+			<SpawnDistMax>400</SpawnDistMax>
+			<WaveCountMin>1</WaveCountMin>
+			<WaveCountMax>4</WaveCountMax>
+		</AnimalSpawnInfo>
+    
+		<NightAnimalSpawnInfo>
+			<Animals>
+				<Animal Type="Wolf"/>
+			</Animals>
+			<SpawnDelayMin>60000</SpawnDelayMin>
+			<SpawnDelayMax>1800000</SpawnDelayMax>
+			<SpawnDistMin>100</SpawnDistMin>
+			<SpawnDistMax>300</SpawnDistMax>
+			<WaveCountMin>2</WaveCountMin>
+			<WaveCountMax>8</WaveCountMax>
+		</NightAnimalSpawnInfo>
 
-  </PlanetGeneratorDefinitions>
+		<WeatherFrequencyMin>600</WeatherFrequencyMin>
+		<WeatherFrequencyMax>5400</WeatherFrequencyMax>
+		<WeatherGenerators>
+			<WeatherGenerator>
+				<Voxel>Grass</Voxel>
+				<Weathers>
+					<Weather>
+						<Name>FogLight</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>900</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+                
+					<Weather>
+						<Name>FogHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>900</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>RainLight</Name>
+						<Weight>3</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>RainHeavy</Name>
+						<Weight>2</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>900</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>ThunderstormLight</Name>
+						<Weight>2</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>ThunderstormHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>1800</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				</Weathers>
+			</WeatherGenerator>
+		
+			<WeatherGenerator>
+				<Voxel>GrassDry</Voxel>
+				<Weathers>
+					<Weather>
+						<Name>FogLight</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>600</MaxLength>
+					</Weather>
+					
+					<Weather>
+						<Name>RainLight</Name>
+						<Weight>4</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+					</Weather>
+					
+					<Weather>
+						<Name>ThunderstormLight</Name>
+						<Weight>2</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+					</Weather>
+				</Weathers>
+			</WeatherGenerator>
+		
+			<WeatherGenerator>
+				<Voxel>Soil</Voxel>
+				<Weathers>
+					<Weather>
+						<Name>FogLight</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>900</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+					
+					<Weather>
+						<Name>FogHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>600</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>RainLight</Name>
+						<Weight>3</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>RainHeavy</Name>
+						<Weight>2</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>1800</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>ThunderstormLight</Name>
+						<Weight>2</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>ThunderstormHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>1800</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				</Weathers>
+			</WeatherGenerator>
+		
+			<WeatherGenerator>
+				<Voxel>Snow</Voxel>
+				<Weathers>
+					<Weather>
+						<Name>SnowLight</Name>
+						<Weight>5</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>1800</MaxLength>
+					</Weather>
+					<Weather>
+						<Name>SnowHeavy</Name>
+						<Weight>2</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>2400</MaxLength>
+					</Weather>
+					
+					<Weather>
+						<Name>FogLight</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>900</MaxLength>
+					</Weather>
+            	
+					<Weather>
+						<Name>FogHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>900</MaxLength>
+					</Weather>
+				</Weathers>
+			</WeatherGenerator>
+		
+			<WeatherGenerator>
+				<Voxel>Sand</Voxel>
+				<Weathers>
+					<Weather>
+						<Name>SandStormLight</Name>
+						<Weight>4</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1800</MaxLength>
+					</Weather>
+				
+					<Weather>
+						<Name>SandStormHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>3600</MaxLength>
+					</Weather>
+					
+					<Weather>
+						<Name>Dust</Name>
+						<Weight>2</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+					</Weather>
+				</Weathers>
+			</WeatherGenerator>
+        
+			<WeatherGenerator>
+				<Voxel>Ice</Voxel>
+				<Weathers>
+					<Weather>
+						<Name>FogLight</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>900</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+                
+					<Weather>
+						<Name>FogHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>600</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+					
+					<Weather>
+						<Name>RainLight</Name>
+						<Weight>3</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>RainHeavy</Name>
+						<Weight>2</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>1800</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+					
+					<Weather>
+						<Name>ThunderstormLight</Name>
+						<Weight>2</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>ThunderstormHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>1800</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				</Weathers>
+			</WeatherGenerator>
+        
+			<WeatherGenerator>
+				<Voxel>Rock</Voxel>
+				<Weathers>
+					<Weather>
+						<Name>FogLight</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>900</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+                
+					<Weather>
+						<Name>FogHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>600</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					
+					</Weather>
+					
+					<Weather>
+						<Name>RainLight</Name>
+						<Weight>3</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>RainHeavy</Name>
+						<Weight>2</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>1800</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>ThunderstormLight</Name>
+						<Weight>2</Weight>
+						<MinLength>300</MinLength>
+						<MaxLength>1200</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+				
+					<Weather>
+						<Name>ThunderstormHeavy</Name>
+						<Weight>1</Weight>
+						<MinLength>600</MinLength>
+						<MaxLength>1800</MaxLength>
+						<SpawnOffset>2000</SpawnOffset>
+					</Weather>
+			
+				</Weathers>
+			</WeatherGenerator>
+		</WeatherGenerators>
+
+    </Definition>
 </Definitions>

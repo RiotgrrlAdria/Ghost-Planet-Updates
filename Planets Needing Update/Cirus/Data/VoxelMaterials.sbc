@@ -1,28 +1,27 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <VoxelMaterials>
-    <!-- grass-->
-    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-      <Id>
-        <TypeId>VoxelMaterialDefinition</TypeId>
-        <SubtypeId>GrassMod</SubtypeId>
-      </Id>
-      <SpawnsInAsteroids>false</SpawnsInAsteroids>
-      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
-      <MaterialTypeName>Grass</MaterialTypeName>
-      <MinedOre>Stone</MinedOre>
-      <MinedOreRatio>5</MinedOreRatio>
-      <CanBeHarvested>true</CanBeHarvested>
-      <IsRare>false</IsRare>
-      <IsIndestructible>false</IsIndestructible>
-      <DamageRatio>1</DamageRatio>
-      <DiffuseXZ>Textures\Voxels\GrassMod_ForAxisXZ_de.dds</DiffuseXZ>
-      <NormalXZ>Textures\Voxels\GrassMod_ForAxisXZ_ns.dds</NormalXZ>
-      <DiffuseY>Textures\Voxels\GrassMod_ForAxisY_de.dds</DiffuseY>
-      <NormalY>Textures\Voxels\GrassMod_ForAxisY_ns.dds</NormalY>
-      <ColorMetalXZnY>Textures\Voxels\GrassMod_cm.dds</ColorMetalXZnY>
-      <NormalGlossXZnY>Textures\Voxels\GrassMod_ng.dds</NormalGlossXZnY>
-      <ExtXZnY>Textures\Voxels\GreenMod_add.dds</ExtXZnY>
+	<VoxelMaterials>
+		<!-- grass-->
+		<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+			<Id>
+				<TypeId>VoxelMaterialDefinition</TypeId>
+				<SubtypeId>GrassMod</SubtypeId>
+			</Id>
+			<SpawnsInAsteroids>false</SpawnsInAsteroids>
+			<SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+			<MaterialTypeName>Grass</MaterialTypeName>
+			<MinedOre>Stone</MinedOre>
+			<MinedOreRatio>1</MinedOreRatio>
+			<CanBeHarvested>true</CanBeHarvested>
+			<IsRare>false</IsRare>
+						
+			<DiffuseXZ>Textures\Voxels\GrassMod_ForAxisXZ_de.dds</DiffuseXZ>
+			<NormalXZ>Textures\Voxels\GrassMod_ForAxisXZ_ns.dds</NormalXZ>
+			<DiffuseY>Textures\Voxels\GrassMod_ForAxisY_de.dds</DiffuseY>
+			<NormalY>Textures\Voxels\GrassMod_ForAxisY_ns.dds</NormalY>
+			<ColorMetalXZnY>Textures\Voxels\GrassMod_cm.dds</ColorMetalXZnY>
+			<NormalGlossXZnY>Textures\Voxels\GrassMod_ng.dds</NormalGlossXZnY>
+			<ExtXZnY>Textures\Voxels\GreenMod_add.dds</ExtXZnY>
       
       <SpecularPower>24</SpecularPower>
       <SpecularShininess>0.364</SpecularShininess>
