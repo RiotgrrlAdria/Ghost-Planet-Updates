@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
-  <Sounds>
-    <Sound>
-      <Id>
- <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>AmbLavaLoop</SubtypeId>
-      </Id>
-      <Category>AMB</Category>
-      <MaxDistance>50</MaxDistance>
-      <Volume>0.15</Volume>
-      <Loopable>true</Loopable>
-      <Waves>
-        <Wave Type="D2">
-          <Loop>Audio\ARC\AMB\AmbLavaLoop.xwm</Loop>
-        </Wave>
-      </Waves>
-    </Sound>
-   </Sounds>
+	<Sounds>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>AmbLavaLoop</SubtypeId>
+			</Id>
+			<Category>AMB</Category>
+			<MaxDistance>50</MaxDistance>
+			<Volume>0.15</Volume>
+			<Loopable>true</Loopable>
+			<Waves>
+				<Wave Type="D2">
+					<Loop>Audio\ARC\AMB\AmbLavaLoop.wav</Loop>
+				</Wave>
+			</Waves>
+		</Sound>
+	</Sounds>
 </Definitions>

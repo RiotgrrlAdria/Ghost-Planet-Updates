@@ -1,4 +1,4 @@
-CURRENT VERSION: 21.05.31.0311
+CURRENT VERSION: 21.06.02.0313
 
 INFO:
 Version format is year.month.day.branch + revision number
@@ -98,6 +98,22 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	NOTE: Unknown if Sandwhite texture will work. If it doesn't, I'll have to create it.
 	NOTE: Cirus is missing a shit load of textures. Look into VoxelMaterials to get an entire list.
 
+21.06.01.312
+	FIXED: Ciybos updated to the latest standards.
+	ADDED: Ciybos now has music.
+	FIXED: Ciybos no longer has oxygen, which matches what the description states.
+	FIXED: Updated lava sound to be more realistic and not so bloody annoying.
+	FIXED: Ciybos now has lava that can do damage.
+
+21.06.02.0313
+	FIXED: Ciybos Lava2 voxel no longer creates ice when mined.
+	FIXED: Ciybos Lava2 has a proper thumbnail when using the voxel tool.
+	FIXED: Ciybos Magma friction greatly increased. Should make it feel 'sticky'
+	FIXED: Ciybos Magma has a proper thumbnail.
+	FIXED: Ciybos voxels now have friction adjusted where appropriate.
+	FIXED: Cleon 06U updated to the latest standards.
+	ADDED: Cleon 06U has music now.
+	ADDED: Cleon 06U was given weather.
 
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
   ALPHA:
