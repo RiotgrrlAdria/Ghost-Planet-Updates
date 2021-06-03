@@ -105,7 +105,7 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	FIXED: Updated lava sound to be more realistic and not so bloody annoying.
 	FIXED: Ciybos now has lava that can do damage.
 
-21.06.02.0313
+21.06.02.313
 	FIXED: Ciybos Lava2 voxel no longer creates ice when mined.
 	FIXED: Ciybos Lava2 has a proper thumbnail when using the voxel tool.
 	FIXED: Ciybos Magma friction greatly increased. Should make it feel 'sticky'
