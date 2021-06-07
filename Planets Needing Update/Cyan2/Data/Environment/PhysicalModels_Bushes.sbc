@@ -39,18 +39,18 @@
     <Definition xsi:type="VR.PhysicalModelDefinition">
       <Id>
         <TypeId>PhysicalModelDefinition</TypeId>
-        <SubtypeId>SnowPineBushSmall</SubtypeId>
+        <SubtypeId>PineBushSnowSmall</SubtypeId>
       </Id>
-      <Model>Models\Environment\Bushes\SnowPineBushSmall.mwm</Model>
+      <Model>Models\Environment\Bushes\PineBushSnowSmall.mwm</Model>
       <PhysicalMaterial>Wood</PhysicalMaterial>
     </Definition>
 
     <Definition xsi:type="VR.PhysicalModelDefinition">
       <Id>
         <TypeId>PhysicalModelDefinition</TypeId>
-        <SubtypeId>SnowPineBushMedium</SubtypeId>
+        <SubtypeId>PineBushSnowMedium</SubtypeId>
       </Id>
-      <Model>Models\Environment\Bushes\SnowPineBushMedium.mwm</Model>
+      <Model>Models\Environment\Bushes\PineBushSnowMedium.mwm</Model>
       <PhysicalMaterial>Wood</PhysicalMaterial>
     </Definition>
 

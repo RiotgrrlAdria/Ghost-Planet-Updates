@@ -1,48 +1,37 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <VoxelMaterials>
-  
-	<!-- AlienGrass -->
-	
-	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-      <Id>
-        <TypeId>VoxelMaterialDefinition</TypeId>
-        <SubtypeId>AlienGrass</SubtypeId>
-      </Id>
-      <SpawnsInAsteroids>false</SpawnsInAsteroids>
-      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
-      <MaterialTypeName>Rock</MaterialTypeName>
-      <MinedOre>Stone</MinedOre>
-      <MinedOreRatio>5</MinedOreRatio>
-      <CanBeHarvested>true</CanBeHarvested>
-      <IsRare>false</IsRare>
-      <IsIndestructible>false</IsIndestructible>
-      <DamageRatio>1</DamageRatio>
-      <ParticleEffect>Collision_Meteor</ParticleEffect>
+	<VoxelMaterials>
 
+	<!-- AlienGrass -->	
+		<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+			<Id>
+				<TypeId>VoxelMaterialDefinition</TypeId>
+				<SubtypeId>AlienGrass</SubtypeId>
+			</Id>
+		
+			<SpawnsInAsteroids>false</SpawnsInAsteroids>
+			<SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+			<MaterialTypeName>Rock</MaterialTypeName>
+			<MinedOre>Stone</MinedOre>
+			<MinedOreRatio>5</MinedOreRatio>
+			<CanBeHarvested>true</CanBeHarvested>
+			<IsRare>false</IsRare>
+			<ParticleEffect>Collision_Meteor</ParticleEffect>
+			
+			<ColorMetalXZnY>Textures\Voxels\AlienGrass\AlienGrass_cm.dds</ColorMetalXZnY>
+			<NormalGlossXZnY>Textures\Voxels\AlienGrass\AlienGrass_ng.dds</NormalGlossXZnY>
+			<ExtXZnY>Textures\Voxels\AlienGrass\AlienGrass_add.dds</ExtXZnY>
 
-      <ColorMetalXZnY>Textures\Voxels\AlienGrass\AlienGrass_cm.dds</ColorMetalXZnY>
-      <NormalGlossXZnY>Textures\Voxels\AlienGrass\AlienGrass_ng.dds</NormalGlossXZnY>
-      <ExtXZnY>Textures\Voxels\AlienGrass\AlienGrass_add.dds</ExtXZnY>
+			<SpecularPower>24</SpecularPower>
+			<SpecularShininess>0.364</SpecularShininess>
 
-      <ColorMetalXZnY>Textures\Voxels\AlienGrass\AlienGrass_cm.dds</ColorMetalXZnY>
-      <NormalGlossXZnY>Textures\Voxels\AlienGrass\AlienGrass_ng.dds</NormalGlossXZnY>
-      <ExtXZnY>Textures\Voxels\AlienGrass\AlienGrass_add.dds</ExtXZnY>
+			<Far3Color>
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<W>0</W>
+			</Far3Color>
 
-      <SpecularPower>24</SpecularPower>
-      <SpecularShininess>0.364</SpecularShininess>
-
-      <Far3Color>
-        <X>0</X>
-        <Y>0</Y>
-        <Z>0</Z>
-        <W>0</W>
-      </Far3Color>
-
-
-      <SpawnsFlora>true</SpawnsFlora>
-      <BiomeValueMin>200</BiomeValueMin>
-      <BiomeValueMax>200</BiomeValueMax>
-    </VoxelMaterial>               
-  </VoxelMaterials>
+		</VoxelMaterial>               
+	</VoxelMaterials>
 </Definitions>

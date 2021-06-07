@@ -115,6 +115,21 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	ADDED: Cleon 06U has music now.
 	ADDED: Cleon 06U was given weather.
 
+21.05.07.314
+	FIXED: Cradus 6D updated to the latest standards
+	ADDED: Cradus 6D now has weather!
+	FIXED: Cyan 2 updated to the latest standards.
+	FIXED: Cyan 2 missing audio file was added.
+	ADDED: Cyan 2 had music added.
+	ADDED: Cyan 2 was assigned some nice weather.
+	FIXED: Cyan 2 missing textures have been added. NOTE: Ores and ExoSand are original. Will need to make new ones that fit better in the future.
+	FIXED: Cyan 2 voxel materials fixed and updated.
+	FIXED: EnviromentModules updated to include Wasteland planet.
+	FIXED: PhysicalModelsCollections model refereces fixed
+	
+	NOTE: New objects aren't actually used. No reference to them at all. PhysicalModels_Trees is the only file with chanes in it.
+
+
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
   ALPHA:
 	-Update the file structure of the skyboxes.
