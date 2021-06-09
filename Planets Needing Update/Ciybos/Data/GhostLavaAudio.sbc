@@ -12,7 +12,7 @@
 			<Loopable>true</Loopable>
 			<Waves>
 				<Wave Type="D2">
-					<Loop>Audio\ARC\AMB\AmbLavaLoop.wav</Loop>
+					<Loop>Audio\ARC\AMB\AmbLavaLoop.xwm</Loop>
 				</Wave>
 			</Waves>
 		</Sound>

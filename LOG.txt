@@ -1,4 +1,4 @@
-CURRENT VERSION: 21.06.02.0313
+CURRENT VERSION: 21.06.08.0315
 
 INFO:
 Version format is year.month.day.branch + revision number
@@ -129,6 +129,28 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	
 	NOTE: New objects aren't actually used. No reference to them at all. PhysicalModels_Trees is the only file with chanes in it.
 
+21.06.08.0315
+	FIXED: Dead Planet updated to the latest standards
+	FIXED: Dead Planet now has better lava audio
+	ADDED: Dead Planet now damages players if thery are outside. Making the enviuroment hella caustic.
+	ADDED: Dead Planet noiw has music.
+	FIXED: Dead Planet's atmosphere density has been increased from 1.0 to 5.0
+	ADDED: Dead Planet has weathers. Really crappyu ones, buyt its weather!
+	FIXED: Dead Planet's lava vxel is set to indestructable. How can one mine lava?
+	ADDED: Dead Planet lava and magma2 textures now have thumbnails
+	FIXED: Dead Sun updated to the latest standards.
+	FIXED: Dead Sun has had the cloud layers adjusted so now it apears huge
+	FIXED: Deltiri updated to the latest standards. The lack of wind = no weather or atmosphere -this is intentional.
+	FIXED: Deluise updated to the latest standards.
+	FIXED: Deluise now has weather.
+	FIXED: Deluise voxelmaterials was updated. Removed references which are no longer supported.
+	REMOVED: Deluise Enviroment file removed. Was in wrong location, plus would conflict with any speed mods.
+	FIXED: Drutenus updated to the lat4est standards.
+	ADDED: Drutenus was assigned some new tunes!
+	FIXED: Drutenus surface gravity lowered slighty to match Jupi-jupe.
+	FIXED: Drutenus is now much larger.
+	FIXED: Drutenus was missing planetdata textures. That's been fixed.
+	
 
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
   ALPHA:

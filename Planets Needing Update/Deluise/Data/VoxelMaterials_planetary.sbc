@@ -14,17 +14,14 @@
       <MinedOreRatio>5</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <IsRare>false</IsRare>
-      <IsIndestructible>false</IsIndestructible>
-      <DamageRatio>1</DamageRatio>
       <ParticleEffect>Collision_Meteor</ParticleEffect>
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
       
       <ColorMetalXZnY>Textures\Voxels\RockySoilXi\RockySoilXi_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\RockySoilXi\RockySoilXi_ng.dds</NormalGlossXZnY>
 	  <ExtXZnY>Textures\Voxels\RockySoilXi\RockySoilXi_add.dds</ExtXZnY>
-	  <ExtDetailScale>0.001</ExtDetailScale>
-	  
-      <SpecularPower>24</SpecularPower>
-      <SpecularShininess>0.364</SpecularShininess>
+	  <ExtDetailScale>0.001</ExtDetailScale> 
       
       <!--Generated Rocks-->
       <FoliageTextureArray1>Textures\Voxels\RocksDesert_ForAxisXZ_cm.dds</FoliageTextureArray1>
@@ -52,8 +49,6 @@
       <MinedOreRatio>5</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <IsRare>false</IsRare>
-      <IsIndestructible>false</IsIndestructible>
-      <DamageRatio>1</DamageRatio>
       <ParticleEffect>Collision_Meteor</ParticleEffect>
       
       <ColorMetalXZnY>Textures\Voxels\mountainsxi\mountainsxi_cm.dds</ColorMetalXZnY>
@@ -70,15 +65,6 @@
       <SpecularPower>24</SpecularPower>
       <SpecularShininess>0.364</SpecularShininess>
       
-      <SpawnChannels>
-        <Channel>2</Channel>
-        <Channel>3</Channel>
-      </SpawnChannels>
-
-      <SpawnsFlora>true</SpawnsFlora>
-      <BiomeValueMin>1</BiomeValueMin>
-      <BiomeValueMax>1</BiomeValueMax>
-
     </VoxelMaterial>	       
   </VoxelMaterials>
 </Definitions>

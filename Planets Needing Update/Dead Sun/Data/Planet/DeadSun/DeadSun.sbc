@@ -1,377 +1,457 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <PlanetGeneratorDefinitions>
-    <PlanetGeneratorDefinition>
-      <Id>
-        <TypeId>PlanetGeneratorDefinition</TypeId>
-        <SubtypeId>DeadSun</SubtypeId>
-      </Id>
-      <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true" />
+	<Definition>
+		<Id>
+			<TypeId>PlanetGeneratorDefinition</TypeId>
+			<SubtypeId>DeadSun</SubtypeId>
+		</Id>
+      
+		<Difficulty>DifficultyEasy</Difficulty>
+		<MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
+			<PostprocessingSteps>
+				<Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
+					<LodSettings>
+						
+						<Settings FromLod="0">
+							<FeatureAngle>15</FeatureAngle>
+							<EdgeThreshold>.04</EdgeThreshold>
+							<PlaneThreshold>.02</PlaneThreshold>
+						</Settings>
+            
+						<Settings FromLod="1">
+							<FeatureAngle>15</FeatureAngle>
+							<EdgeThreshold>.04</EdgeThreshold>
+							<PlaneThreshold>.04</PlaneThreshold>
+						</Settings>
+            
+						<Settings FromLod="2">
+							<FeatureAngle>15</FeatureAngle>
+							<EdgeThreshold>.06</EdgeThreshold>
+							<PlaneThreshold>.06</PlaneThreshold>
+						</Settings>
+			
+					</LodSettings>
+				</Step>
+			</PostprocessingSteps>
+		</MesherPostprocessing>
 
-      <SurfaceDetail>
-        <Texture>Data\PlanetDataFiles\DeadSun</Texture>
-        <Size>384</Size>
-        <Scale>5</Scale>
-        <Slope Min="20" Max="90" />
-        <Transition>7.5</Transition>
-      </SurfaceDetail>
+		<SurfaceDetail>
+			<Texture>Data\PlanetDataFiles\DeadSun</Texture>
+			<Size>384</Size>
+			<Scale>5</Scale>
+			<Slope Min="20" Max="90" />
+			<Transition>7.5</Transition>
+		</SurfaceDetail>
 
-      <DistortionTable>
-        <Distortion Type="Perlin" Value="92" Frequency="10" Height="4" LayerCount="6" />
-      </DistortionTable>
+		<PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true" />
 
-      <OreMappings>
-        <!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
-        <!-- U 2-->
-        <Ore Value="156" Type="Flerow" Start="80" Depth="8" />
-        <Ore Value="160" Type="Flerow" Start="89" Depth="9" />
-        <Ore Value="164" Type="Flerow" Start="96" Depth="11" />
+		<DistortionTable>
+			<Distortion Type="Perlin" Value="92" Frequency="10" Height="4" LayerCount="6" />
+		</DistortionTable>
 
-        <!-- Au 1-->
-        <Ore Value="168" Type="Flerow" Start="40" Depth="1" />
-        <Ore Value="172" Type="Flerow" Start="42" Depth="2" />
-        <Ore Value="176" Type="Flerow" Start="45" Depth="3" />
+		<OreMappings>
+			<!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
+			<!-- U 2-->
+			<Ore Value="156" Type="Flerow" Start="80" Depth="8" />
+			<Ore Value="160" Type="Flerow" Start="89" Depth="9" />
+			<Ore Value="164" Type="Flerow" Start="96" Depth="11" />
+
+			<!-- Au 1-->
+			<Ore Value="168" Type="Flerow" Start="40" Depth="1" />
+			<Ore Value="172" Type="Flerow" Start="42" Depth="2" />
+			<Ore Value="176" Type="Flerow" Start="45" Depth="3" />
         
-        <!-- Ni 2-->
-        <Ore Value="36" Type="Lorens" Start="24" Depth="5" />
-        <Ore Value="40" Type="Lorens" Start="27" Depth="5" />
-        <Ore Value="44" Type="Lorens" Start="30" Depth="8" />
+			<!-- Ni 2-->
+			<Ore Value="36" Type="Lorens" Start="24" Depth="5" />
+			<Ore Value="40" Type="Lorens" Start="27" Depth="5" />
+			<Ore Value="44" Type="Lorens" Start="30" Depth="8" />
 
-        <!-- Si 1-->
-        <Ore Value="48" Type="Lorens" Start="9" Depth="4" />
-        <Ore Value="52" Type="Lorens" Start="13" Depth="4" />
-        <Ore Value="56" Type="Lorens" Start="10" Depth="6" />
+			<!-- Si 1-->
+			<Ore Value="48" Type="Lorens" Start="9" Depth="4" />
+			<Ore Value="52" Type="Lorens" Start="13" Depth="4" />
+			<Ore Value="56" Type="Lorens" Start="10" Depth="6" />
         
-        <!-- Fe 2-->
-        <Ore Value="12" Type="Nihonium" Start="25" Depth="5" />
-        <Ore Value="16" Type="Nihonium" Start="28" Depth="5" />
-        <Ore Value="20" Type="Nihonium" Start="31" Depth="8" />
+			<!-- Fe 2-->
+			<Ore Value="12" Type="Nihonium" Start="25" Depth="5" />
+			<Ore Value="16" Type="Nihonium" Start="28" Depth="5" />
+			<Ore Value="20" Type="Nihonium" Start="31" Depth="8" />
 
-        <!-- Ni 1-->
-        <Ore Value="24" Type="Nihonium" Start="10" Depth="4" />
-        <Ore Value="28" Type="Nihonium" Start="11" Depth="4" />
-        <Ore Value="32" Type="Nihonium" Start="11" Depth="6" />
+			<!-- Ni 1-->
+			<Ore Value="24" Type="Nihonium" Start="10" Depth="4" />
+			<Ore Value="28" Type="Nihonium" Start="11" Depth="4" />
+			<Ore Value="32" Type="Nihonium" Start="11" Depth="6" />
         
-        <!-- Tier 1-->
-        <Ore Value="200" Type="Tau" Start="3" Depth="7" />
-        <Ore Value="220" Type="Tau" Start="3" Depth="7" />
-        <Ore Value="240" Type="Tau" Start="3" Depth="7" />
+			<!-- Tier 1-->
+			<Ore Value="200" Type="Tau" Start="3" Depth="7" />
+			<Ore Value="220" Type="Tau" Start="3" Depth="7" />
+			<Ore Value="240" Type="Tau" Start="3" Depth="7" />
 
-        <!-- Fe 1-->
-        <Ore Value="1" Type="Tau" Start="10" Depth="3" />
-        <Ore Value="4" Type="Tau" Start="12" Depth="3" />
-        <Ore Value="8" Type="Tau" Start="14" Depth="4" />
-      </OreMappings>
+			<!-- Fe 1-->
+			<Ore Value="1" Type="Tau" Start="10" Depth="3" />
+			<Ore Value="4" Type="Tau" Start="12" Depth="3" />
+			<Ore Value="8" Type="Tau" Start="14" Depth="4" />
+		</OreMappings>
 
-      <SoundRules>
-        <SoundRule>
-          <Height Min="0" Max="1.2" />
-          <Latitude Min="0" Max="90" />
-          <SunAngleFromZenith Min="0" Max="180" />
-          <EnvironmentSound>AmbMoonDayLoop</EnvironmentSound>
-        </SoundRule>
-      </SoundRules>
+		<SoundRules>
+			<SoundRule>
+				<Height Min="0" Max="1.2" />
+				<Latitude Min="0" Max="90" />
+				<SunAngleFromZenith Min="0" Max="180" />
+				<EnvironmentSound>AmbMoonDayLoop</EnvironmentSound>
+			</SoundRule>
+		</SoundRules>
 
-      <ComplexMaterials>
-        <MaterialGroup Name="LO" Value="255">
-          <Rule>
-            <Layers>
-              <Layer Material="RykeLava" Depth="25" />
-            </Layers>
-            <Height Min="-0.001" Max="0.001" />
-            <Latitude Min="0" Max="90" />
-            <Slope Min="0" Max="3" />
-          </Rule>
-        </MaterialGroup>
-        <MaterialGroup Name="AO" Value="0">
-          <Rule>
-            <Layers>
-              <Layer Material="RykeLava1" Depth="25" />
-            </Layers>
-            <Height Min="0" Max="0.008" />
-            <Latitude Min="0" Max="90" />
-            <Slope Min="0" Max="3" />
-          </Rule>
-          <Rule>
-            <Layers>
-              <Layer Material="RykeRock2" Depth="25" />
-            </Layers>
-            <Height Min="0" Max="1" />
-            <Latitude Min="0" Max="90" />
-            <Slope Min="4" Max="5" />
-          </Rule>
-          <Rule>
-            <Layers>
-              <Layer Material="RykeSoil" Depth="25" />
-            </Layers>
-            <Height Min="0" Max="1" />
-            <Latitude Min="0" Max="90" />
-            <Slope Min="5" Max="15" />
-          </Rule>
-          <Rule>
-            <Layers>
-              <Layer Material="RykeRock2" Depth="25" />
-            </Layers>
-            <Height Min="0" Max="1" />
-            <Latitude Min="0" Max="90" />
-            <Slope Min="15" Max="30" />
-          </Rule>
-          <Rule>
-            <Layers>
-              <Layer Material="RykeRock2" Depth="25" />
-            </Layers>
-            <Height Min="0" Max="1" />
-            <Latitude Min="0" Max="90" />
-            <Slope Min="30" Max="90" />
-          </Rule>
-        </MaterialGroup>
-      </ComplexMaterials>
-      <EnvironmentItems>
-        <Item>
-          <Biomes>
-            <Biome>0</Biome>
-          </Biomes>
-          <Materials>
-            <Material>RykeSoil</Material>
-          </Materials>
-          <Items>
-            <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="Stones" ModifierId="RykeRock2"
-                  Density="0.007" />
-          </Items>
-          <Rule>
-            <Height Min="0" Max="1" />
-            <Latitude Min="0" Max="90" />
-            <Slope Min="5" Max="15" />
-          </Rule>
-        </Item>
-      </EnvironmentItems>
+		<MusicCategories>
+			<MusicCategory Category="Alien" Frequency="0.75" />
+			<MusicCategory Category="Mystery" Frequency="0.15" />
+			<MusicCategory Category="Danger" Frequency="0.1" />
+		</MusicCategories>
+		
+		<ComplexMaterials>
+			
+			<MaterialGroup Name="LO" Value="255">				
+				
+				<Rule>
+					<Layers>
+						<Layer Material="RykeLava" Depth="25" />
+					</Layers>
+					<Height Min="-0.001" Max="0.001" />
+					<Latitude Min="0" Max="90" />
+					<Slope Min="0" Max="3" />
+				</Rule>
+				
+			</MaterialGroup>
+        
+			<MaterialGroup Name="AO" Value="0">
+				
+				<Rule>
+					<Layers>
+						<Layer Material="RykeLava1" Depth="25" />
+					</Layers>
+					<Height Min="0" Max="0.008" />
+					<Latitude Min="0" Max="90" />
+					<Slope Min="0" Max="3" />
+				</Rule>
+          
+				<Rule>
+					<Layers>
+						<Layer Material="RykeRock2" Depth="25" />
+					</Layers>
+					<Height Min="0" Max="1" />
+					<Latitude Min="0" Max="90" />
+					<Slope Min="4" Max="5" />
+				</Rule>
+          
+				<Rule>
+					<Layers>
+						<Layer Material="RykeSoil" Depth="25" />
+					</Layers>
+					<Height Min="0" Max="1" />
+					<Latitude Min="0" Max="90" />
+					<Slope Min="5" Max="15" />
+				</Rule>
+          
+				<Rule>
+					<Layers>
+						<Layer Material="RykeRock2" Depth="25" />
+					</Layers>
+					<Height Min="0" Max="1" />
+					<Latitude Min="0" Max="90" />
+					<Slope Min="15" Max="30" />
+				</Rule>
+          
+				<Rule>
+					<Layers>
+						<Layer Material="RykeRock2" Depth="25" />
+					</Layers>
+					<Height Min="0" Max="1" />
+					<Latitude Min="0" Max="90" />
+					<Slope Min="30" Max="90" />
+				</Rule>
+			
+			</MaterialGroup>
+			
+		</ComplexMaterials>
+      
+		<EnvironmentItems>
+			<Item>
+				<Biomes>
+					<Biome>0</Biome>
+				</Biomes>
+				<Materials>
+					<Material>RykeSoil</Material>
+				</Materials>
+				<Items>
+					<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="Stones" ModifierId="RykeRock2" Density="0.007" />
+				</Items>
+				<Rule>
+					<Height Min="0" Max="1" />
+					<Latitude Min="0" Max="90" />
+					<Slope Min="5" Max="15" />
+				</Rule>
+			</Item>
+		</EnvironmentItems>
 
-      <DefaultSurfaceMaterial Material="RykeRock2" MaxDepth="25" />
-      <DefaultSubSurfaceMaterial Material="RykeLava" />
+		<MaximumOxygen>0.1</MaximumOxygen>
+		<SurfaceGravity>2.3</SurfaceGravity>
+		<GravityFalloffPower>3</GravityFalloffPower> <!-- No Clue if this is still a valid setting -->
+		<DefaultSurfaceMaterial Material="RykeRock2" MaxDepth="25" />
+		<DefaultSubSurfaceMaterial Material="RykeLava" />
+		<Deviation Min="0.005" Max="0.003" />
+		<MaterialsMaxDepth Min="4000" Max="4000" />
+		<MaterialsMinDepth Min="20" Max="20" />
+		<HasAtmosphere>true</HasAtmosphere>	  
+		
+		<Atmosphere>
+			<Breathable>false</Breathable>
+			<OxygenDensity>0</OxygenDensity>
+			<Density>1.2</Density>
+			<LimitAltitude>8.0</LimitAltitude>
+			<MaxWindSpeed>700</MaxWindSpeed> <!-- speed of solar winds, typically. -->
+		</Atmosphere>
+		
+		<AtmosphereSettings>
+			<RayleighScattering>
+				<X>56</X>
+				<Y>20</Y>
+				<Z>30</Z>
+			</RayleighScattering>
+			<MieScattering>40</MieScattering>
+			<MieColorScattering>
+				<X>56</X>
+				<Y>20</Y>
+				<Z>30</Z>
+			</MieColorScattering>
+			<RayleighHeight>30</RayleighHeight>
+			<RayleighHeightSpace>10</RayleighHeightSpace>
+			<RayleighTransitionModifier>2.9</RayleighTransitionModifier>
+			<MieHeight>30</MieHeight>
+			<MieG>0.998</MieG>
+			<Intensity>16</Intensity>
+			<SeaLevelModifier>0.092</SeaLevelModifier>
+			<AtmosphereTopModifier>1</AtmosphereTopModifier>
+			<FogIntensity>40</FogIntensity>
+			<Scale>10</Scale>
+		</AtmosphereSettings>
 
-      <MaximumOxygen>0.1</MaximumOxygen>
-      <HasAtmosphere>true</HasAtmosphere>
+		<CloudLayers>
+			
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Fog_v1.dds</Texture>
+				</Textures>
+				<RelativeAltitude>0</RelativeAltitude>
+				<AngularVelocity>0.5</AngularVelocity>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>				
+				<InitialRotation>0</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.1</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.4</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
 
-      <GravityFalloffPower>3</GravityFalloffPower>
+			<CloudLayer>
+				<!-- Far layer -->
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+				</Textures>
+				<RelativeAltitude>0.04</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0.05</AngularVelocity>
+				<InitialRotation>3.2</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>1</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.6</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
 
+			<!-- Near layers -->
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+				</Textures>
+				<RelativeAltitude>0.1</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0.0006</AngularVelocity>
+				<InitialRotation>0.95</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>1.1</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.7</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
+        
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+				</Textures>
+				<RelativeAltitude>0.2</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0</AngularVelocity>
+				<InitialRotation>0</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>1.1</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.7</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
 
-      <SurfaceGravity>2.3</SurfaceGravity>
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+				</Textures>
+				<RelativeAltitude>1600</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0.7</AngularVelocity>
+				<InitialRotation>3.5</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.1</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.5</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
 
-      <Deviation Min="0.005" Max="0.003" />
-      <MaterialsMaxDepth Min="4000" Max="4000" />
-      <MaterialsMinDepth Min="20" Max="20" />
-<AtmosphereSettings>
-      <RayleighScattering>
-        <X>56</X>
-        <Y>20</Y>
-        <Z>30</Z>
-      </RayleighScattering>
-      <MieScattering>40</MieScattering>
-      <MieColorScattering>
-        <X>56</X>
-        <Y>20</Y>
-        <Z>30</Z>
-      </MieColorScattering>
-      <RayleighHeight>30</RayleighHeight>
-      <RayleighHeightSpace>10</RayleighHeightSpace>
-      <RayleighTransitionModifier>2.9</RayleighTransitionModifier>
-      <MieHeight>30</MieHeight>
-      <MieG>0.998</MieG>
-      <Intensity>16</Intensity>
-      <SeaLevelModifier>0.092</SeaLevelModifier>
-      <AtmosphereTopModifier>1</AtmosphereTopModifier>
-      <FogIntensity>40</FogIntensity>
-      <Scale>10</Scale>
-    </AtmosphereSettings>
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Fog_v1.dds</Texture>
+				</Textures>
+				<RelativeAltitude>1.0</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0</AngularVelocity>
+				<InitialRotation>0</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>1.5</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
 
-      <Atmosphere>
-        <Breathable>true</Breathable>
-        <OxygenDensity>0</OxygenDensity>
-        <Density>1.2</Density>
-        <LimitAltitude>8.0</LimitAltitude>
-      </Atmosphere>
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Fog_v1.dds</Texture>
+				</Textures>
+				<RelativeAltitude>2799.99</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0</AngularVelocity>
+				<InitialRotation>0</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.9</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>			
 
-      <HillParams Min="-0.02" Max="0.06" />
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Fog_v1.dds</Texture>
+				</Textures>
+				<RelativeAltitude>2799.99</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0</AngularVelocity>
+				<InitialRotation>0</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.9</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
+			
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Fog_v1.dds</Texture>
+				</Textures>
+				<RelativeAltitude>2799.99</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0</AngularVelocity>
+				<InitialRotation>0</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.9</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>			
+			
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Fog_v1.dds</Texture>
+				</Textures>
+				<RelativeAltitude>2800</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0</AngularVelocity>
+				<InitialRotation>0</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.1</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.5</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
 
+			<CloudLayer>
+				<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+				<Textures>
+					<Texture>Textures/Models/Environment/Sky/Fog_v1.dds</Texture>
+				</Textures>
+				<RelativeAltitude>2800</RelativeAltitude>
+				<RotationAxis>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</RotationAxis>
+				<AngularVelocity>0</AngularVelocity>
+				<InitialRotation>0</InitialRotation>
+				<ScalingEnabled>true</ScalingEnabled>
+				<FadeOutRelativeAltitudeStart>0.1</FadeOutRelativeAltitudeStart>
+				<FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
+				<ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
+			</CloudLayer>
 
-      <CloudLayers>
-        <CloudLayer>
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Fog_vsha.dds</Texture>
-          </Textures>
-          <RelativeAltitude>0.1</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0.0001</AngularVelocity>
-          <InitialRotation>0</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>0.1</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>0.4</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
+		</CloudLayers>
 
-        <CloudLayer>
-          <!-- Far layer -->
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
-          </Textures>
-          <RelativeAltitude>0.3</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0.0002</AngularVelocity>
-          <InitialRotation>3.2</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>1</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>0.6</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
-
-        <!-- Near layers -->
-        <CloudLayer>
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
-          </Textures>
-          <RelativeAltitude>0.1</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0.0006</AngularVelocity>
-          <InitialRotation>0.95</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>1.1</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>0.7</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
-        <CloudLayer>
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
-          </Textures>
-          <RelativeAltitude>0.2</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0</AngularVelocity>
-          <InitialRotation>0</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>1.1</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>0.7</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
-
-        <CloudLayer>
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
-          </Textures>
-          <RelativeAltitude>0.6</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0</AngularVelocity>
-          <InitialRotation>0</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>0.1</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>0.5</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
-
-        <CloudLayer>
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Fog_vsha.dds</Texture>
-          </Textures>
-          <RelativeAltitude>1.0</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0</AngularVelocity>
-          <InitialRotation>0</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>1.5</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
-
-        <CloudLayer>
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Fog_vsha.dds</Texture>
-          </Textures>
-          <RelativeAltitude>3.0</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0</AngularVelocity>
-          <InitialRotation>0</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>0.9</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
-
-
-        <CloudLayer>
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Fog_vsha.dds</Texture>
-          </Textures>
-          <RelativeAltitude>4.0</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0</AngularVelocity>
-          <InitialRotation>0</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>0.1</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>0.5</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
-
-        <CloudLayer>
-          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
-          <Textures>
-            <Texture>Textures/Models/Environment/Sky/Fog_vsha.dds</Texture>
-          </Textures>
-          <RelativeAltitude>5.0</RelativeAltitude>
-          <RotationAxis>
-            <X>0</X>
-            <Y>0</Y>
-            <Z>0</Z>
-          </RotationAxis>
-          <AngularVelocity>0</AngularVelocity>
-          <InitialRotation>0</InitialRotation>
-          <ScalingEnabled>true</ScalingEnabled>
-          <FadeOutRelativeAltitudeStart>0.1</FadeOutRelativeAltitudeStart>
-          <FadeOutRelativeAltitudeEnd>0.1</FadeOutRelativeAltitudeEnd>
-          <ApplyFogRelativeDistance>0</ApplyFogRelativeDistance>
-        </CloudLayer>
-
-      </CloudLayers>
-
-    </PlanetGeneratorDefinition>
-
-  </PlanetGeneratorDefinitions>
+		<MaterialsMaxDepth Min="4000" Max="4000"/>
+		<MaterialsMinDepth Min="20" Max="20"/>
+		<HillParams Min="-0.02" Max="0.06" />
+    
+	</Definition>
 </Definitions>
