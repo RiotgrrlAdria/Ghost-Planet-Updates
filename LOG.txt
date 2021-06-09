@@ -150,6 +150,7 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	FIXED: Drutenus surface gravity lowered slighty to match Jupi-jupe.
 	FIXED: Drutenus is now much larger.
 	FIXED: Drutenus was missing planetdata textures. That's been fixed.
+	NOTE: Forgot to add atmosphere damage to Drutenus. Shit....
 	
 
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
