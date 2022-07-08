@@ -11,7 +11,7 @@ Branch number:
 -Alpha branch represents the latest nightly builds. Alpha has assigned milestones to it, where the goal is to reach the assigned milestones in the order they are assigned. Additional milestones are added as needed to ensure that the project remains flexible as new complications can be addressed.
 -Beta branch represents builds where alpha branch milestones have been reached, but the build remains largely untested. Beta builds are basically test
 candidates. Like the Alpha branch, beta has milestones. However, these milestones represent a set list of testing mechanics which are repeatedly run over every single update.
--Master branch represents stable builds which have reached major milestones and have been tested throughly. Master branch is the branch which is uploaded to the Steam Workshop.
+-Master branch represents stable builds which have reached major milestones and have been tested thoroughly. Master branch is the branch which is uploaded to the Steam Workshop.
 ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BEFORE MOVING ON.
 
 -----------------------------------------------------------Version Log------------------------------------------------------------------
@@ -19,8 +19,8 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 
 19.6.18.0303
 	ADDED: Created log (you're reading it)
-	ADDED: Uploaded original copies of the planets to github
-	ADDED: Alpha branch. This branch will contain the initial updates for compatability with the newer planetary additions, and all
+	ADDED: Uploaded original copies of the planets to GitHub
+	ADDED: Alpha branch. This branch will contain the initial updates for compatibility with the newer planetary additions, and all
 	       new modifications and additions to the planets, with very light testing.
 	ADDED: Beta branch. Beta branch is where changes will be tweaked and additional testing will be done to ensure that the end product is
 	       stable.
@@ -30,7 +30,7 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	FIXED: Version was wrong on the log document.
 	FIXED: Cleaned up the look of the log so its easier to read.
 	ADDED: Updated Aibos to new standards and features.
-	TODO: Update Aibos to have it's landscape look proper. Adjust lighting so that the day sky is completely non-existant.
+	TODO: Update Aibos to have it's landscape look proper. Adjust lighting so that the day sky is completely non-existent.
 
 
 19.6.20.0304
@@ -51,7 +51,7 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	FIXED: Ancore sky texture bug.
 	FIXED: Andros planet generator definitions updated to the latest standard
 
-	
+
 21.05.24.0308
 	FIXED: Aibos updated to latest standards.
 	ADDED: Aibos now has ore (added in ore generation).
@@ -59,7 +59,7 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	FIXED: Aibos now has accurate wind speed.
 	ADDED: Aibos was given weather (copied mars). Clouds were added in as it makes no sense for the planet to have ridiculously high winds yet nothing like clouds or anthing kicked into the atmospere.
 	FIXED: Akura updated to the latest standards.
-	FIXED: Akura's ore generatrion should work now.
+	FIXED: Akura's ore generation should work now.
 	ADDED: Akura has wind & weather (alien planet weather).
 
 
@@ -72,14 +72,14 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 21.05.27.310
 	FIXED: Aplov update to the latest standards.
 	ADDED: Aplov now has music
-	FIXED: Aplov's clouds were adjusted to make the planet apear bigger and increased the angular velocity. Adjusted maximum oxygen from 0.9 to 0.1.
+	FIXED: Aplov's clouds were adjusted to make the planet appear bigger and increased the angular velocity. Adjusted maximum oxygen from 0.9 to 0.1.
 	ADDED: Aplov has had appropriate weather added in.
 	FIXED: Arcelia updated to the latest standards.
 	FIXED: Arcelia no longer has a purple surface.
 	ADDED: Arcelia has music in the air.
 	FIXED: Avalon updated to the latest standards.
 	FIXED: Avalon missing audio file fixed (created one).
-	ADDED: Avalon is a lot dealier - wolves are now on the surface.
+	ADDED: Avalon is a lot deadlier - wolves are now on the surface.
 	ADDED: Avalon has weather.
 	NOTE: With Avalon -Need to test to make sure that the textures work properly. I *think* this one may CTD.
 
@@ -125,33 +125,34 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	FIXED: Cyan 2 missing textures have been added. NOTE: Ores and ExoSand are original. Will need to make new ones that fit better in the future.
 	FIXED: Cyan 2 voxel materials fixed and updated.
 	FIXED: EnviromentModules updated to include Wasteland planet.
-	FIXED: PhysicalModelsCollections model refereces fixed
-	
-	NOTE: New objects aren't actually used. No reference to them at all. PhysicalModels_Trees is the only file with chanes in it.
+	FIXED: PhysicalModelsCollections model references fixed
+
+	NOTE: New objects aren't actually used. No reference to them at all. PhysicalModels_Trees is the only file with changes in it.
 
 21.06.08.0315
 	FIXED: Dead Planet updated to the latest standards
 	FIXED: Dead Planet now has better lava audio
-	ADDED: Dead Planet now damages players if thery are outside. Making the enviuroment hella caustic.
-	ADDED: Dead Planet noiw has music.
+	ADDED: Dead Planet now damages players if they are outside. Making the environment Hella caustic.
+	ADDED: Dead Planet now has music.
 	FIXED: Dead Planet's atmosphere density has been increased from 1.0 to 5.0
-	ADDED: Dead Planet has weathers. Really crappyu ones, buyt its weather!
-	FIXED: Dead Planet's lava vxel is set to indestructable. How can one mine lava?
+	ADDED: Dead Planet has weathers. Really crappy ones, but its weather!
+	FIXED: Dead Planet's lava voxel is set to indestructible. How can one mine lava?
 	ADDED: Dead Planet lava and magma2 textures now have thumbnails
 	FIXED: Dead Sun updated to the latest standards.
-	FIXED: Dead Sun has had the cloud layers adjusted so now it apears huge
+	FIXED: Dead Sun has had the cloud layers adjusted so now it appears huge
 	FIXED: Deltiri updated to the latest standards. The lack of wind = no weather or atmosphere -this is intentional.
 	FIXED: Deluise updated to the latest standards.
 	FIXED: Deluise now has weather.
-	FIXED: Deluise voxelmaterials was updated. Removed references which are no longer supported.
-	REMOVED: Deluise Enviroment file removed. Was in wrong location, plus would conflict with any speed mods.
+	FIXED: Deluise voxel materials was updated. Removed references which are no longer supported.
+	REMOVED: Deluise Environment file removed. Was in wrong location, plus would conflict with any speed mods.
 	FIXED: Drutenus updated to the lat4est standards.
 	ADDED: Drutenus was assigned some new tunes!
-	FIXED: Drutenus surface gravity lowered slighty to match Jupi-jupe.
+	FIXED: Drutenus surface gravity lowered slightly to match Jupi-jupe.
 	FIXED: Drutenus is now much larger.
-	FIXED: Drutenus was missing planetdata textures. That's been fixed.
+	FIXED: Drutenus was missing planet data textures. That's been fixed.
 	NOTE: Forgot to add atmosphere damage to Drutenus. Shit....
-	
+
+
 
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
   ALPHA:
@@ -162,5 +163,5 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	-Update settings to ensure that the look and feel matches original release by Ghost.
 	-Add in new feature sets including music, etc.
 	-Write scripts for planets with high gravity / high winds / inhospitable
-	
+
   BETA:
