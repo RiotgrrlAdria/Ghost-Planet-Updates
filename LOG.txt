@@ -145,15 +145,19 @@ ALL BRANCHES, SANS MASTER, WILL HAVE MILESTONES ASSIGNED THAT MUST BE REACHED BE
 	FIXED: Deluise now has weather.
 	FIXED: Deluise voxel materials was updated. Removed references which are no longer supported.
 	REMOVED: Deluise Environment file removed. Was in wrong location, plus would conflict with any speed mods.
-	FIXED: Drutenus updated to the lat4est standards.
+	FIXED: Drutenus updated to the latest standards.
 	ADDED: Drutenus was assigned some new tunes!
 	FIXED: Drutenus surface gravity lowered slightly to match Jupi-jupe.
 	FIXED: Drutenus is now much larger.
 	FIXED: Drutenus was missing planet data textures. That's been fixed.
 	NOTE: Forgot to add atmosphere damage to Drutenus. Shit....
 
-
-
+22.07.22.0316
+	FIXED: Earth HD updated to the latest standards
+	FIXED: Earth HD has weather now.
+	FIXED: Enides updated to the latest standards
+	FIXED: Enides now has some sick beats
+	FIXED: Enides now has custom lava sounds.
 -------------------------------------------------------MILESTONES:----------------------------------------------------------------------
   ALPHA:
 	-Update the file structure of the skyboxes.
